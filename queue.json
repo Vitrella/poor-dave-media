@@ -1,0 +1,7 @@
+{
+  "enabled": false,
+  "tiktok": true,
+  "youtube": true,
+  "note": "Robot is OFF until the TikTok app and the YouTube API audit are approved. While OFF, posting is done through Chrome (see claude/upload-pelo-chrome.md in the project). Times are ISO 8601 with the -03:00 offset.",
+  "items": []
+}

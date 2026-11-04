@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poor Dave Publisher</title>
+<style>
+  :root { --ink:#1d1d1f; --mut:#6e6e73; --line:#e3e3e8; --acc:#fe2c55; --ok:#1a7f37; }
+  * { box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background:#f6f6f8; margin:0; }
+  header { background:#111; color:#fff; padding:14px 24px; display:flex; align-items:center; gap:12px; }
+  header img { width:36px; height:36px; border-radius:8px; }
+  header b { font-size:17px; }
+  header span { color:#aaa; font-size:13px; margin-left:auto; }
+  main { max-width:760px; margin:24px auto; padding:0 16px 48px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:20px; margin-bottom:16px; }
+  h2 { font-size:16px; margin:0 0 12px; }
+  label { display:block; font-size:13px; color:var(--mut); margin:12px 0 4px; }
+  input[type=text], input[type=password], select, textarea { width:100%; padding:9px 10px; border:1px solid var(--line); border-radius:8px; font:inherit; }
+  textarea { min-height:90px; }
+  button { background:var(--acc); color:#fff; border:0; border-radius:8px; padding:10px 18px; font:inherit; font-weight:600; cursor:pointer; }
+  button.sec { background:#fff; color:var(--ink); border:1px solid var(--line); }
+  button:disabled { opacity:.45; cursor:not-allowed; }
+  .row { display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+  .creator { display:flex; gap:12px; align-items:center; }
+  .creator img { width:48px; height:48px; border-radius:50%; background:#ddd; }
+  .chk { display:flex; gap:8px; align-items:center; margin:8px 0; font-size:14px; color:var(--ink); }
+  .note { font-size:12px; color:var(--mut); }
+  .ok { color:var(--ok); } .err { color:#b00020; }
+  video { width:220px; border-radius:10px; background:#000; }
+  #log { font-family: ui-monospace, monospace; font-size:12px; white-space:pre-wrap; color:var(--mut); }
+  .hidden { display:none; }
+</style>
+</head>
+<body>
+<header>
+  <img src="https://raw.githubusercontent.com/Vitrella/poor-dave-media/main/brand/avatar.png" alt="">
+  <b>Poor Dave Publisher</b>
+  <span>Private tool for the @poor.dave account</span>
+</header>
+<main>
+
+<section class="card" id="setup">
+  <h2>1. App settings (owner only, stored in this browser)</h2>
+  <p class="note">Enter the Client key and Client secret of the Poor Dave Publisher app (Sandbox or Production) from the TikTok for Developers portal. They never leave this browser except to call TikTok.</p>
+  <label for="ck">Client key</label><input id="ck" type="text" autocomplete="off">
+  <label for="cs">Client secret</label><input id="cs" type="password" autocomplete="off">
+  <div class="row" style="margin-top:14px">
+    <button id="save">Save settings</button>
+    <span class="note" id="saved"></span>
+  </div>
+</section>
+
+<section class="card">
+  <h2>2. Connect TikTok account</h2>
+  <div id="notConnected">
+    <p class="note">Sign in with TikTok to connect the Poor Dave account. We request: user.info.basic (to show which account is connected), video.upload and video.publish (to send our own videos to this account).</p>
+    <button id="login">Continue with TikTok</button>
+  </div>
+  <div id="connected" class="hidden">
+    <div class="creator"><img id="avatar" alt=""><div><b id="nick"></b><div class="note" id="openid"></div></div></div>
+    <div class="row" style="margin-top:12px"><button class="sec" id="logout">Disconnect</button></div>
+  </div>
+</section>
+
+<section class="card" id="postCard">
+  <h2>3. Post a video</h2>
+  <div class="row" style="align-items:flex-start">
+    <video id="preview" controls muted playsinline></video>
+    <div style="flex:1;min-width:240px">
+      <label for="video">Video</label>
+      <select id="video"></select>
+      <label for="caption">Caption</label>
+      <textarea id="caption" maxlength="2200"></textarea>
+      <label for="privacy">Who can view this video</label>
+      <select id="privacy"><option value="">Select privacy…</option></select>
+      <p class="note" id="maxdur"></p>
+    </div>
+  </div>
+  <label>Allow users to</label>
+  <div class="chk"><input type="checkbox" id="allowComment"> <span>Comment</span></div>
+  <div class="chk"><input type="checkbox" id="allowDuet"> <span>Duet</span></div>
+  <div class="chk"><input type="checkbox" id="allowStitch"> <span>Stitch</span></div>
+  <label>Content disclosure</label>
+  <div class="chk"><input type="checkbox" id="aigc" checked> <span>AI-generated content (label shown on the post)</span></div>
+  <div class="chk"><input type="checkbox" id="commercial"> <span>This video promotes a brand, product or service</span></div>
+  <p class="note">By posting, you agree to TikTok's <a href="https://www.tiktok.com/legal/page/global/music-usage-confirmation/en" target="_blank" rel="noopener">Music Usage Confirmation</a>.</p>
+  <div class="row" style="margin-top:8px">
+    <button id="post" disabled>Post to TikTok</button>
+    <button class="sec" id="draft" disabled>Send as draft</button>
+    <span id="status" class="note"></span>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Activity</h2>
+  <div id="log"></div>
+</section>
+</main>
+
+<script>
+const API = 'https://open.tiktokapis.com';
+const REDIRECT = 'https://vitrella.github.io/poor-dave-media/callback.html';
+const RAW = 'https://raw.githubusercontent.com/Vitrella/poor-dave-media/main/videos/';
+const VIDEOS = [
+  ['04_water_upwards.mp4', 'What if water fell upwards for 5 seconds? Which one next? 👇 #whatif #pov #simulation #science #physics'],
+  ['05_cats_lions.mp4', 'What if every cat on Earth became a lion for 5 seconds? Which one next? 👇 #whatif #pov #simulation #science #cats'],
+  ['03_she_loved_you_back.mp4', 'What if she loved you back? Which one next? 👇 #whatif #pov #storytime'],
+];
+const $ = id => document.getElementById(id);
+const store = {
+  get: k => { try { return JSON.parse(localStorage.getItem('pd_' + k)); } catch (e) { return null; } },
+  set: (k, v) => { try { localStorage.setItem('pd_' + k, JSON.stringify(v)); } catch (e) {} },
+  del: k => { try { localStorage.removeItem('pd_' + k); } catch (e) {} },
+};
+const log = m => { $('log').textContent = new Date().toLocaleTimeString() + '  ' + m + '\n' + $('log').textContent; };
+
+// settings
+$('ck').value = store.get('ck') || '';
+$('cs').value = store.get('cs') ? '••••••••' : '';
+$('save').onclick = () => {
+  store.set('ck', $('ck').value.trim());
+  if ($('cs').value && !/^•+$/.test($('cs').value)) store.set('cs', $('cs').value.trim());
+  $('cs').value = store.get('cs') ? '••••••••' : '';
+  $('saved').textContent = 'Saved.';
+};
+
+// videos
+for (const [f, c] of VIDEOS) { const o = document.createElement('option'); o.value = f; o.textContent = f; o.dataset.caption = c; $('video').appendChild(o); }
+const pickVideo = () => { const o = $('video').selectedOptions[0]; $('preview').src = RAW + o.value; $('caption').value = o.dataset.caption; };
+$('video').onchange = pickVideo; pickVideo();
+
+// login
+$('login').onclick = () => {
+  const ck = store.get('ck'); if (!ck) { alertBox('Save the Client key first.'); return; }
+  const state = 'pd-' + Math.random().toString(36).slice(2);
+  store.set('state', state);
+  const u = new URL('https://www.tiktok.com/v2/auth/authorize/');
+  u.search = new URLSearchParams({ client_key: ck, scope: 'user.info.basic,video.upload,video.publish', response_type: 'code', redirect_uri: REDIRECT, state }).toString();
+  location.href = u.toString();
+};
+function alertBox(m) { $('status').textContent = m; $('status').className = 'err'; log(m); }
+
+async function tokenCall(params) {
+  const body = new URLSearchParams({ client_key: store.get('ck'), client_secret: store.get('cs'), ...params });
+  const r = await fetch(API + '/v2/oauth/token/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body });
+  const j = await r.json();
+  if (!j.access_token) throw new Error(j.error_description || j.error || 'token error');
+  j.expires_at = Date.now() + (j.expires_in - 60) * 1000;
+  store.set('tok', j); return j;
+}
+async function accessToken() {
+  let t = store.get('tok'); if (!t) return null;
+  if (Date.now() > t.expires_at) { log('Refreshing access token…'); t = await tokenCall({ grant_type: 'refresh_token', refresh_token: t.refresh_token }); }
+  return t.access_token;
+}
+async function api(path, opts = {}) {
+  const at = await accessToken();
+  const r = await fetch(API + path, { ...opts, headers: { Authorization: 'Bearer ' + at, 'Content-Type': 'application/json; charset=UTF-8', ...(opts.headers || {}) } });
+  const j = await r.json();
+  if (j.error && j.error.code && j.error.code !== 'ok') throw new Error(j.error.code + ': ' + j.error.message);
+  return j.data;
+}
+
+async function connectFromCode() {
+  const p = new URLSearchParams(location.search);
+  if (!p.get('code')) return;
+  if (p.get('state') !== store.get('state')) { alertBox('Sign-in state did not match; please try again.'); return; }
+  history.replaceState(null, '', location.pathname);
+  log('Exchanging authorization code…');
+  await tokenCall({ code: p.get('code'), grant_type: 'authorization_code', redirect_uri: REDIRECT });
+  log('Connected.');
+}
+
+async function showAccount() {
+  if (!store.get('tok')) { $('connected').classList.add('hidden'); $('notConnected').classList.remove('hidden'); return; }
+  const u = (await api('/v2/user/info/?fields=open_id,display_name,avatar_url')).user;
+  $('nick').textContent = u.display_name; $('openid').textContent = 'open_id ' + u.open_id; $('avatar').src = u.avatar_url;
+  $('connected').classList.remove('hidden'); $('notConnected').classList.add('hidden');
+  const ci = await api('/v2/post/publish/creator_info/query/', { method: 'POST', body: '{}' });
+  log('Creator: ' + ci.creator_nickname + ' (@' + ci.creator_username + ')');
+  $('nick').textContent = ci.creator_nickname + ' · @' + ci.creator_username;
+  $('privacy').innerHTML = '<option value="">Select privacy…</option>' + ci.privacy_level_options.map(o => `<option value="${o}">${o.replace(/_/g, ' ').toLowerCase()}</option>`).join('');
+  $('allowComment').disabled = ci.comment_disabled; $('allowDuet').disabled = ci.duet_disabled; $('allowStitch').disabled = ci.stitch_disabled;
+  $('maxdur').textContent = 'Max video length for this account: ' + ci.max_video_post_duration_sec + ' s';
+  $('post').disabled = false; $('draft').disabled = false;
+}
+$('logout').onclick = () => { store.del('tok'); showAccount(); log('Disconnected.'); };
+
+async function waitStatus(publishId) {
+  for (let i = 0; i < 40; i++) {
+    await new Promise(r => setTimeout(r, 5000));
+    const s = await api('/v2/post/publish/status/fetch/', { method: 'POST', body: JSON.stringify({ publish_id: publishId }) });
+    $('status').textContent = 'Status: ' + s.status; log('Status: ' + s.status + (s.fail_reason ? ' (' + s.fail_reason + ')' : ''));
+    if (['PUBLISH_COMPLETE', 'SEND_TO_USER_INBOX', 'FAILED'].includes(s.status)) { $('status').className = s.status === 'FAILED' ? 'err' : 'ok'; return s; }
+  }
+}
+$('post').onclick = async () => {
+  if (!$('privacy').value) { alertBox('Choose who can view this video.'); return; }
+  $('post').disabled = true; $('status').className = 'note'; $('status').textContent = 'Sending…';
+  try {
+    const d = await api('/v2/post/publish/video/init/', { method: 'POST', body: JSON.stringify({
+      post_info: { title: $('caption').value, privacy_level: $('privacy').value, disable_comment: !$('allowComment').checked, disable_duet: !$('allowDuet').checked, disable_stitch: !$('allowStitch').checked, is_aigc: $('aigc').checked, brand_content_toggle: $('commercial').checked, brand_organic_toggle: false },
+      source_info: { source: 'PULL_FROM_URL', video_url: RAW + $('video').value } }) });
+    log('Publish started: ' + d.publish_id); await waitStatus(d.publish_id);
+  } catch (e) { alertBox(e.message); }
+  $('post').disabled = false;
+};
+$('draft').onclick = async () => {
+  $('draft').disabled = true; $('status').className = 'note'; $('status').textContent = 'Sending draft…';
+  try {
+    const d = await api('/v2/post/publish/inbox/video/init/', { method: 'POST', body: JSON.stringify({ source_info: { source: 'PULL_FROM_URL', video_url: RAW + $('video').value } }) });
+    log('Draft sent: ' + d.publish_id); await waitStatus(d.publish_id);
+  } catch (e) { alertBox(e.message); }
+  $('draft').disabled = false;
+};
+
+(async () => { try { await connectFromCode(); await showAccount(); } catch (e) { alertBox(e.message); } })();
+</script>
+</body>
+</html>

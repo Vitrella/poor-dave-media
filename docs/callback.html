@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poor Dave Publisher – Authorization</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 640px; margin: 48px auto; padding: 0 20px; color: #222; }
+  h1 { font-size: 22px; }
+  code { display: block; background: #f3f3f3; padding: 12px; border-radius: 6px; word-break: break-all; }
+  .err { color: #b00020; }
+</style>
+</head>
+<body>
+<h1>Poor Dave Publisher</h1>
+<p id="msg">Reading the authorization response…</p>
+<code id="code" hidden></code>
+<p><a href="index.html">Back to Poor Dave</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+<script>
+  const p = new URLSearchParams(location.search);
+  const msg = document.getElementById('msg'), box = document.getElementById('code');
+  if (p.get('error')) {
+    msg.className = 'err';
+    msg.textContent = 'Authorization was not granted: ' + p.get('error') + (p.get('error_description') ? ' (' + p.get('error_description') + ')' : '');
+  } else if (p.get('code')) {
+    msg.textContent = 'Authorization complete. The publisher uses this one-time code to connect the Poor Dave account. You can close this page.';
+    box.textContent = p.get('code');
+    box.hidden = false;
+  } else {
+    msg.textContent = 'This page receives the sign-in response for the Poor Dave Publisher tool. Nothing to do here.';
+  }
+</script>
+</body>
+</html>

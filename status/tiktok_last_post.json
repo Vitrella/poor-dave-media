@@ -1,0 +1,7 @@
+{
+  "requested": "2026-11-05T01:14:51.643156+00:00",
+  "video": "04_water_upwards.mp4",
+  "draft": false,
+  "error": "TikTok /v2/post/publish/video/init/: {'code': 'unaudited_client_can_only_post_to_private_accounts', 'message': 'Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/', 'log_id': '20261105091453E35123B358A47A2F7BA1'}",
+  "finished": "2026-11-05T01:14:53.699500+00:00"
+}

@@ -1,7 +1,10 @@
 {
-  "requested": "2026-11-05T01:14:51.643156+00:00",
+  "requested": "2026-11-05T01:18:53.697692+00:00",
   "video": "04_water_upwards.mp4",
-  "draft": false,
-  "error": "TikTok /v2/post/publish/video/init/: {'code': 'unaudited_client_can_only_post_to_private_accounts', 'message': 'Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/', 'log_id': '20261105091453E35123B358A47A2F7BA1'}",
-  "finished": "2026-11-05T01:14:53.699500+00:00"
+  "draft": true,
+  "publish_id": "v_inbox_file~v2.7704490402442692615",
+  "privacy": "SELF_ONLY",
+  "status": "SEND_TO_USER_INBOX",
+  "fail_reason": null,
+  "finished": "2026-11-05T01:19:43.378054+00:00"
 }

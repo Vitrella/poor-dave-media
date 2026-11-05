@@ -18,7 +18,7 @@
 <p><a href="index.html">Back to Poor Dave</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
 <script>
   const p = new URLSearchParams(location.search);
-  if ((p.get('state') || '').startsWith('pd-')) { location.replace('publisher.html' + location.search); }
+  if (/^(pd|yt)-/.test(p.get('state') || '')) { location.replace('publisher.html' + location.search); }
   const msg = document.getElementById('msg'), box = document.getElementById('code');
   if (p.get('error')) {
     msg.className = 'err';

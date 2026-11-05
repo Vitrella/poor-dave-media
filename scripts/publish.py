@@ -187,6 +187,19 @@ def google_access(tokens):
     return t['access_token']
 
 
+def youtube_profile(tokens):
+    """Save the connected channel (no secrets) for the publisher page."""
+    st, j, _ = http('GET', 'https://www.googleapis.com/youtube/v3/channels?part=snippet&mine=true',
+                    headers={'Authorization': 'Bearer ' + google_access(tokens)})
+    items = j.get('items') or []
+    if not items:
+        raise RuntimeError(f'YouTube channels: {j}')
+    sn = items[0]['snippet']
+    save(os.path.join(STATUS, 'youtube_account.json'), {
+        'channel_id': items[0]['id'], 'title': sn.get('title'), 'handle': sn.get('customUrl'),
+        'refresh_token': bool(tokens.get('youtube', {}).get('refresh_token')), 'updated': now().isoformat()})
+
+
 def youtube_upload(tokens, item, video):
     meta = {'snippet': {'title': item['title'], 'description': item['caption'], 'categoryId': '28',
                         'defaultLanguage': 'en', 'defaultAudioLanguage': 'en'},
@@ -247,6 +260,11 @@ def auth(platform, code):
             save(os.path.join(STATUS, 'tiktok_account.json'), {'error': str(e), 'updated': now().isoformat()})
     elif platform == 'youtube':
         google_token(tokens, code=code, grant_type='authorization_code', redirect_uri=REDIRECT)
+        save(TOKENS, tokens)
+        try:
+            youtube_profile(tokens)
+        except Exception as e:
+            save(os.path.join(STATUS, 'youtube_account.json'), {'error': str(e), 'updated': now().isoformat()})
     else:
         sys.exit('platform must be tiktok or youtube')
     save(TOKENS, tokens)

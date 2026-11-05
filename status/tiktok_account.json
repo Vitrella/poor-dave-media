@@ -1,0 +1,17 @@
+{
+  "display_name": "Poor Dave",
+  "avatar_url": "https://p19-common-sign.tiktokcdn.com/tos-alisg-avt-0068/10612d00a17ee55f881f7e8bf4c1347c~tplv-tiktokx-cropcenter:168:168.jpeg?dr=14577&refresh_token=b22e0e55&x-expires=1794013200&x-signature=0%2BDtBXMPWacM2jSPhND%2FO0vxEX4%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=8aecc5ac&idc=my2",
+  "creator_nickname": "Poor Dave",
+  "creator_username": "poor.dave",
+  "creator_avatar_url": "https://p19-common-sign.tiktokcdn.com/tos-alisg-avt-0068/10612d00a17ee55f881f7e8bf4c1347c~tplv-tiktokx-cropcenter:168:168.webp?dr=14577&refresh_token=56761083&x-expires=1794013200&x-signature=Y%2B71bBc7cihzWfoMNntMlPEeUXM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=bbadf38d&idc=my2",
+  "privacy_level_options": [
+    "PUBLIC_TO_EVERYONE",
+    "MUTUAL_FOLLOW_FRIENDS",
+    "SELF_ONLY"
+  ],
+  "comment_disabled": false,
+  "duet_disabled": false,
+  "stitch_disabled": false,
+  "max_video_post_duration_sec": 3600,
+  "updated": "2026-11-05T01:12:34.270763+00:00"
+}

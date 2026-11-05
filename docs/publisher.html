@@ -42,9 +42,9 @@
 
 <section class="card" id="setup">
   <h2>1. App settings (owner only, stored in this browser)</h2>
-  <p class="note">Enter the Client key and Client secret of the Poor Dave Publisher app (Sandbox or Production) from the TikTok for Developers portal. They never leave this browser except to call TikTok.</p>
-  <label for="ck">Client key</label><input id="ck" type="text" autocomplete="off">
-  <label for="cs">Client secret</label><input id="cs" type="password" autocomplete="off">
+  <p class="note">The Client key of the Poor Dave Publisher app (it is public) and a GitHub access token that lets this page start our publisher job. The TikTok client secret and the account tokens are never in this page: they live encrypted in our GitHub publisher job, which talks to TikTok.</p>
+  <label for="ck">TikTok Client key</label><input id="ck" type="text" autocomplete="off">
+  <label for="cs">GitHub access token (Actions: read and write)</label><input id="cs" type="password" autocomplete="off">
   <div class="row" style="margin-top:14px">
     <button id="save">Save settings</button>
     <span class="note" id="saved"></span>
@@ -99,7 +99,8 @@
 </main>
 
 <script>
-const API = 'https://open.tiktokapis.com';
+const REPO = 'Vitrella/poor-dave-media';
+const GH = 'https://api.github.com/repos/' + REPO;
 const REDIRECT = 'https://vitrella.github.io/poor-dave-media/callback.html';
 const RAW = 'https://raw.githubusercontent.com/Vitrella/poor-dave-media/main/videos/';
 const VIDEOS = [
@@ -114,14 +115,16 @@ const store = {
   del: k => { try { localStorage.removeItem('pd_' + k); } catch (e) {} },
 };
 const log = m => { $('log').textContent = new Date().toLocaleTimeString() + '  ' + m + '\n' + $('log').textContent; };
+const setStatus = (m, cls) => { $('status').textContent = m; $('status').className = cls || 'note'; };
+function alertBox(m) { setStatus(m, 'err'); log(m); }
 
 // settings
 $('ck').value = store.get('ck') || '';
-$('cs').value = store.get('cs') ? '••••••••' : '';
+$('cs').value = store.get('gh') ? '••••••••' : '';
 $('save').onclick = () => {
   store.set('ck', $('ck').value.trim());
-  if ($('cs').value && !/^•+$/.test($('cs').value)) store.set('cs', $('cs').value.trim());
-  $('cs').value = store.get('cs') ? '••••••••' : '';
+  if ($('cs').value && !/^•+$/.test($('cs').value)) store.set('gh', $('cs').value.trim());
+  $('cs').value = store.get('gh') ? '••••••••' : '';
   $('saved').textContent = 'Saved.';
 };
 
@@ -130,90 +133,89 @@ for (const [f, c] of VIDEOS) { const o = document.createElement('option'); o.val
 const pickVideo = () => { const o = $('video').selectedOptions[0]; $('preview').src = RAW + o.value; $('caption').value = o.dataset.caption; };
 $('video').onchange = pickVideo; pickVideo();
 
-// login
+// GitHub publisher job
+async function gh(path, opts = {}) {
+  const r = await fetch(GH + path, { ...opts, headers: { Authorization: 'Bearer ' + store.get('gh'), Accept: 'application/vnd.github+json', ...(opts.headers || {}) } });
+  if (r.status === 204) return null;
+  if (!r.ok) throw new Error('GitHub ' + r.status + ': ' + (await r.text()).slice(0, 160));
+  return opts.raw ? r.text() : r.json();
+}
+async function runJob(inputs, label) {
+  const request_id = 'r' + Date.now().toString(36);
+  await gh('/actions/workflows/publish.yml/dispatches', { method: 'POST', body: JSON.stringify({ ref: 'main', inputs: { ...inputs, request_id } }) });
+  log(label + ': job requested');
+  let run = null;
+  for (let i = 0; i < 120; i++) {
+    await new Promise(r => setTimeout(r, 4000));
+    if (!run) {
+      const list = await gh('/actions/workflows/publish.yml/runs?event=workflow_dispatch&per_page=10');
+      run = list.workflow_runs.find(w => (w.display_title || w.name || '').includes(request_id));
+      if (run) log(label + ': job started');
+      continue;
+    }
+    run = await gh('/actions/runs/' + run.id);
+    setStatus(label + ': ' + run.status + '…');
+    if (run.status === 'completed') { log(label + ': job ' + run.conclusion); return run.conclusion; }
+  }
+  throw new Error(label + ': job timed out');
+}
+async function readStatus(file) {
+  try { return JSON.parse(await gh('/contents/status/' + file + '?ref=main', { raw: true, headers: { Accept: 'application/vnd.github.raw+json' } })); }
+  catch (e) { return null; }
+}
+
+// login with TikTok (authorization code goes to our publisher job, which keeps the tokens)
 $('login').onclick = () => {
-  const ck = store.get('ck'); if (!ck) { alertBox('Save the Client key first.'); return; }
+  const ck = store.get('ck'); if (!ck || !store.get('gh')) { alertBox('Save the settings first.'); return; }
   const state = 'pd-' + Math.random().toString(36).slice(2);
   store.set('state', state);
   const u = new URL('https://www.tiktok.com/v2/auth/authorize/');
   u.search = new URLSearchParams({ client_key: ck, scope: 'user.info.basic,video.upload,video.publish', response_type: 'code', redirect_uri: REDIRECT, state }).toString();
   location.href = u.toString();
 };
-function alertBox(m) { $('status').textContent = m; $('status').className = 'err'; log(m); }
-
-async function tokenCall(params) {
-  const body = new URLSearchParams({ client_key: store.get('ck'), client_secret: store.get('cs'), ...params });
-  const r = await fetch(API + '/v2/oauth/token/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body });
-  const j = await r.json();
-  if (!j.access_token) throw new Error(j.error_description || j.error || 'token error');
-  j.expires_at = Date.now() + (j.expires_in - 60) * 1000;
-  store.set('tok', j); return j;
-}
-async function accessToken() {
-  let t = store.get('tok'); if (!t) return null;
-  if (Date.now() > t.expires_at) { log('Refreshing access token…'); t = await tokenCall({ grant_type: 'refresh_token', refresh_token: t.refresh_token }); }
-  return t.access_token;
-}
-async function api(path, opts = {}) {
-  const at = await accessToken();
-  const r = await fetch(API + path, { ...opts, headers: { Authorization: 'Bearer ' + at, 'Content-Type': 'application/json; charset=UTF-8', ...(opts.headers || {}) } });
-  const j = await r.json();
-  if (j.error && j.error.code && j.error.code !== 'ok') throw new Error(j.error.code + ': ' + j.error.message);
-  return j.data;
-}
-
 async function connectFromCode() {
   const p = new URLSearchParams(location.search);
   if (!p.get('code')) return;
-  if (p.get('state') !== store.get('state')) { alertBox('Sign-in state did not match; please try again.'); return; }
   history.replaceState(null, '', location.pathname);
-  log('Exchanging authorization code…');
-  await tokenCall({ code: p.get('code'), grant_type: 'authorization_code', redirect_uri: REDIRECT });
-  log('Connected.');
+  if (p.get('state') !== store.get('state')) { alertBox('Sign-in state did not match; please try again.'); return; }
+  setStatus('Connecting the account…');
+  const c = await runJob({ mode: 'auth', platform: 'tiktok', code: p.get('code') }, 'Connect');
+  if (c !== 'success') throw new Error('Connecting failed (see the job log on GitHub)');
+  store.set('connected', true);
 }
 
 async function showAccount() {
-  if (!store.get('tok')) { $('connected').classList.add('hidden'); $('notConnected').classList.remove('hidden'); return; }
-  const u = (await api('/v2/user/info/?fields=open_id,display_name,avatar_url')).user;
-  $('nick').textContent = u.display_name; $('openid').textContent = 'open_id ' + u.open_id; $('avatar').src = u.avatar_url;
+  if (!store.get('connected') || !store.get('gh')) { $('connected').classList.add('hidden'); $('notConnected').classList.remove('hidden'); return; }
+  const a = await readStatus('tiktok_account.json');
+  if (!a || a.error) { alertBox('Account info unavailable' + (a && a.error ? ': ' + a.error : '')); return; }
+  $('nick').textContent = (a.creator_nickname || a.display_name) + (a.creator_username ? ' · @' + a.creator_username : '');
+  $('openid').textContent = 'Connected · creator info updated ' + new Date(a.updated).toLocaleString();
+  $('avatar').src = a.creator_avatar_url || a.avatar_url || '';
   $('connected').classList.remove('hidden'); $('notConnected').classList.add('hidden');
-  const ci = await api('/v2/post/publish/creator_info/query/', { method: 'POST', body: '{}' });
-  log('Creator: ' + ci.creator_nickname + ' (@' + ci.creator_username + ')');
-  $('nick').textContent = ci.creator_nickname + ' · @' + ci.creator_username;
-  $('privacy').innerHTML = '<option value="">Select privacy…</option>' + ci.privacy_level_options.map(o => `<option value="${o}">${o.replace(/_/g, ' ').toLowerCase()}</option>`).join('');
-  $('allowComment').disabled = ci.comment_disabled; $('allowDuet').disabled = ci.duet_disabled; $('allowStitch').disabled = ci.stitch_disabled;
-  $('maxdur').textContent = 'Max video length for this account: ' + ci.max_video_post_duration_sec + ' s';
+  $('privacy').innerHTML = '<option value="">Select privacy…</option>' + a.privacy_level_options.map(o => `<option value="${o}">${o.replace(/_/g, ' ').toLowerCase()}</option>`).join('');
+  $('allowComment').disabled = !!a.comment_disabled; $('allowDuet').disabled = !!a.duet_disabled; $('allowStitch').disabled = !!a.stitch_disabled;
+  $('maxdur').textContent = 'Max video length for this account: ' + a.max_video_post_duration_sec + ' s';
+  $('post').disabled = false; $('draft').disabled = false;
+  log('Creator: ' + $('nick').textContent);
+}
+$('logout').onclick = () => { store.del('connected'); showAccount(); log('Disconnected from this page.'); };
+
+async function send(draft) {
+  if (!draft && !$('privacy').value) { alertBox('Choose who can view this video.'); return; }
+  $('post').disabled = true; $('draft').disabled = true; setStatus('Sending…');
+  const payload = { video: $('video').value, caption: $('caption').value, privacy: $('privacy').value || undefined,
+    allow_comment: $('allowComment').checked, allow_duet: $('allowDuet').checked, allow_stitch: $('allowStitch').checked,
+    aigc: $('aigc').checked, commercial: $('commercial').checked, draft };
+  try {
+    await runJob({ mode: 'post', payload: JSON.stringify(payload) }, draft ? 'Draft' : 'Post');
+    const r = await readStatus('tiktok_last_post.json');
+    if (!r || r.error) alertBox('Post failed: ' + (r ? r.error : 'no result'));
+    else { setStatus('TikTok status: ' + r.status + ' (' + r.privacy + ')', 'ok'); log('TikTok status: ' + r.status + ' · publish_id ' + r.publish_id); }
+  } catch (e) { alertBox(e.message); }
   $('post').disabled = false; $('draft').disabled = false;
 }
-$('logout').onclick = () => { store.del('tok'); showAccount(); log('Disconnected.'); };
-
-async function waitStatus(publishId) {
-  for (let i = 0; i < 40; i++) {
-    await new Promise(r => setTimeout(r, 5000));
-    const s = await api('/v2/post/publish/status/fetch/', { method: 'POST', body: JSON.stringify({ publish_id: publishId }) });
-    $('status').textContent = 'Status: ' + s.status; log('Status: ' + s.status + (s.fail_reason ? ' (' + s.fail_reason + ')' : ''));
-    if (['PUBLISH_COMPLETE', 'SEND_TO_USER_INBOX', 'FAILED'].includes(s.status)) { $('status').className = s.status === 'FAILED' ? 'err' : 'ok'; return s; }
-  }
-}
-$('post').onclick = async () => {
-  if (!$('privacy').value) { alertBox('Choose who can view this video.'); return; }
-  $('post').disabled = true; $('status').className = 'note'; $('status').textContent = 'Sending…';
-  try {
-    const d = await api('/v2/post/publish/video/init/', { method: 'POST', body: JSON.stringify({
-      post_info: { title: $('caption').value, privacy_level: $('privacy').value, disable_comment: !$('allowComment').checked, disable_duet: !$('allowDuet').checked, disable_stitch: !$('allowStitch').checked, is_aigc: $('aigc').checked, brand_content_toggle: $('commercial').checked, brand_organic_toggle: false },
-      source_info: { source: 'PULL_FROM_URL', video_url: RAW + $('video').value } }) });
-    log('Publish started: ' + d.publish_id); await waitStatus(d.publish_id);
-  } catch (e) { alertBox(e.message); }
-  $('post').disabled = false;
-};
-$('draft').onclick = async () => {
-  $('draft').disabled = true; $('status').className = 'note'; $('status').textContent = 'Sending draft…';
-  try {
-    const d = await api('/v2/post/publish/inbox/video/init/', { method: 'POST', body: JSON.stringify({ source_info: { source: 'PULL_FROM_URL', video_url: RAW + $('video').value } }) });
-    log('Draft sent: ' + d.publish_id); await waitStatus(d.publish_id);
-  } catch (e) { alertBox(e.message); }
-  $('draft').disabled = false;
-};
+$('post').onclick = () => send(false);
+$('draft').onclick = () => send(true);
 
 (async () => { try { await connectFromCode(); await showAccount(); } catch (e) { alertBox(e.message); } })();
 </script>

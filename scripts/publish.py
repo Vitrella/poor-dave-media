@@ -5,6 +5,8 @@ Modes:
   publish.py run                     post every due item of queue.json (only if queue.enabled is true)
   publish.py auth tiktok <code>      exchange a TikTok authorization code and store the tokens
   publish.py auth youtube <code>     exchange a Google authorization code and store the tokens
+  publish.py post '<json>'           post one video now (publisher page); writes status/tiktok_last_post.json
+  publish.py profile                 refresh status/tiktok_account.json (creator info, no secrets)
 
 Secrets (GitHub Actions secrets, never in the repo):
   TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET
@@ -21,6 +23,7 @@ TOKENS = os.path.join(ROOT, 'state', 'tokens.json')
 RAW = 'https://raw.githubusercontent.com/Vitrella/poor-dave-media/main/videos/'
 REDIRECT = 'https://vitrella.github.io/poor-dave-media/callback.html'
 TT = 'https://open.tiktokapis.com'
+STATUS = os.path.join(ROOT, 'status')
 
 
 def env(name):
@@ -99,27 +102,66 @@ def tiktok_api(tokens, path, payload):
     return j.get('data', {})
 
 
-def tiktok_post(tokens, item, video):
+def tiktok_get(tokens, path):
+    st, j, _ = http('GET', TT + path, headers={'Authorization': 'Bearer ' + tiktok_access(tokens)})
+    if j.get('error', {}).get('code', 'ok') != 'ok':
+        raise RuntimeError(f"TikTok {path}: {j['error']}")
+    return j.get('data', {})
+
+
+def tiktok_profile(tokens):
+    """Save the connected account and its creator info (no secrets) for the publisher page."""
+    u = tiktok_get(tokens, '/v2/user/info/?fields=open_id,display_name,avatar_url').get('user', {})
     ci = tiktok_api(tokens, '/v2/post/publish/creator_info/query/', {})
-    privacy = 'PUBLIC_TO_EVERYONE' if 'PUBLIC_TO_EVERYONE' in ci['privacy_level_options'] else ci['privacy_level_options'][0]
+    save(os.path.join(STATUS, 'tiktok_account.json'), {
+        'display_name': u.get('display_name'), 'avatar_url': u.get('avatar_url'),
+        'creator_nickname': ci.get('creator_nickname'), 'creator_username': ci.get('creator_username'),
+        'creator_avatar_url': ci.get('creator_avatar_url'),
+        'privacy_level_options': ci.get('privacy_level_options', []),
+        'comment_disabled': ci.get('comment_disabled'), 'duet_disabled': ci.get('duet_disabled'),
+        'stitch_disabled': ci.get('stitch_disabled'),
+        'max_video_post_duration_sec': ci.get('max_video_post_duration_sec'),
+        'updated': now().isoformat()})
+    return ci
+
+
+def tiktok_post(tokens, item, video, opts=None):
+    """Direct post (or draft when opts['draft']) by FILE_UPLOAD. opts comes from the publisher page;
+    the scheduled robot passes none and uses PUBLIC_TO_EVERYONE when allowed."""
+    opts = opts or {}
+    ci = tiktok_api(tokens, '/v2/post/publish/creator_info/query/', {})
+    options = ci['privacy_level_options']
+    privacy = opts.get('privacy') or ('PUBLIC_TO_EVERYONE' if 'PUBLIC_TO_EVERYONE' in options else options[0])
+    if privacy not in options:
+        raise RuntimeError(f'privacy {privacy} not allowed for this account: {options}')
     size = len(video)
-    d = tiktok_api(tokens, '/v2/post/publish/video/init/', {
-        'post_info': {'title': item['caption'], 'privacy_level': privacy, 'disable_comment': False,
-                      'disable_duet': True, 'disable_stitch': True, 'is_aigc': True,
-                      'brand_content_toggle': False, 'brand_organic_toggle': False},
-        'source_info': {'source': 'FILE_UPLOAD', 'video_size': size, 'chunk_size': size, 'total_chunk_count': 1}})
+    source = {'source': 'FILE_UPLOAD', 'video_size': size, 'chunk_size': size, 'total_chunk_count': 1}
+    if opts.get('draft'):
+        d = tiktok_api(tokens, '/v2/post/publish/inbox/video/init/', {'source_info': source})
+    else:
+        d = tiktok_api(tokens, '/v2/post/publish/video/init/', {
+            'post_info': {'title': item['caption'], 'privacy_level': privacy,
+                          'disable_comment': not opts.get('allow_comment', True),
+                          'disable_duet': not opts.get('allow_duet', False),
+                          'disable_stitch': not opts.get('allow_stitch', False),
+                          'is_aigc': opts.get('aigc', True),
+                          'brand_content_toggle': opts.get('commercial', False), 'brand_organic_toggle': False},
+            'source_info': source})
     st, j, _ = http('PUT', d['upload_url'], raw=video, headers={
         'Content-Type': 'video/mp4', 'Content-Length': str(size), 'Content-Range': f'bytes 0-{size - 1}/{size}'})
     if st not in (200, 201):
         raise RuntimeError(f'TikTok upload HTTP {st}: {j}')
+    last = {}
     for _ in range(60):
         time.sleep(10)
-        s = tiktok_api(tokens, '/v2/post/publish/status/fetch/', {'publish_id': d['publish_id']})
-        if s.get('status') in ('PUBLISH_COMPLETE', 'FAILED'):
-            if s['status'] == 'FAILED':
-                raise RuntimeError(f"TikTok publish failed: {s.get('fail_reason')}")
-            return {'publish_id': d['publish_id'], 'privacy': privacy}
-    raise RuntimeError('TikTok publish timed out')
+        last = tiktok_api(tokens, '/v2/post/publish/status/fetch/', {'publish_id': d['publish_id']})
+        if last.get('status') in ('PUBLISH_COMPLETE', 'SEND_TO_USER_INBOX', 'FAILED'):
+            break
+    res = {'publish_id': d['publish_id'], 'privacy': privacy, 'status': last.get('status'),
+           'fail_reason': last.get('fail_reason'), 'draft': bool(opts.get('draft'))}
+    if last.get('status') == 'FAILED':
+        raise RuntimeError(f"TikTok publish failed: {last.get('fail_reason')}")
+    return res
 
 
 # ---------------- YouTube ----------------
@@ -198,6 +240,11 @@ def auth(platform, code):
     tokens = load(TOKENS, {})
     if platform == 'tiktok':
         tiktok_token(tokens, code=code, grant_type='authorization_code', redirect_uri=REDIRECT)
+        save(TOKENS, tokens)
+        try:
+            tiktok_profile(tokens)
+        except Exception as e:
+            save(os.path.join(STATUS, 'tiktok_account.json'), {'error': str(e), 'updated': now().isoformat()})
     elif platform == 'youtube':
         google_token(tokens, code=code, grant_type='authorization_code', redirect_uri=REDIRECT)
     else:
@@ -206,10 +253,39 @@ def auth(platform, code):
     print(platform, 'connected')
 
 
+def manual_post(payload):
+    """Publisher page: post one video right now with the options the owner chose."""
+    opts = json.loads(payload)
+    tokens = load(TOKENS, {})
+    result = {'requested': now().isoformat(), 'video': opts.get('video'), 'draft': bool(opts.get('draft'))}
+    try:
+        video = urllib.request.urlopen(RAW + opts['video'], timeout=300).read()
+        result.update(tiktok_post(tokens, {'caption': opts.get('caption', '')}, video, opts))
+    except Exception as e:
+        result['error'] = str(e)
+        print('ERROR', e)
+    result['finished'] = now().isoformat()
+    save(os.path.join(STATUS, 'tiktok_last_post.json'), result)
+    save(TOKENS, tokens)
+
+
+def refresh_profile():
+    tokens = load(TOKENS, {})
+    try:
+        tiktok_profile(tokens)
+    except Exception as e:
+        save(os.path.join(STATUS, 'tiktok_account.json'), {'error': str(e), 'updated': now().isoformat()})
+    save(TOKENS, tokens)
+
+
 if __name__ == '__main__':
     if len(sys.argv) >= 2 and sys.argv[1] == 'run':
         run()
     elif len(sys.argv) == 4 and sys.argv[1] == 'auth':
         auth(sys.argv[2], sys.argv[3])
+    elif len(sys.argv) == 3 and sys.argv[1] == 'post':
+        manual_post(sys.argv[2])
+    elif len(sys.argv) == 2 and sys.argv[1] == 'profile':
+        refresh_profile()
     else:
         sys.exit(__doc__)

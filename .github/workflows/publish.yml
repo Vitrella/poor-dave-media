@@ -2,21 +2,31 @@ name: Poor Dave publisher
 
 on:
   schedule:
-    - cron: '7,27,47 * * * *'   # every 20 minutes; the queue decides what is due
+    - cron: '7,27,47 * * * *'   # every 20 minutes; queue.json decides what is due (robot OFF while enabled=false)
   workflow_dispatch:
     inputs:
       mode:
-        description: 'run, or auth'
+        description: 'run | auth | post | profile'
         default: 'run'
         required: true
       platform:
-        description: 'for auth: tiktok or youtube'
+        description: 'auth: tiktok or youtube'
         default: ''
         required: false
       code:
-        description: 'for auth: one-time authorization code from callback.html'
+        description: 'auth: one-time authorization code from callback.html'
         default: ''
         required: false
+      payload:
+        description: 'post: JSON with video, caption, privacy, allow_comment, allow_duet, allow_stitch, aigc, commercial, draft'
+        default: ''
+        required: false
+      request_id:
+        description: 'set by the publisher page to find this run'
+        default: ''
+        required: false
+
+run-name: ${{ github.event_name == 'workflow_dispatch' && format('{0} {1}', inputs.mode, inputs.request_id) || 'scheduled run' }}
 
 permissions:
   contents: write
@@ -36,32 +46,32 @@ jobs:
         env:
           TOKEN_KEY: ${{ secrets.TOKEN_KEY }}
         run: |
-          mkdir -p state
+          mkdir -p state status
           if [ -f state/tokens.enc ] && [ -n "$TOKEN_KEY" ]; then
             openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in state/tokens.enc -out state/tokens.json -pass env:TOKEN_KEY
           fi
 
-      - name: Publish due items
-        if: ${{ github.event_name == 'schedule' || inputs.mode == 'run' }}
+      - name: Run publisher
         env:
           TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
           TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
-        run: python3 scripts/publish.py run
-
-      - name: Connect account
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'auth' }}
-        env:
-          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
-          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
-          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
-          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
-          CODE: ${{ inputs.code }}
+          MODE: ${{ github.event_name == 'schedule' && 'run' || inputs.mode }}
           PLATFORM: ${{ inputs.platform }}
-        run: python3 scripts/publish.py auth "$PLATFORM" "$CODE"
+          CODE: ${{ inputs.code }}
+          PAYLOAD: ${{ inputs.payload }}
+        run: |
+          case "$MODE" in
+            run)     python3 scripts/publish.py run ;;
+            auth)    python3 scripts/publish.py auth "$PLATFORM" "$CODE" ;;
+            post)    python3 scripts/publish.py post "$PAYLOAD" ;;
+            profile) python3 scripts/publish.py profile ;;
+            *)       echo "unknown mode $MODE"; exit 1 ;;
+          esac
 
-      - name: Encrypt tokens and save queue
+      - name: Encrypt tokens and save state
+        if: always()
         env:
           TOKEN_KEY: ${{ secrets.TOKEN_KEY }}
         run: |
@@ -71,5 +81,8 @@ jobs:
           rm -f state/tokens.json
           git config user.name "poor-dave-bot"
           git config user.email "poor-dave-bot@users.noreply.github.com"
-          git add queue.json state/tokens.enc 2>/dev/null || true
-          git diff --cached --quiet || (git commit -m "publisher: update queue/tokens [skip ci]" && git push)
+          git add queue.json state/tokens.enc status 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "publisher: update state [skip ci]"
+            for i in 1 2 3; do git pull --rebase -q origin main && git push -q && break; sleep 5; done
+          fi

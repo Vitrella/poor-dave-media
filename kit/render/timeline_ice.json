@@ -1,0 +1,1507 @@
+{
+ "fps": 30,
+ "duration": 91.631,
+ "audio": "voice/ice_final.mp3",
+ "marks": {
+  "model": 4.462,
+  "priya": 6.846,
+  "on": 9.0,
+  "allofit": 12.308,
+  "five": 13.231,
+  "vol": 14.833,
+  "thick": 17.464,
+  "water": 20.079,
+  "energy": 23.725,
+  "five2": 27.463,
+  "beach": 29.233,
+  "poles": 31.002,
+  "way": 32.848,
+  "slides": 34.015,
+  "tsunami": 37.554,
+  "speed": 39.938,
+  "day": 41.852,
+  "rise": 44.01,
+  "storey": 46.066,
+  "everywhere": 47.835,
+  "london": 48.769,
+  "ny": 50.137,
+  "shanghai": 51.137,
+  "tokyo": 52.06,
+  "eight": 53.137,
+  "seaice": 56.527,
+  "already": 58.552,
+  "arch": 60.244,
+  "notice": 62.782,
+  "moat": 66.09,
+  "salt": 67.705,
+  "fish": 71.475,
+  "onlyfish": 72.782,
+  "space": 74.233,
+  "darker": 76.439,
+  "week": 79.285,
+  "factor": 80.9,
+  "venue": 83.439,
+  "plan": 84.977,
+  "air_back": null
+ },
+ "scenes": [
+  {
+   "id": "intro",
+   "line": "It's Saturday at the seaside.",
+   "words": [
+    {
+     "w": "It's",
+     "s": 0.0,
+     "e": 0.231
+    },
+    {
+     "w": "Saturday",
+     "s": 0.5,
+     "e": 0.769
+    },
+    {
+     "w": "at",
+     "s": 0.846,
+     "e": 0.923
+    },
+    {
+     "w": "the",
+     "s": 1.0,
+     "e": 1.038
+    },
+    {
+     "w": "seaside.",
+     "s": 1.077,
+     "e": 1.923
+    }
+   ],
+   "sentences": [
+    {
+     "text": "It's Saturday at the seaside.",
+     "s": 0.0,
+     "e": 1.923
+    }
+   ],
+   "start": 0.0,
+   "end": 2.074
+  },
+  {
+   "id": "dave",
+   "line": "Dave is finishing a sandcastle. It's a scale model of the wedding venue. Priya has the seating plan.",
+   "words": [
+    {
+     "w": "Dave",
+     "s": 2.154,
+     "e": 2.538
+    },
+    {
+     "w": "is",
+     "s": 2.615,
+     "e": 2.692
+    },
+    {
+     "w": "finishing",
+     "s": 2.769,
+     "e": 3.077
+    },
+    {
+     "w": "a",
+     "s": 3.115,
+     "e": 3.154
+    },
+    {
+     "w": "sandcastle.",
+     "s": 3.231,
+     "e": 4.0
+    },
+    {
+     "w": "It's",
+     "s": 4.462,
+     "e": 4.577
+    },
+    {
+     "w": "a",
+     "s": 4.615,
+     "e": 4.692
+    },
+    {
+     "w": "scale",
+     "s": 4.846,
+     "e": 5.0
+    },
+    {
+     "w": "model",
+     "s": 5.154,
+     "e": 5.385
+    },
+    {
+     "w": "of",
+     "s": 5.462,
+     "e": 5.538
+    },
+    {
+     "w": "the",
+     "s": 5.577,
+     "e": 5.615
+    },
+    {
+     "w": "wedding",
+     "s": 5.692,
+     "e": 5.923
+    },
+    {
+     "w": "venue.",
+     "s": 6.115,
+     "e": 6.385
+    },
+    {
+     "w": "Priya",
+     "s": 6.846,
+     "e": 7.231
+    },
+    {
+     "w": "has",
+     "s": 7.308,
+     "e": 7.462
+    },
+    {
+     "w": "the",
+     "s": 7.5,
+     "e": 7.538
+    },
+    {
+     "w": "seating",
+     "s": 7.615,
+     "e": 7.846
+    },
+    {
+     "w": "plan.",
+     "s": 8.0,
+     "e": 8.654
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Dave is finishing a sandcastle.",
+     "s": 2.154,
+     "e": 4.0
+    },
+    {
+     "text": "It's a scale model of the wedding venue.",
+     "s": 4.462,
+     "e": 6.385
+    },
+    {
+     "text": "Priya has the seating plan.",
+     "s": 6.846,
+     "e": 8.654
+    }
+   ],
+   "start": 2.074,
+   "end": 8.92
+  },
+  {
+   "id": "event",
+   "line": "Then every piece of ice on Earth melts. All of it. In five seconds.",
+   "words": [
+    {
+     "w": "Then",
+     "s": 9.0,
+     "e": 9.308
+    },
+    {
+     "w": "every",
+     "s": 9.538,
+     "e": 9.846
+    },
+    {
+     "w": "piece",
+     "s": 9.923,
+     "e": 10.154
+    },
+    {
+     "w": "of",
+     "s": 10.192,
+     "e": 10.231
+    },
+    {
+     "w": "ice",
+     "s": 10.385,
+     "e": 10.615
+    },
+    {
+     "w": "on",
+     "s": 10.692,
+     "e": 10.769
+    },
+    {
+     "w": "Earth",
+     "s": 10.923,
+     "e": 11.231
+    },
+    {
+     "w": "melts.",
+     "s": 11.385,
+     "e": 12.077
+    },
+    {
+     "w": "All",
+     "s": 12.308,
+     "e": 12.462
+    },
+    {
+     "w": "of",
+     "s": 12.538,
+     "e": 12.615
+    },
+    {
+     "w": "it.",
+     "s": 12.731,
+     "e": 13.038
+    },
+    {
+     "w": "In",
+     "s": 13.231,
+     "e": 13.385
+    },
+    {
+     "w": "five",
+     "s": 13.462,
+     "e": 13.769
+    },
+    {
+     "w": "seconds.",
+     "s": 13.846,
+     "e": 14.564
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Then every piece of ice on Earth melts.",
+     "s": 9.0,
+     "e": 12.077
+    },
+    {
+     "text": "All of it.",
+     "s": 12.308,
+     "e": 13.038
+    },
+    {
+     "text": "In five seconds.",
+     "s": 13.231,
+     "e": 14.564
+    }
+   ],
+   "start": 8.92,
+   "end": 14.753
+  },
+  {
+   "id": "volume",
+   "line": "Thirty million cubic kilometres of ice. Antarctica is two kilometres thick. Now it's two kilometres of water, sitting on a continent.",
+   "words": [
+    {
+     "w": "Thirty",
+     "s": 14.833,
+     "e": 15.141
+    },
+    {
+     "w": "million",
+     "s": 15.295,
+     "e": 15.603
+    },
+    {
+     "w": "cubic",
+     "s": 15.757,
+     "e": 16.064
+    },
+    {
+     "w": "kilometres",
+     "s": 16.141,
+     "e": 16.603
+    },
+    {
+     "w": "of",
+     "s": 16.68,
+     "e": 16.757
+    },
+    {
+     "w": "ice.",
+     "s": 16.833,
+     "e": 17.343
+    },
+    {
+     "w": "Antarctica",
+     "s": 17.464,
+     "e": 18.156
+    },
+    {
+     "w": "is",
+     "s": 18.233,
+     "e": 18.387
+    },
+    {
+     "w": "two",
+     "s": 18.464,
+     "e": 18.541
+    },
+    {
+     "w": "kilometres",
+     "s": 18.694,
+     "e": 19.079
+    },
+    {
+     "w": "thick.",
+     "s": 19.233,
+     "e": 19.81
+    },
+    {
+     "w": "Now",
+     "s": 20.079,
+     "e": 20.387
+    },
+    {
+     "w": "it's",
+     "s": 20.464,
+     "e": 20.694
+    },
+    {
+     "w": "two",
+     "s": 20.771,
+     "e": 20.848
+    },
+    {
+     "w": "kilometres",
+     "s": 20.925,
+     "e": 21.387
+    },
+    {
+     "w": "of",
+     "s": 21.425,
+     "e": 21.464
+    },
+    {
+     "w": "water,",
+     "s": 21.618,
+     "e": 22.233
+    },
+    {
+     "w": "sitting",
+     "s": 22.31,
+     "e": 22.617
+    },
+    {
+     "w": "on",
+     "s": 22.656,
+     "e": 22.694
+    },
+    {
+     "w": "a",
+     "s": 22.771,
+     "e": 22.81
+    },
+    {
+     "w": "continent.",
+     "s": 22.848,
+     "e": 23.552
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Thirty million cubic kilometres of ice.",
+     "s": 14.833,
+     "e": 17.343
+    },
+    {
+     "text": "Antarctica is two kilometres thick.",
+     "s": 17.464,
+     "e": 19.81
+    },
+    {
+     "text": "Now it's two kilometres of water, sitting on a continent.",
+     "s": 20.079,
+     "e": 23.552
+    }
+   ],
+   "start": 14.753,
+   "end": 23.645
+  },
+  {
+   "id": "energy",
+   "line": "Melting it takes fifteen thousand years of the world's energy, in five seconds. The beach hasn't noticed. The water is at the poles. It's on its way.",
+   "words": [
+    {
+     "w": "Melting",
+     "s": 23.725,
+     "e": 24.11
+    },
+    {
+     "w": "it",
+     "s": 24.187,
+     "e": 24.264
+    },
+    {
+     "w": "takes",
+     "s": 24.341,
+     "e": 24.571
+    },
+    {
+     "w": "fifteen",
+     "s": 24.648,
+     "e": 25.033
+    },
+    {
+     "w": "thousand",
+     "s": 25.264,
+     "e": 25.648
+    },
+    {
+     "w": "years",
+     "s": 25.725,
+     "e": 26.033
+    },
+    {
+     "w": "of",
+     "s": 26.071,
+     "e": 26.11
+    },
+    {
+     "w": "the",
+     "s": 26.187,
+     "e": 26.264
+    },
+    {
+     "w": "world's",
+     "s": 26.341,
+     "e": 26.648
+    },
+    {
+     "w": "energy,",
+     "s": 26.725,
+     "e": 27.386
+    },
+    {
+     "w": "in",
+     "s": 27.463,
+     "e": 27.617
+    },
+    {
+     "w": "five",
+     "s": 27.771,
+     "e": 28.002
+    },
+    {
+     "w": "seconds.",
+     "s": 28.156,
+     "e": 28.694
+    },
+    {
+     "w": "The",
+     "s": 29.233,
+     "e": 29.31
+    },
+    {
+     "w": "beach",
+     "s": 29.386,
+     "e": 29.617
+    },
+    {
+     "w": "hasn't",
+     "s": 29.694,
+     "e": 29.925
+    },
+    {
+     "w": "noticed.",
+     "s": 30.002,
+     "e": 30.733
+    },
+    {
+     "w": "The",
+     "s": 31.002,
+     "e": 31.079
+    },
+    {
+     "w": "water",
+     "s": 31.156,
+     "e": 31.463
+    },
+    {
+     "w": "is",
+     "s": 31.54,
+     "e": 31.694
+    },
+    {
+     "w": "at",
+     "s": 31.733,
+     "e": 31.771
+    },
+    {
+     "w": "the",
+     "s": 31.848,
+     "e": 31.886
+    },
+    {
+     "w": "poles.",
+     "s": 31.925,
+     "e": 32.463
+    },
+    {
+     "w": "It's",
+     "s": 32.848,
+     "e": 33.04
+    },
+    {
+     "w": "on",
+     "s": 33.079,
+     "e": 33.156
+    },
+    {
+     "w": "its",
+     "s": 33.233,
+     "e": 33.31
+    },
+    {
+     "w": "way.",
+     "s": 33.386,
+     "e": 33.905
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Melting it takes fifteen thousand years of the world's energy, in five seconds.",
+     "s": 23.725,
+     "e": 28.694
+    },
+    {
+     "text": "The beach hasn't noticed.",
+     "s": 29.233,
+     "e": 30.733
+    },
+    {
+     "text": "The water is at the poles.",
+     "s": 31.002,
+     "e": 32.463
+    },
+    {
+     "text": "It's on its way.",
+     "s": 32.848,
+     "e": 33.905
+    }
+   ],
+   "start": 23.645,
+   "end": 33.935
+  },
+  {
+   "id": "flood",
+   "line": "It slides off Antarctica as the biggest flood in history, crossing the ocean like a tsunami. Seven hundred kilometres an hour.",
+   "words": [
+    {
+     "w": "It",
+     "s": 34.015,
+     "e": 34.169
+    },
+    {
+     "w": "slides",
+     "s": 34.246,
+     "e": 34.631
+    },
+    {
+     "w": "off",
+     "s": 34.708,
+     "e": 34.784
+    },
+    {
+     "w": "Antarctica",
+     "s": 34.861,
+     "e": 35.477
+    },
+    {
+     "w": "as",
+     "s": 35.554,
+     "e": 35.708
+    },
+    {
+     "w": "the",
+     "s": 35.746,
+     "e": 35.784
+    },
+    {
+     "w": "biggest",
+     "s": 35.938,
+     "e": 36.246
+    },
+    {
+     "w": "flood",
+     "s": 36.323,
+     "e": 36.554
+    },
+    {
+     "w": "in",
+     "s": 36.592,
+     "e": 36.631
+    },
+    {
+     "w": "history,",
+     "s": 36.708,
+     "e": 37.477
+    },
+    {
+     "w": "crossing",
+     "s": 37.554,
+     "e": 37.861
+    },
+    {
+     "w": "the",
+     "s": 37.938,
+     "e": 38.015
+    },
+    {
+     "w": "ocean",
+     "s": 38.092,
+     "e": 38.4
+    },
+    {
+     "w": "like",
+     "s": 38.477,
+     "e": 38.631
+    },
+    {
+     "w": "a",
+     "s": 38.669,
+     "e": 38.708
+    },
+    {
+     "w": "tsunami.",
+     "s": 38.784,
+     "e": 39.784
+    },
+    {
+     "w": "Seven",
+     "s": 39.938,
+     "e": 40.169
+    },
+    {
+     "w": "hundred",
+     "s": 40.246,
+     "e": 40.477
+    },
+    {
+     "w": "kilometres",
+     "s": 40.554,
+     "e": 41.015
+    },
+    {
+     "w": "an",
+     "s": 41.092,
+     "e": 41.169
+    },
+    {
+     "w": "hour.",
+     "s": 41.323,
+     "e": 41.554
+    }
+   ],
+   "sentences": [
+    {
+     "text": "It slides off Antarctica as the biggest flood in history, crossing the ocean like a tsunami.",
+     "s": 34.015,
+     "e": 39.784
+    },
+    {
+     "text": "Seven hundred kilometres an hour.",
+     "s": 39.938,
+     "e": 41.554
+    }
+   ],
+   "start": 33.935,
+   "end": 41.772
+  },
+  {
+   "id": "arrival",
+   "line": "Within a day, the sea arrives. It rises seventy metres. A twenty-storey building. Everywhere.",
+   "words": [
+    {
+     "w": "Within",
+     "s": 41.852,
+     "e": 42.083
+    },
+    {
+     "w": "a",
+     "s": 42.16,
+     "e": 42.198
+    },
+    {
+     "w": "day,",
+     "s": 42.237,
+     "e": 42.698
+    },
+    {
+     "w": "the",
+     "s": 42.737,
+     "e": 42.775
+    },
+    {
+     "w": "sea",
+     "s": 42.929,
+     "e": 43.083
+    },
+    {
+     "w": "arrives.",
+     "s": 43.198,
+     "e": 43.883
+    },
+    {
+     "w": "It",
+     "s": 44.01,
+     "e": 44.163
+    },
+    {
+     "w": "rises",
+     "s": 44.24,
+     "e": 44.702
+    },
+    {
+     "w": "seventy",
+     "s": 44.779,
+     "e": 45.125
+    },
+    {
+     "w": "metres.",
+     "s": 45.163,
+     "e": 45.802
+    },
+    {
+     "w": "A",
+     "s": 45.912,
+     "e": 45.989
+    },
+    {
+     "w": "twenty-storey",
+     "s": 46.066,
+     "e": 46.797
+    },
+    {
+     "w": "building.",
+     "s": 46.835,
+     "e": 47.566
+    },
+    {
+     "w": "Everywhere.",
+     "s": 47.835,
+     "e": 48.451
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Within a day, the sea arrives.",
+     "s": 41.852,
+     "e": 43.883
+    },
+    {
+     "text": "It rises seventy metres.",
+     "s": 44.01,
+     "e": 45.802
+    },
+    {
+     "text": "A twenty-storey building.",
+     "s": 45.912,
+     "e": 47.566
+    },
+    {
+     "text": "Everywhere.",
+     "s": 47.835,
+     "e": 48.451
+    }
+   ],
+   "start": 41.772,
+   "end": 48.689
+  },
+  {
+   "id": "cities",
+   "line": "London goes under. New York. Shanghai. Tokyo. Eight of the ten biggest cities on Earth were on the coast.",
+   "words": [
+    {
+     "w": "London",
+     "s": 48.769,
+     "e": 49.154
+    },
+    {
+     "w": "goes",
+     "s": 49.231,
+     "e": 49.385
+    },
+    {
+     "w": "under.",
+     "s": 49.461,
+     "e": 49.846
+    },
+    {
+     "w": "New",
+     "s": 50.137,
+     "e": 50.291
+    },
+    {
+     "w": "York.",
+     "s": 50.368,
+     "e": 50.945
+    },
+    {
+     "w": "Shanghai.",
+     "s": 51.137,
+     "e": 51.906
+    },
+    {
+     "w": "Tokyo.",
+     "s": 52.06,
+     "e": 52.868
+    },
+    {
+     "w": "Eight",
+     "s": 53.137,
+     "e": 53.368
+    },
+    {
+     "w": "of",
+     "s": 53.406,
+     "e": 53.445
+    },
+    {
+     "w": "the",
+     "s": 53.521,
+     "e": 53.598
+    },
+    {
+     "w": "ten",
+     "s": 53.675,
+     "e": 53.906
+    },
+    {
+     "w": "biggest",
+     "s": 53.983,
+     "e": 54.291
+    },
+    {
+     "w": "cities",
+     "s": 54.368,
+     "e": 54.675
+    },
+    {
+     "w": "on",
+     "s": 54.752,
+     "e": 54.829
+    },
+    {
+     "w": "Earth",
+     "s": 54.906,
+     "e": 55.137
+    },
+    {
+     "w": "were",
+     "s": 55.291,
+     "e": 55.445
+    },
+    {
+     "w": "on",
+     "s": 55.483,
+     "e": 55.521
+    },
+    {
+     "w": "the",
+     "s": 55.598,
+     "e": 55.675
+    },
+    {
+     "w": "coast.",
+     "s": 55.752,
+     "e": 56.45
+    }
+   ],
+   "sentences": [
+    {
+     "text": "London goes under.",
+     "s": 48.769,
+     "e": 49.846
+    },
+    {
+     "text": "New York.",
+     "s": 50.137,
+     "e": 50.945
+    },
+    {
+     "text": "Shanghai.",
+     "s": 51.137,
+     "e": 51.906
+    },
+    {
+     "text": "Tokyo.",
+     "s": 52.06,
+     "e": 52.868
+    },
+    {
+     "text": "Eight of the ten biggest cities on Earth were on the coast.",
+     "s": 53.137,
+     "e": 56.45
+    }
+   ],
+   "start": 48.689,
+   "end": 56.447
+  },
+  {
+   "id": "seaice",
+   "line": "Floating sea ice adds nothing. It was already in the water. Archimedes did that one in a bath.",
+   "words": [
+    {
+     "w": "Floating",
+     "s": 56.527,
+     "e": 56.911
+    },
+    {
+     "w": "sea",
+     "s": 56.988,
+     "e": 57.142
+    },
+    {
+     "w": "ice",
+     "s": 57.219,
+     "e": 57.45
+    },
+    {
+     "w": "adds",
+     "s": 57.527,
+     "e": 57.758
+    },
+    {
+     "w": "nothing.",
+     "s": 57.834,
+     "e": 58.475
+    },
+    {
+     "w": "It",
+     "s": 58.552,
+     "e": 58.629
+    },
+    {
+     "w": "was",
+     "s": 58.705,
+     "e": 58.782
+    },
+    {
+     "w": "already",
+     "s": 58.975,
+     "e": 59.167
+    },
+    {
+     "w": "in",
+     "s": 59.205,
+     "e": 59.244
+    },
+    {
+     "w": "the",
+     "s": 59.321,
+     "e": 59.359
+    },
+    {
+     "w": "water.",
+     "s": 59.398,
+     "e": 60.013
+    },
+    {
+     "w": "Archimedes",
+     "s": 60.244,
+     "e": 60.936
+    },
+    {
+     "w": "did",
+     "s": 61.013,
+     "e": 61.09
+    },
+    {
+     "w": "that",
+     "s": 61.167,
+     "e": 61.321
+    },
+    {
+     "w": "one",
+     "s": 61.398,
+     "e": 61.475
+    },
+    {
+     "w": "in",
+     "s": 61.552,
+     "e": 61.59
+    },
+    {
+     "w": "a",
+     "s": 61.629,
+     "e": 61.705
+    },
+    {
+     "w": "bath.",
+     "s": 61.744,
+     "e": 62.475
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Floating sea ice adds nothing.",
+     "s": 56.527,
+     "e": 58.475
+    },
+    {
+     "text": "It was already in the water.",
+     "s": 58.552,
+     "e": 60.013
+    },
+    {
+     "text": "Archimedes did that one in a bath.",
+     "s": 60.244,
+     "e": 62.475
+    }
+   ],
+   "start": 56.447,
+   "end": 62.702
+  },
+  {
+   "id": "dave_mid",
+   "line": "Dave has noticed the horizon is higher than the pier. Dave adds a moat.",
+   "words": [
+    {
+     "w": "Dave",
+     "s": 62.782,
+     "e": 63.167
+    },
+    {
+     "w": "has",
+     "s": 63.244,
+     "e": 63.321
+    },
+    {
+     "w": "noticed",
+     "s": 63.398,
+     "e": 63.705
+    },
+    {
+     "w": "the",
+     "s": 63.744,
+     "e": 63.782
+    },
+    {
+     "w": "horizon",
+     "s": 63.859,
+     "e": 64.321
+    },
+    {
+     "w": "is",
+     "s": 64.398,
+     "e": 64.552
+    },
+    {
+     "w": "higher",
+     "s": 64.629,
+     "e": 64.859
+    },
+    {
+     "w": "than",
+     "s": 64.936,
+     "e": 65.013
+    },
+    {
+     "w": "the",
+     "s": 65.052,
+     "e": 65.09
+    },
+    {
+     "w": "pier.",
+     "s": 65.167,
+     "e": 65.552
+    },
+    {
+     "w": "Dave",
+     "s": 66.09,
+     "e": 66.475
+    },
+    {
+     "w": "adds",
+     "s": 66.59,
+     "e": 66.705
+    },
+    {
+     "w": "a",
+     "s": 66.744,
+     "e": 66.782
+    },
+    {
+     "w": "moat.",
+     "s": 66.859,
+     "e": 67.244
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Dave has noticed the horizon is higher than the pier.",
+     "s": 62.782,
+     "e": 65.552
+    },
+    {
+     "text": "Dave adds a moat.",
+     "s": 66.09,
+     "e": 67.244
+    }
+   ],
+   "start": 62.702,
+   "end": 67.625
+  },
+  {
+   "id": "salt",
+   "line": "All that fresh water makes the sea two percent less salty. The fish are fine. Only the fish are fine.",
+   "words": [
+    {
+     "w": "All",
+     "s": 67.705,
+     "e": 67.936
+    },
+    {
+     "w": "that",
+     "s": 68.013,
+     "e": 68.09
+    },
+    {
+     "w": "fresh",
+     "s": 68.244,
+     "e": 68.475
+    },
+    {
+     "w": "water",
+     "s": 68.552,
+     "e": 68.859
+    },
+    {
+     "w": "makes",
+     "s": 68.936,
+     "e": 69.167
+    },
+    {
+     "w": "the",
+     "s": 69.244,
+     "e": 69.321
+    },
+    {
+     "w": "sea",
+     "s": 69.398,
+     "e": 69.629
+    },
+    {
+     "w": "two",
+     "s": 69.705,
+     "e": 69.782
+    },
+    {
+     "w": "percent",
+     "s": 69.859,
+     "e": 70.244
+    },
+    {
+     "w": "less",
+     "s": 70.321,
+     "e": 70.475
+    },
+    {
+     "w": "salty.",
+     "s": 70.552,
+     "e": 71.244
+    },
+    {
+     "w": "The",
+     "s": 71.475,
+     "e": 71.552
+    },
+    {
+     "w": "fish",
+     "s": 71.629,
+     "e": 71.782
+    },
+    {
+     "w": "are",
+     "s": 71.859,
+     "e": 71.936
+    },
+    {
+     "w": "fine.",
+     "s": 72.129,
+     "e": 72.552
+    },
+    {
+     "w": "Only",
+     "s": 72.782,
+     "e": 73.09
+    },
+    {
+     "w": "the",
+     "s": 73.167,
+     "e": 73.205
+    },
+    {
+     "w": "fish",
+     "s": 73.244,
+     "e": 73.398
+    },
+    {
+     "w": "are",
+     "s": 73.475,
+     "e": 73.552
+    },
+    {
+     "w": "fine.",
+     "s": 73.705,
+     "e": 73.936
+    }
+   ],
+   "sentences": [
+    {
+     "text": "All that fresh water makes the sea two percent less salty.",
+     "s": 67.705,
+     "e": 71.244
+    },
+    {
+     "text": "The fish are fine.",
+     "s": 71.475,
+     "e": 72.552
+    },
+    {
+     "text": "Only the fish are fine.",
+     "s": 72.782,
+     "e": 73.936
+    }
+   ],
+   "start": 67.625,
+   "end": 74.153
+  },
+  {
+   "id": "earth",
+   "line": "From space, the white bits are gone. Earth gets darker, keeps more sunlight. Not this week's problem.",
+   "words": [
+    {
+     "w": "From",
+     "s": 74.233,
+     "e": 74.387
+    },
+    {
+     "w": "space,",
+     "s": 74.464,
+     "e": 75.002
+    },
+    {
+     "w": "the",
+     "s": 75.041,
+     "e": 75.079
+    },
+    {
+     "w": "white",
+     "s": 75.156,
+     "e": 75.31
+    },
+    {
+     "w": "bits",
+     "s": 75.387,
+     "e": 75.618
+    },
+    {
+     "w": "are",
+     "s": 75.694,
+     "e": 75.771
+    },
+    {
+     "w": "gone.",
+     "s": 75.925,
+     "e": 76.156
+    },
+    {
+     "w": "Earth",
+     "s": 76.439,
+     "e": 76.747
+    },
+    {
+     "w": "gets",
+     "s": 76.862,
+     "e": 76.977
+    },
+    {
+     "w": "darker,",
+     "s": 77.054,
+     "e": 77.747
+    },
+    {
+     "w": "keeps",
+     "s": 77.785,
+     "e": 78.054
+    },
+    {
+     "w": "more",
+     "s": 78.131,
+     "e": 78.208
+    },
+    {
+     "w": "sunlight.",
+     "s": 78.362,
+     "e": 78.823
+    },
+    {
+     "w": "Not",
+     "s": 79.285,
+     "e": 79.439
+    },
+    {
+     "w": "this",
+     "s": 79.516,
+     "e": 79.67
+    },
+    {
+     "w": "week's",
+     "s": 79.747,
+     "e": 79.9
+    },
+    {
+     "w": "problem.",
+     "s": 79.977,
+     "e": 80.631
+    }
+   ],
+   "sentences": [
+    {
+     "text": "From space, the white bits are gone.",
+     "s": 74.233,
+     "e": 76.156
+    },
+    {
+     "text": "Earth gets darker, keeps more sunlight.",
+     "s": 76.439,
+     "e": 78.823
+    },
+    {
+     "text": "Not this week's problem.",
+     "s": 79.285,
+     "e": 80.631
+    }
+   ],
+   "start": 74.153,
+   "end": 80.82
+  },
+  {
+   "id": "dave_end",
+   "line": "The sandcastle is no longer a factor. Neither is the venue. Priya keeps the seating plan anyway.",
+   "words": [
+    {
+     "w": "The",
+     "s": 80.9,
+     "e": 80.977
+    },
+    {
+     "w": "sandcastle",
+     "s": 81.054,
+     "e": 81.67
+    },
+    {
+     "w": "is",
+     "s": 81.747,
+     "e": 81.9
+    },
+    {
+     "w": "no",
+     "s": 81.939,
+     "e": 81.977
+    },
+    {
+     "w": "longer",
+     "s": 82.054,
+     "e": 82.285
+    },
+    {
+     "w": "a",
+     "s": 82.362,
+     "e": 82.4
+    },
+    {
+     "w": "factor.",
+     "s": 82.439,
+     "e": 82.977
+    },
+    {
+     "w": "Neither",
+     "s": 83.439,
+     "e": 83.747
+    },
+    {
+     "w": "is",
+     "s": 83.823,
+     "e": 83.9
+    },
+    {
+     "w": "the",
+     "s": 83.939,
+     "e": 83.977
+    },
+    {
+     "w": "venue.",
+     "s": 84.054,
+     "e": 84.708
+    },
+    {
+     "w": "Priya",
+     "s": 84.977,
+     "e": 85.285
+    },
+    {
+     "w": "keeps",
+     "s": 85.362,
+     "e": 85.516
+    },
+    {
+     "w": "the",
+     "s": 85.593,
+     "e": 85.67
+    },
+    {
+     "w": "seating",
+     "s": 85.747,
+     "e": 86.054
+    },
+    {
+     "w": "plan",
+     "s": 86.208,
+     "e": 86.362
+    },
+    {
+     "w": "anyway.",
+     "s": 86.439,
+     "e": 87.131
+    }
+   ],
+   "sentences": [
+    {
+     "text": "The sandcastle is no longer a factor.",
+     "s": 80.9,
+     "e": 82.977
+    },
+    {
+     "text": "Neither is the venue.",
+     "s": 83.439,
+     "e": 84.708
+    },
+    {
+     "text": "Priya keeps the seating plan anyway.",
+     "s": 84.977,
+     "e": 87.131
+    }
+   ],
+   "start": 80.82,
+   "end": 88.031
+  },
+  {
+   "id": "endcard",
+   "line": "",
+   "words": [],
+   "sentences": [],
+   "start": 88.031,
+   "end": 91.631
+  }
+ ]
+}

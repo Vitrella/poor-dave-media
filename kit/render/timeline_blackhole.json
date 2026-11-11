@@ -1,0 +1,1480 @@
+{
+ "fps": 30,
+ "duration": 92.247,
+ "audio": "voice/blackhole_final.mp3",
+ "marks": {
+  "job": 3.462,
+  "lemon1": 6.628,
+  "typing1": 9.062,
+  "on": 10.272,
+  "two": 12.168,
+  "both": 13.399,
+  "opt1": 14.052,
+  "tensuns": 16.512,
+  "thirty": 18.358,
+  "feet": 21.075,
+  "km3500": 22.385,
+  "teng": 25.462,
+  "taller": 27.462,
+  "horizon": 28.508,
+  "noodle": 31.816,
+  "spag": 33.789,
+  "sorry": 35.327,
+  "opt2": 36.664,
+  "fourm": 39.624,
+  "twelvem": 42.814,
+  "eighteen": 45.814,
+  "tide2": 47.61,
+  "crosses": 51.456,
+  "notice": 54.072,
+  "still": 54.995,
+  "inside": 56.085,
+  "minute": 60.085,
+  "sending1": 60.812,
+  "outside": 62.533,
+  "slows": 66.072,
+  "red": 67.225,
+  "fades": 68.456,
+  "edge": 69.61,
+  "nothing": 71.687,
+  "light": 73.764,
+  "text": 74.687,
+  "forever": 77.131,
+  "orders": 79.208,
+  "wouldhave": 80.9,
+  "long": 83.593,
+  "gone": 84.977,
+  "sorted": 85.823,
+  "air_back": null
+ },
+ "scenes": [
+  {
+   "id": "intro",
+   "line": "It's Tuesday, and Dave is in space.",
+   "words": [
+    {
+     "w": "It's",
+     "s": 0.0,
+     "e": 0.231
+    },
+    {
+     "w": "Tuesday,",
+     "s": 0.308,
+     "e": 1.077
+    },
+    {
+     "w": "and",
+     "s": 1.154,
+     "e": 1.231
+    },
+    {
+     "w": "Dave",
+     "s": 1.308,
+     "e": 1.615
+    },
+    {
+     "w": "is",
+     "s": 1.692,
+     "e": 1.769
+    },
+    {
+     "w": "in",
+     "s": 1.846,
+     "e": 1.923
+    },
+    {
+     "w": "space.",
+     "s": 2.0,
+     "e": 2.731
+    }
+   ],
+   "sentences": [
+    {
+     "text": "It's Tuesday, and Dave is in space.",
+     "s": 0.0,
+     "e": 2.731
+    }
+   ],
+   "start": 0.0,
+   "end": 2.92
+  },
+  {
+   "id": "dave",
+   "line": "He has one job: confirm the wedding cake with Priya. Lemon, or Victoria sponge. He's typing.",
+   "words": [
+    {
+     "w": "He",
+     "s": 3.0,
+     "e": 3.154
+    },
+    {
+     "w": "has",
+     "s": 3.269,
+     "e": 3.385
+    },
+    {
+     "w": "one",
+     "s": 3.462,
+     "e": 3.615
+    },
+    {
+     "w": "job:",
+     "s": 3.692,
+     "e": 4.32
+    },
+    {
+     "w": "confirm",
+     "s": 4.551,
+     "e": 4.782
+    },
+    {
+     "w": "the",
+     "s": 4.82,
+     "e": 4.859
+    },
+    {
+     "w": "wedding",
+     "s": 4.936,
+     "e": 5.166
+    },
+    {
+     "w": "cake",
+     "s": 5.243,
+     "e": 5.474
+    },
+    {
+     "w": "with",
+     "s": 5.551,
+     "e": 5.628
+    },
+    {
+     "w": "Priya.",
+     "s": 5.705,
+     "e": 6.359
+    },
+    {
+     "w": "Lemon,",
+     "s": 6.628,
+     "e": 7.09
+    },
+    {
+     "w": "or",
+     "s": 7.243,
+     "e": 7.32
+    },
+    {
+     "w": "Victoria",
+     "s": 7.397,
+     "e": 7.782
+    },
+    {
+     "w": "sponge.",
+     "s": 7.859,
+     "e": 8.514
+    },
+    {
+     "w": "He's",
+     "s": 8.6,
+     "e": 8.831
+    },
+    {
+     "w": "typing.",
+     "s": 9.062,
+     "e": 9.469
+    }
+   ],
+   "sentences": [
+    {
+     "text": "He has one job: confirm the wedding cake with Priya.",
+     "s": 3.0,
+     "e": 6.359
+    },
+    {
+     "text": "Lemon, or Victoria sponge.",
+     "s": 6.628,
+     "e": 8.514
+    },
+    {
+     "text": "He's typing.",
+     "s": 8.6,
+     "e": 9.469
+    }
+   ],
+   "start": 2.92,
+   "end": 9.577
+  },
+  {
+   "id": "event",
+   "line": "Then he falls into a black hole. There are two kinds. We'll do both.",
+   "words": [
+    {
+     "w": "Then",
+     "s": 9.657,
+     "e": 9.887
+    },
+    {
+     "w": "he",
+     "s": 10.041,
+     "e": 10.195
+    },
+    {
+     "w": "falls",
+     "s": 10.272,
+     "e": 10.503
+    },
+    {
+     "w": "into",
+     "s": 10.58,
+     "e": 10.733
+    },
+    {
+     "w": "a",
+     "s": 10.784,
+     "e": 10.836
+    },
+    {
+     "w": "black",
+     "s": 10.887,
+     "e": 11.118
+    },
+    {
+     "w": "hole.",
+     "s": 11.195,
+     "e": 11.706
+    },
+    {
+     "w": "There",
+     "s": 11.861,
+     "e": 11.938
+    },
+    {
+     "w": "are",
+     "s": 12.015,
+     "e": 12.092
+    },
+    {
+     "w": "two",
+     "s": 12.168,
+     "e": 12.245
+    },
+    {
+     "w": "kinds.",
+     "s": 12.322,
+     "e": 12.784
+    },
+    {
+     "w": "We'll",
+     "s": 13.015,
+     "e": 13.168
+    },
+    {
+     "w": "do",
+     "s": 13.245,
+     "e": 13.322
+    },
+    {
+     "w": "both.",
+     "s": 13.399,
+     "e": 13.784
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Then he falls into a black hole.",
+     "s": 9.657,
+     "e": 11.706
+    },
+    {
+     "text": "There are two kinds.",
+     "s": 11.861,
+     "e": 12.784
+    },
+    {
+     "text": "We'll do both.",
+     "s": 13.015,
+     "e": 13.784
+    }
+   ],
+   "start": 9.577,
+   "end": 13.972
+  },
+  {
+   "id": "small",
+   "line": "Option one: a stellar black hole. Ten Suns, squeezed into thirty kilometres.",
+   "words": [
+    {
+     "w": "Option",
+     "s": 14.052,
+     "e": 14.36
+    },
+    {
+     "w": "one:",
+     "s": 14.437,
+     "e": 15.052
+    },
+    {
+     "w": "a",
+     "s": 15.09,
+     "e": 15.129
+    },
+    {
+     "w": "stellar",
+     "s": 15.206,
+     "e": 15.514
+    },
+    {
+     "w": "black",
+     "s": 15.59,
+     "e": 15.821
+    },
+    {
+     "w": "hole.",
+     "s": 15.898,
+     "e": 16.206
+    },
+    {
+     "w": "Ten",
+     "s": 16.512,
+     "e": 16.743
+    },
+    {
+     "w": "Suns,",
+     "s": 16.896,
+     "e": 17.396
+    },
+    {
+     "w": "squeezed",
+     "s": 17.512,
+     "e": 17.973
+    },
+    {
+     "w": "into",
+     "s": 18.05,
+     "e": 18.204
+    },
+    {
+     "w": "thirty",
+     "s": 18.358,
+     "e": 18.589
+    },
+    {
+     "w": "kilometres.",
+     "s": 18.666,
+     "e": 19.281
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Option one: a stellar black hole.",
+     "s": 14.052,
+     "e": 16.206
+    },
+    {
+     "text": "Ten Suns, squeezed into thirty kilometres.",
+     "s": 16.512,
+     "e": 19.281
+    }
+   ],
+   "start": 13.972,
+   "end": 19.456
+  },
+  {
+   "id": "tides",
+   "line": "Gravity pulls harder on his feet than his head. Three and a half thousand kilometres out, the difference is ten g. Dave is now taller.",
+   "words": [
+    {
+     "w": "Gravity",
+     "s": 19.536,
+     "e": 19.998
+    },
+    {
+     "w": "pulls",
+     "s": 20.075,
+     "e": 20.306
+    },
+    {
+     "w": "harder",
+     "s": 20.383,
+     "e": 20.69
+    },
+    {
+     "w": "on",
+     "s": 20.767,
+     "e": 20.844
+    },
+    {
+     "w": "his",
+     "s": 20.921,
+     "e": 20.998
+    },
+    {
+     "w": "feet",
+     "s": 21.075,
+     "e": 21.306
+    },
+    {
+     "w": "than",
+     "s": 21.46,
+     "e": 21.536
+    },
+    {
+     "w": "his",
+     "s": 21.613,
+     "e": 21.69
+    },
+    {
+     "w": "head.",
+     "s": 21.767,
+     "e": 22.075
+    },
+    {
+     "w": "Three",
+     "s": 22.385,
+     "e": 22.539
+    },
+    {
+     "w": "and",
+     "s": 22.616,
+     "e": 22.693
+    },
+    {
+     "w": "a",
+     "s": 22.732,
+     "e": 22.77
+    },
+    {
+     "w": "half",
+     "s": 22.885,
+     "e": 23.001
+    },
+    {
+     "w": "thousand",
+     "s": 23.155,
+     "e": 23.462
+    },
+    {
+     "w": "kilometres",
+     "s": 23.539,
+     "e": 24.001
+    },
+    {
+     "w": "out,",
+     "s": 24.155,
+     "e": 24.616
+    },
+    {
+     "w": "the",
+     "s": 24.655,
+     "e": 24.693
+    },
+    {
+     "w": "difference",
+     "s": 24.77,
+     "e": 25.155
+    },
+    {
+     "w": "is",
+     "s": 25.232,
+     "e": 25.385
+    },
+    {
+     "w": "ten",
+     "s": 25.462,
+     "e": 25.693
+    },
+    {
+     "w": "g.",
+     "s": 25.77,
+     "e": 26.155
+    },
+    {
+     "w": "Dave",
+     "s": 26.693,
+     "e": 27.001
+    },
+    {
+     "w": "is",
+     "s": 27.078,
+     "e": 27.155
+    },
+    {
+     "w": "now",
+     "s": 27.232,
+     "e": 27.385
+    },
+    {
+     "w": "taller.",
+     "s": 27.462,
+     "e": 28.043
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Gravity pulls harder on his feet than his head.",
+     "s": 19.536,
+     "e": 22.075
+    },
+    {
+     "text": "Three and a half thousand kilometres out, the difference is ten g.",
+     "s": 22.385,
+     "e": 26.155
+    },
+    {
+     "text": "Dave is now taller.",
+     "s": 26.693,
+     "e": 28.043
+    }
+   ],
+   "start": 19.456,
+   "end": 28.121
+  },
+  {
+   "id": "spaghetti",
+   "line": "At the horizon it's twenty million g. Dave is a noodle. Physicists call this spaghettification. They are not sorry.",
+   "words": [
+    {
+     "w": "At",
+     "s": 28.201,
+     "e": 28.278
+    },
+    {
+     "w": "the",
+     "s": 28.355,
+     "e": 28.431
+    },
+    {
+     "w": "horizon",
+     "s": 28.508,
+     "e": 28.97
+    },
+    {
+     "w": "it's",
+     "s": 29.124,
+     "e": 29.355
+    },
+    {
+     "w": "twenty",
+     "s": 29.431,
+     "e": 29.662
+    },
+    {
+     "w": "million",
+     "s": 29.893,
+     "e": 30.201
+    },
+    {
+     "w": "g.",
+     "s": 30.278,
+     "e": 30.662
+    },
+    {
+     "w": "Dave",
+     "s": 31.201,
+     "e": 31.508
+    },
+    {
+     "w": "is",
+     "s": 31.585,
+     "e": 31.662
+    },
+    {
+     "w": "a",
+     "s": 31.739,
+     "e": 31.778
+    },
+    {
+     "w": "noodle.",
+     "s": 31.816,
+     "e": 32.379
+    },
+    {
+     "w": "Physicists",
+     "s": 32.558,
+     "e": 33.174
+    },
+    {
+     "w": "call",
+     "s": 33.251,
+     "e": 33.404
+    },
+    {
+     "w": "this",
+     "s": 33.52,
+     "e": 33.635
+    },
+    {
+     "w": "spaghettification.",
+     "s": 33.789,
+     "e": 34.866
+    },
+    {
+     "w": "They",
+     "s": 35.327,
+     "e": 35.481
+    },
+    {
+     "w": "are",
+     "s": 35.52,
+     "e": 35.558
+    },
+    {
+     "w": "not",
+     "s": 35.635,
+     "e": 35.866
+    },
+    {
+     "w": "sorry.",
+     "s": 35.943,
+     "e": 36.493
+    }
+   ],
+   "sentences": [
+    {
+     "text": "At the horizon it's twenty million g.",
+     "s": 28.201,
+     "e": 30.662
+    },
+    {
+     "text": "Dave is a noodle.",
+     "s": 31.201,
+     "e": 32.379
+    },
+    {
+     "text": "Physicists call this spaghettification.",
+     "s": 32.558,
+     "e": 34.866
+    },
+    {
+     "text": "They are not sorry.",
+     "s": 35.327,
+     "e": 36.493
+    }
+   ],
+   "start": 28.121,
+   "end": 36.584
+  },
+  {
+   "id": "big",
+   "line": "Option two: Sagittarius A-star. Four million Suns, at the centre of our galaxy. The horizon sits twelve million kilometres out. Eighteen Suns in a row.",
+   "words": [
+    {
+     "w": "Option",
+     "s": 36.664,
+     "e": 36.972
+    },
+    {
+     "w": "two:",
+     "s": 37.049,
+     "e": 37.644
+    },
+    {
+     "w": "Sagittarius",
+     "s": 37.721,
+     "e": 38.49
+    },
+    {
+     "w": "A-star.",
+     "s": 38.567,
+     "e": 39.355
+    },
+    {
+     "w": "Four",
+     "s": 39.624,
+     "e": 39.778
+    },
+    {
+     "w": "million",
+     "s": 39.932,
+     "e": 40.24
+    },
+    {
+     "w": "Suns,",
+     "s": 40.394,
+     "e": 40.932
+    },
+    {
+     "w": "at",
+     "s": 40.971,
+     "e": 41.009
+    },
+    {
+     "w": "the",
+     "s": 41.086,
+     "e": 41.163
+    },
+    {
+     "w": "centre",
+     "s": 41.24,
+     "e": 41.471
+    },
+    {
+     "w": "of",
+     "s": 41.547,
+     "e": 41.624
+    },
+    {
+     "w": "our",
+     "s": 41.701,
+     "e": 41.778
+    },
+    {
+     "w": "galaxy.",
+     "s": 41.855,
+     "e": 42.394
+    },
+    {
+     "w": "The",
+     "s": 42.66,
+     "e": 42.737
+    },
+    {
+     "w": "horizon",
+     "s": 42.814,
+     "e": 43.275
+    },
+    {
+     "w": "sits",
+     "s": 43.352,
+     "e": 43.66
+    },
+    {
+     "w": "twelve",
+     "s": 43.737,
+     "e": 43.968
+    },
+    {
+     "w": "million",
+     "s": 44.122,
+     "e": 44.352
+    },
+    {
+     "w": "kilometres",
+     "s": 44.429,
+     "e": 44.891
+    },
+    {
+     "w": "out.",
+     "s": 45.045,
+     "e": 45.737
+    },
+    {
+     "w": "Eighteen",
+     "s": 45.814,
+     "e": 46.198
+    },
+    {
+     "w": "Suns",
+     "s": 46.352,
+     "e": 46.66
+    },
+    {
+     "w": "in",
+     "s": 46.737,
+     "e": 46.814
+    },
+    {
+     "w": "a",
+     "s": 46.891,
+     "e": 46.929
+    },
+    {
+     "w": "row.",
+     "s": 46.968,
+     "e": 47.464
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Option two: Sagittarius A-star.",
+     "s": 36.664,
+     "e": 39.355
+    },
+    {
+     "text": "Four million Suns, at the centre of our galaxy.",
+     "s": 39.624,
+     "e": 42.394
+    },
+    {
+     "text": "The horizon sits twelve million kilometres out.",
+     "s": 42.66,
+     "e": 45.737
+    },
+    {
+     "text": "Eighteen Suns in a row.",
+     "s": 45.814,
+     "e": 47.464
+    }
+   ],
+   "start": 36.584,
+   "end": 47.53
+  },
+  {
+   "id": "cross",
+   "line": "Out here the tide is a ten-thousandth of a g. Dave crosses the horizon in one piece. He doesn't notice. Still typing.",
+   "words": [
+    {
+     "w": "Out",
+     "s": 47.61,
+     "e": 47.764
+    },
+    {
+     "w": "here",
+     "s": 47.841,
+     "e": 48.149
+    },
+    {
+     "w": "the",
+     "s": 48.38,
+     "e": 48.456
+    },
+    {
+     "w": "tide",
+     "s": 48.533,
+     "e": 48.841
+    },
+    {
+     "w": "is",
+     "s": 48.88,
+     "e": 48.918
+    },
+    {
+     "w": "a",
+     "s": 48.995,
+     "e": 49.072
+    },
+    {
+     "w": "ten-thousandth",
+     "s": 49.149,
+     "e": 49.841
+    },
+    {
+     "w": "of",
+     "s": 49.918,
+     "e": 49.995
+    },
+    {
+     "w": "a",
+     "s": 50.033,
+     "e": 50.072
+    },
+    {
+     "w": "g.",
+     "s": 50.149,
+     "e": 50.764
+    },
+    {
+     "w": "Dave",
+     "s": 51.072,
+     "e": 51.38
+    },
+    {
+     "w": "crosses",
+     "s": 51.456,
+     "e": 51.764
+    },
+    {
+     "w": "the",
+     "s": 51.803,
+     "e": 51.841
+    },
+    {
+     "w": "horizon",
+     "s": 51.918,
+     "e": 52.38
+    },
+    {
+     "w": "in",
+     "s": 52.456,
+     "e": 52.533
+    },
+    {
+     "w": "one",
+     "s": 52.61,
+     "e": 52.764
+    },
+    {
+     "w": "piece.",
+     "s": 52.841,
+     "e": 53.418
+    },
+    {
+     "w": "He",
+     "s": 53.61,
+     "e": 53.764
+    },
+    {
+     "w": "doesn't",
+     "s": 53.841,
+     "e": 53.995
+    },
+    {
+     "w": "notice.",
+     "s": 54.072,
+     "e": 54.533
+    },
+    {
+     "w": "Still",
+     "s": 54.995,
+     "e": 55.226
+    },
+    {
+     "w": "typing.",
+     "s": 55.303,
+     "e": 55.925
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Out here the tide is a ten-thousandth of a g.",
+     "s": 47.61,
+     "e": 50.764
+    },
+    {
+     "text": "Dave crosses the horizon in one piece.",
+     "s": 51.072,
+     "e": 53.418
+    },
+    {
+     "text": "He doesn't notice.",
+     "s": 53.61,
+     "e": 54.533
+    },
+    {
+     "text": "Still typing.",
+     "s": 54.995,
+     "e": 55.925
+    }
+   ],
+   "start": 47.53,
+   "end": 56.005
+  },
+  {
+   "id": "inside",
+   "line": "Inside, every direction leads to the centre. He has about a minute. The phone says: sending.",
+   "words": [
+    {
+     "w": "Inside,",
+     "s": 56.085,
+     "e": 56.854
+    },
+    {
+     "w": "every",
+     "s": 57.008,
+     "e": 57.162
+    },
+    {
+     "w": "direction",
+     "s": 57.239,
+     "e": 57.7
+    },
+    {
+     "w": "leads",
+     "s": 57.854,
+     "e": 58.085
+    },
+    {
+     "w": "to",
+     "s": 58.162,
+     "e": 58.239
+    },
+    {
+     "w": "the",
+     "s": 58.277,
+     "e": 58.316
+    },
+    {
+     "w": "centre.",
+     "s": 58.393,
+     "e": 58.854
+    },
+    {
+     "w": "He",
+     "s": 59.316,
+     "e": 59.47
+    },
+    {
+     "w": "has",
+     "s": 59.547,
+     "e": 59.624
+    },
+    {
+     "w": "about",
+     "s": 59.7,
+     "e": 59.931
+    },
+    {
+     "w": "a",
+     "s": 59.97,
+     "e": 60.008
+    },
+    {
+     "w": "minute.",
+     "s": 60.085,
+     "e": 60.47
+    },
+    {
+     "w": "The",
+     "s": 60.658,
+     "e": 60.735
+    },
+    {
+     "w": "phone",
+     "s": 60.812,
+     "e": 61.043
+    },
+    {
+     "w": "says:",
+     "s": 61.12,
+     "e": 61.428
+    },
+    {
+     "w": "sending.",
+     "s": 61.735,
+     "e": 62.274
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Inside, every direction leads to the centre.",
+     "s": 56.085,
+     "e": 58.854
+    },
+    {
+     "text": "He has about a minute.",
+     "s": 59.316,
+     "e": 60.47
+    },
+    {
+     "text": "The phone says: sending.",
+     "s": 60.658,
+     "e": 62.274
+    }
+   ],
+   "start": 56.005,
+   "end": 62.453
+  },
+  {
+   "id": "outside",
+   "line": "From outside, a telescope sees something else. Dave slows down. Turns red. Fades. He never quite reaches the edge.",
+   "words": [
+    {
+     "w": "From",
+     "s": 62.533,
+     "e": 62.687
+    },
+    {
+     "w": "outside,",
+     "s": 62.764,
+     "e": 63.456
+    },
+    {
+     "w": "a",
+     "s": 63.533,
+     "e": 63.61
+    },
+    {
+     "w": "telescope",
+     "s": 63.649,
+     "e": 64.149
+    },
+    {
+     "w": "sees",
+     "s": 64.225,
+     "e": 64.456
+    },
+    {
+     "w": "something",
+     "s": 64.61,
+     "e": 64.764
+    },
+    {
+     "w": "else.",
+     "s": 64.841,
+     "e": 65.418
+    },
+    {
+     "w": "Dave",
+     "s": 65.687,
+     "e": 65.995
+    },
+    {
+     "w": "slows",
+     "s": 66.072,
+     "e": 66.302
+    },
+    {
+     "w": "down.",
+     "s": 66.379,
+     "e": 66.995
+    },
+    {
+     "w": "Turns",
+     "s": 67.225,
+     "e": 67.533
+    },
+    {
+     "w": "red.",
+     "s": 67.61,
+     "e": 67.995
+    },
+    {
+     "w": "Fades.",
+     "s": 68.456,
+     "e": 69.225
+    },
+    {
+     "w": "He",
+     "s": 69.456,
+     "e": 69.533
+    },
+    {
+     "w": "never",
+     "s": 69.61,
+     "e": 69.841
+    },
+    {
+     "w": "quite",
+     "s": 69.918,
+     "e": 70.149
+    },
+    {
+     "w": "reaches",
+     "s": 70.225,
+     "e": 70.533
+    },
+    {
+     "w": "the",
+     "s": 70.61,
+     "e": 70.687
+    },
+    {
+     "w": "edge.",
+     "s": 70.764,
+     "e": 71.379
+    }
+   ],
+   "sentences": [
+    {
+     "text": "From outside, a telescope sees something else.",
+     "s": 62.533,
+     "e": 65.418
+    },
+    {
+     "text": "Dave slows down.",
+     "s": 65.687,
+     "e": 66.995
+    },
+    {
+     "text": "Turns red.",
+     "s": 67.225,
+     "e": 67.995
+    },
+    {
+     "text": "Fades.",
+     "s": 68.456,
+     "e": 69.225
+    },
+    {
+     "text": "He never quite reaches the edge.",
+     "s": 69.456,
+     "e": 71.379
+    }
+   ],
+   "start": 62.453,
+   "end": 71.607
+  },
+  {
+   "id": "message",
+   "line": "Nothing leaves a black hole. Not light. Not a text. The message is sending. It will be sending forever.",
+   "words": [
+    {
+     "w": "Nothing",
+     "s": 71.687,
+     "e": 72.072
+    },
+    {
+     "w": "leaves",
+     "s": 72.149,
+     "e": 72.379
+    },
+    {
+     "w": "a",
+     "s": 72.418,
+     "e": 72.456
+    },
+    {
+     "w": "black",
+     "s": 72.61,
+     "e": 72.764
+    },
+    {
+     "w": "hole.",
+     "s": 72.918,
+     "e": 73.302
+    },
+    {
+     "w": "Not",
+     "s": 73.533,
+     "e": 73.687
+    },
+    {
+     "w": "light.",
+     "s": 73.764,
+     "e": 74.379
+    },
+    {
+     "w": "Not",
+     "s": 74.456,
+     "e": 74.533
+    },
+    {
+     "w": "a",
+     "s": 74.61,
+     "e": 74.649
+    },
+    {
+     "w": "text.",
+     "s": 74.687,
+     "e": 75.315
+    },
+    {
+     "w": "The",
+     "s": 75.439,
+     "e": 75.516
+    },
+    {
+     "w": "message",
+     "s": 75.593,
+     "e": 75.977
+    },
+    {
+     "w": "is",
+     "s": 76.054,
+     "e": 76.131
+    },
+    {
+     "w": "sending.",
+     "s": 76.208,
+     "e": 77.054
+    },
+    {
+     "w": "It",
+     "s": 77.131,
+     "e": 77.208
+    },
+    {
+     "w": "will",
+     "s": 77.285,
+     "e": 77.362
+    },
+    {
+     "w": "be",
+     "s": 77.439,
+     "e": 77.516
+    },
+    {
+     "w": "sending",
+     "s": 77.593,
+     "e": 77.977
+    },
+    {
+     "w": "forever.",
+     "s": 78.054,
+     "e": 78.862
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Nothing leaves a black hole.",
+     "s": 71.687,
+     "e": 73.302
+    },
+    {
+     "text": "Not light.",
+     "s": 73.533,
+     "e": 74.379
+    },
+    {
+     "text": "Not a text.",
+     "s": 74.456,
+     "e": 75.315
+    },
+    {
+     "text": "The message is sending.",
+     "s": 75.439,
+     "e": 77.054
+    },
+    {
+     "text": "It will be sending forever.",
+     "s": 77.131,
+     "e": 78.862
+    }
+   ],
+   "start": 71.607,
+   "end": 79.128
+  },
+  {
+   "id": "priya",
+   "line": "Priya orders the lemon.",
+   "words": [
+    {
+     "w": "Priya",
+     "s": 79.208,
+     "e": 79.593
+    },
+    {
+     "w": "orders",
+     "s": 79.747,
+     "e": 79.9
+    },
+    {
+     "w": "the",
+     "s": 79.977,
+     "e": 80.016
+    },
+    {
+     "w": "lemon.",
+     "s": 80.054,
+     "e": 80.631
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Priya orders the lemon.",
+     "s": 79.208,
+     "e": 80.631
+    }
+   ],
+   "start": 79.128,
+   "end": 80.82
+  },
+  {
+   "id": "end",
+   "line": "Dave would have said lemon. Dave is now very long, or very gone. Either way, the cake is sorted.",
+   "words": [
+    {
+     "w": "Dave",
+     "s": 80.9,
+     "e": 81.131
+    },
+    {
+     "w": "would",
+     "s": 81.208,
+     "e": 81.285
+    },
+    {
+     "w": "have",
+     "s": 81.323,
+     "e": 81.362
+    },
+    {
+     "w": "said",
+     "s": 81.439,
+     "e": 81.593
+    },
+    {
+     "w": "lemon.",
+     "s": 81.631,
+     "e": 82.208
+    },
+    {
+     "w": "Dave",
+     "s": 82.516,
+     "e": 82.747
+    },
+    {
+     "w": "is",
+     "s": 82.823,
+     "e": 82.977
+    },
+    {
+     "w": "now",
+     "s": 83.093,
+     "e": 83.208
+    },
+    {
+     "w": "very",
+     "s": 83.285,
+     "e": 83.516
+    },
+    {
+     "w": "long,",
+     "s": 83.593,
+     "e": 84.208
+    },
+    {
+     "w": "or",
+     "s": 84.323,
+     "e": 84.439
+    },
+    {
+     "w": "very",
+     "s": 84.67,
+     "e": 84.823
+    },
+    {
+     "w": "gone.",
+     "s": 84.977,
+     "e": 85.747
+    },
+    {
+     "w": "Either",
+     "s": 85.823,
+     "e": 86.054
+    },
+    {
+     "w": "way,",
+     "s": 86.131,
+     "e": 86.593
+    },
+    {
+     "w": "the",
+     "s": 86.67,
+     "e": 86.747
+    },
+    {
+     "w": "cake",
+     "s": 86.862,
+     "e": 86.977
+    },
+    {
+     "w": "is",
+     "s": 87.054,
+     "e": 87.131
+    },
+    {
+     "w": "sorted.",
+     "s": 87.362,
+     "e": 87.747
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Dave would have said lemon.",
+     "s": 80.9,
+     "e": 82.208
+    },
+    {
+     "text": "Dave is now very long, or very gone.",
+     "s": 82.516,
+     "e": 85.747
+    },
+    {
+     "text": "Either way, the cake is sorted.",
+     "s": 85.823,
+     "e": 87.747
+    }
+   ],
+   "start": 80.82,
+   "end": 88.647
+  },
+  {
+   "id": "endcard",
+   "line": "",
+   "words": [],
+   "sentences": [],
+   "start": 88.647,
+   "end": 92.247
+  }
+ ]
+}

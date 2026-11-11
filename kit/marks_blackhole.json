@@ -1,0 +1,12 @@
+{"job": ["dave", "one"], "lemon1": ["dave", "Lemon"], "typing1": ["dave", "typing"],
+ "on": ["event", "falls"], "two": ["event", "two"], "both": ["event", "both"],
+ "opt1": ["small", "Option"], "tensuns": ["small", "Ten"], "thirty": ["small", "thirty"],
+ "feet": ["tides", "feet"], "km3500": ["tides", "Three"], "teng": ["tides", "ten"], "taller": ["tides", "taller"],
+ "horizon": ["spaghetti", "horizon"], "noodle": ["spaghetti", "noodle"], "spag": ["spaghetti", "spaghettification"], "sorry": ["spaghetti", "They"],
+ "opt2": ["big", "Option"], "fourm": ["big", "Four"], "twelvem": ["big", "horizon"], "eighteen": ["big", "Eighteen"],
+ "tide2": ["cross", "Out"], "crosses": ["cross", "crosses"], "notice": ["cross", "notice"], "still": ["cross", "Still"],
+ "inside": ["inside", "Inside"], "minute": ["inside", "minute"], "sending1": ["inside", "phone"],
+ "outside": ["outside", "From"], "slows": ["outside", "slows"], "red": ["outside", "Turns"], "fades": ["outside", "Fades"], "edge": ["outside", "never"],
+ "nothing": ["message", "Nothing"], "light": ["message", "light"], "text": ["message", "text"], "forever": ["message", "It"],
+ "orders": ["priya", "Priya"],
+ "wouldhave": ["end", "Dave"], "long": ["end", "long"], "gone": ["end", "gone"], "sorted": ["end", "Either"]}

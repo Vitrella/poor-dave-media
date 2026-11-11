@@ -1,0 +1,1569 @@
+{
+ "fps": 30,
+ "duration": 94.181,
+ "audio": "voice/plastic_final.mp3",
+ "marks": {
+  "close1": 5.381,
+  "on": 9.996,
+  "five": 11.304,
+  "suitgo": 13.057,
+  "elastic": 14.749,
+  "billion": 17.057,
+  "thirds": 19.516,
+  "popular": 22.694,
+  "half": 25.121,
+  "dash": 28.193,
+  "touch": 31.938,
+  "vehicles": 33.129,
+  "cable": 35.819,
+  "lights": 38.183,
+  "aircraft": 40.35,
+  "halfplastic": 42.864,
+  "halfair": 45.249,
+  "lenses": 47.304,
+  "spectacle": 51.112,
+  "blurry": 52.741,
+  "bottle": 54.057,
+  "hold": 57.054,
+  "remember": 59.285,
+  "sea": 60.696,
+  "clean": 65.043,
+  "fish": 67.655,
+  "vest": 69.23,
+  "ceiling": 73.23,
+  "back": 76.615,
+  "exactly": 77.307,
+  "notnow": 78.922,
+  "returns": 80.995,
+  "moved": 83.553,
+  "stands": 84.63,
+  "doesnt": 86.63,
+  "close2": 87.835,
+  "air_back": null
+ },
+ "scenes": [
+  {
+   "id": "intro",
+   "line": "It's Thursday at the tailor's.",
+   "words": [
+    {
+     "w": "It's",
+     "s": 0.0,
+     "e": 0.231
+    },
+    {
+     "w": "Thursday",
+     "s": 0.308,
+     "e": 0.769
+    },
+    {
+     "w": "at",
+     "s": 0.808,
+     "e": 0.846
+    },
+    {
+     "w": "the",
+     "s": 0.923,
+     "e": 0.962
+    },
+    {
+     "w": "tailor's.",
+     "s": 1.0,
+     "e": 1.538
+    }
+   ],
+   "sentences": [
+    {
+     "text": "It's Thursday at the tailor's.",
+     "s": 0.0,
+     "e": 1.538
+    }
+   ],
+   "start": 0.0,
+   "end": 1.743
+  },
+  {
+   "id": "dave",
+   "line": "Dave is trying on the wedding suit. It's polyester. The tailor calls it close enough.",
+   "words": [
+    {
+     "w": "Dave",
+     "s": 1.823,
+     "e": 2.131
+    },
+    {
+     "w": "is",
+     "s": 2.208,
+     "e": 2.285
+    },
+    {
+     "w": "trying",
+     "s": 2.362,
+     "e": 2.593
+    },
+    {
+     "w": "on",
+     "s": 2.669,
+     "e": 2.746
+    },
+    {
+     "w": "the",
+     "s": 2.823,
+     "e": 2.862
+    },
+    {
+     "w": "wedding",
+     "s": 2.9,
+     "e": 3.131
+    },
+    {
+     "w": "suit.",
+     "s": 3.208,
+     "e": 3.746
+    },
+    {
+     "w": "It's",
+     "s": 3.977,
+     "e": 4.208
+    },
+    {
+     "w": "polyester.",
+     "s": 4.362,
+     "e": 5.099
+    },
+    {
+     "w": "The",
+     "s": 5.227,
+     "e": 5.304
+    },
+    {
+     "w": "tailor",
+     "s": 5.381,
+     "e": 5.688
+    },
+    {
+     "w": "calls",
+     "s": 5.804,
+     "e": 5.919
+    },
+    {
+     "w": "it",
+     "s": 5.996,
+     "e": 6.073
+    },
+    {
+     "w": "close",
+     "s": 6.381,
+     "e": 6.688
+    },
+    {
+     "w": "enough.",
+     "s": 6.727,
+     "e": 7.381
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Dave is trying on the wedding suit.",
+     "s": 1.823,
+     "e": 3.746
+    },
+    {
+     "text": "It's polyester.",
+     "s": 3.977,
+     "e": 5.099
+    },
+    {
+     "text": "The tailor calls it close enough.",
+     "s": 5.227,
+     "e": 7.381
+    }
+   ],
+   "start": 1.743,
+   "end": 7.608
+  },
+  {
+   "id": "event",
+   "line": "Then every piece of plastic on Earth vanishes. For five seconds.",
+   "words": [
+    {
+     "w": "Then",
+     "s": 7.688,
+     "e": 7.996
+    },
+    {
+     "w": "every",
+     "s": 8.227,
+     "e": 8.458
+    },
+    {
+     "w": "piece",
+     "s": 8.612,
+     "e": 8.765
+    },
+    {
+     "w": "of",
+     "s": 8.842,
+     "e": 8.919
+    },
+    {
+     "w": "plastic",
+     "s": 8.958,
+     "e": 9.304
+    },
+    {
+     "w": "on",
+     "s": 9.381,
+     "e": 9.458
+    },
+    {
+     "w": "Earth",
+     "s": 9.612,
+     "e": 9.842
+    },
+    {
+     "w": "vanishes.",
+     "s": 9.996,
+     "e": 10.612
+    },
+    {
+     "w": "For",
+     "s": 11.073,
+     "e": 11.227
+    },
+    {
+     "w": "five",
+     "s": 11.304,
+     "e": 11.612
+    },
+    {
+     "w": "seconds.",
+     "s": 11.688,
+     "e": 12.405
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Then every piece of plastic on Earth vanishes.",
+     "s": 7.688,
+     "e": 10.612
+    },
+    {
+     "text": "For five seconds.",
+     "s": 11.073,
+     "e": 12.405
+    }
+   ],
+   "start": 7.608,
+   "end": 12.438
+  },
+  {
+   "id": "suit",
+   "line": "The suit goes first. So does the elastic in everyone's underwear. Eight billion people, at once.",
+   "words": [
+    {
+     "w": "The",
+     "s": 12.518,
+     "e": 12.595
+    },
+    {
+     "w": "suit",
+     "s": 12.672,
+     "e": 12.98
+    },
+    {
+     "w": "goes",
+     "s": 13.057,
+     "e": 13.211
+    },
+    {
+     "w": "first.",
+     "s": 13.288,
+     "e": 14.018
+    },
+    {
+     "w": "So",
+     "s": 14.288,
+     "e": 14.441
+    },
+    {
+     "w": "does",
+     "s": 14.518,
+     "e": 14.595
+    },
+    {
+     "w": "the",
+     "s": 14.672,
+     "e": 14.711
+    },
+    {
+     "w": "elastic",
+     "s": 14.749,
+     "e": 15.211
+    },
+    {
+     "w": "in",
+     "s": 15.288,
+     "e": 15.365
+    },
+    {
+     "w": "everyone's",
+     "s": 15.518,
+     "e": 15.903
+    },
+    {
+     "w": "underwear.",
+     "s": 15.98,
+     "e": 16.518
+    },
+    {
+     "w": "Eight",
+     "s": 17.057,
+     "e": 17.288
+    },
+    {
+     "w": "billion",
+     "s": 17.441,
+     "e": 17.749
+    },
+    {
+     "w": "people,",
+     "s": 17.903,
+     "e": 18.288
+    },
+    {
+     "w": "at",
+     "s": 18.518,
+     "e": 18.672
+    },
+    {
+     "w": "once.",
+     "s": 18.749,
+     "e": 19.211
+    }
+   ],
+   "sentences": [
+    {
+     "text": "The suit goes first.",
+     "s": 12.518,
+     "e": 14.018
+    },
+    {
+     "text": "So does the elastic in everyone's underwear.",
+     "s": 14.288,
+     "e": 16.518
+    },
+    {
+     "text": "Eight billion people, at once.",
+     "s": 17.057,
+     "e": 19.211
+    }
+   ],
+   "start": 12.438,
+   "end": 19.436
+  },
+  {
+   "id": "clothes",
+   "line": "Two thirds of the world's clothing fibre is plastic. The other third is suddenly very popular.",
+   "words": [
+    {
+     "w": "Two",
+     "s": 19.516,
+     "e": 19.67
+    },
+    {
+     "w": "thirds",
+     "s": 19.747,
+     "e": 20.054
+    },
+    {
+     "w": "of",
+     "s": 20.131,
+     "e": 20.17
+    },
+    {
+     "w": "the",
+     "s": 20.208,
+     "e": 20.285
+    },
+    {
+     "w": "world's",
+     "s": 20.362,
+     "e": 20.67
+    },
+    {
+     "w": "clothing",
+     "s": 20.747,
+     "e": 21.054
+    },
+    {
+     "w": "fibre",
+     "s": 21.131,
+     "e": 21.439
+    },
+    {
+     "w": "is",
+     "s": 21.516,
+     "e": 21.593
+    },
+    {
+     "w": "plastic.",
+     "s": 21.67,
+     "e": 22.389
+    },
+    {
+     "w": "The",
+     "s": 22.54,
+     "e": 22.617
+    },
+    {
+     "w": "other",
+     "s": 22.694,
+     "e": 22.848
+    },
+    {
+     "w": "third",
+     "s": 22.925,
+     "e": 23.155
+    },
+    {
+     "w": "is",
+     "s": 23.309,
+     "e": 23.386
+    },
+    {
+     "w": "suddenly",
+     "s": 23.463,
+     "e": 23.848
+    },
+    {
+     "w": "very",
+     "s": 24.002,
+     "e": 24.232
+    },
+    {
+     "w": "popular.",
+     "s": 24.309,
+     "e": 24.949
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Two thirds of the world's clothing fibre is plastic.",
+     "s": 19.516,
+     "e": 22.389
+    },
+    {
+     "text": "The other third is suddenly very popular.",
+     "s": 22.54,
+     "e": 24.949
+    }
+   ],
+   "start": 19.436,
+   "end": 25.041
+  },
+  {
+   "id": "cars",
+   "line": "Half of every car, by volume, is plastic. Dashboards, bumpers, the insulation on every wire. The wires touch. One and a half billion vehicles short out.",
+   "words": [
+    {
+     "w": "Half",
+     "s": 25.121,
+     "e": 25.351
+    },
+    {
+     "w": "of",
+     "s": 25.428,
+     "e": 25.582
+    },
+    {
+     "w": "every",
+     "s": 25.659,
+     "e": 25.89
+    },
+    {
+     "w": "car,",
+     "s": 25.967,
+     "e": 26.351
+    },
+    {
+     "w": "by",
+     "s": 26.428,
+     "e": 26.505
+    },
+    {
+     "w": "volume,",
+     "s": 26.659,
+     "e": 27.198
+    },
+    {
+     "w": "is",
+     "s": 27.236,
+     "e": 27.274
+    },
+    {
+     "w": "plastic.",
+     "s": 27.351,
+     "e": 28.054
+    },
+    {
+     "w": "Dashboards,",
+     "s": 28.193,
+     "e": 29.039
+    },
+    {
+     "w": "bumpers,",
+     "s": 29.078,
+     "e": 29.732
+    },
+    {
+     "w": "the",
+     "s": 29.77,
+     "e": 29.808
+    },
+    {
+     "w": "insulation",
+     "s": 29.885,
+     "e": 30.501
+    },
+    {
+     "w": "on",
+     "s": 30.578,
+     "e": 30.655
+    },
+    {
+     "w": "every",
+     "s": 30.732,
+     "e": 30.962
+    },
+    {
+     "w": "wire.",
+     "s": 31.039,
+     "e": 31.614
+    },
+    {
+     "w": "The",
+     "s": 31.784,
+     "e": 31.861
+    },
+    {
+     "w": "wires",
+     "s": 31.938,
+     "e": 32.245
+    },
+    {
+     "w": "touch.",
+     "s": 32.322,
+     "e": 32.784
+    },
+    {
+     "w": "One",
+     "s": 33.129,
+     "e": 33.283
+    },
+    {
+     "w": "and",
+     "s": 33.321,
+     "e": 33.36
+    },
+    {
+     "w": "a",
+     "s": 33.437,
+     "e": 33.475
+    },
+    {
+     "w": "half",
+     "s": 33.514,
+     "e": 33.744
+    },
+    {
+     "w": "billion",
+     "s": 33.898,
+     "e": 34.206
+    },
+    {
+     "w": "vehicles",
+     "s": 34.283,
+     "e": 34.744
+    },
+    {
+     "w": "short",
+     "s": 34.898,
+     "e": 35.129
+    },
+    {
+     "w": "out.",
+     "s": 35.206,
+     "e": 35.59
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Half of every car, by volume, is plastic.",
+     "s": 25.121,
+     "e": 28.054
+    },
+    {
+     "text": "Dashboards, bumpers, the insulation on every wire.",
+     "s": 28.193,
+     "e": 31.614
+    },
+    {
+     "text": "The wires touch.",
+     "s": 31.784,
+     "e": 32.784
+    },
+    {
+     "text": "One and a half billion vehicles short out.",
+     "s": 33.129,
+     "e": 35.59
+    }
+   ],
+   "start": 25.041,
+   "end": 35.739
+  },
+  {
+   "id": "grid",
+   "line": "Every cable on Earth does the same. From space, the lights go out.",
+   "words": [
+    {
+     "w": "Every",
+     "s": 35.819,
+     "e": 36.127
+    },
+    {
+     "w": "cable",
+     "s": 36.204,
+     "e": 36.512
+    },
+    {
+     "w": "on",
+     "s": 36.588,
+     "e": 36.665
+    },
+    {
+     "w": "Earth",
+     "s": 36.742,
+     "e": 37.05
+    },
+    {
+     "w": "does",
+     "s": 37.127,
+     "e": 37.281
+    },
+    {
+     "w": "the",
+     "s": 37.358,
+     "e": 37.435
+    },
+    {
+     "w": "same.",
+     "s": 37.512,
+     "e": 37.896
+    },
+    {
+     "w": "From",
+     "s": 38.183,
+     "e": 38.337
+    },
+    {
+     "w": "space,",
+     "s": 38.414,
+     "e": 39.029
+    },
+    {
+     "w": "the",
+     "s": 39.106,
+     "e": 39.145
+    },
+    {
+     "w": "lights",
+     "s": 39.183,
+     "e": 39.491
+    },
+    {
+     "w": "go",
+     "s": 39.568,
+     "e": 39.645
+    },
+    {
+     "w": "out.",
+     "s": 39.722,
+     "e": 40.029
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Every cable on Earth does the same.",
+     "s": 35.819,
+     "e": 37.896
+    },
+    {
+     "text": "From space, the lights go out.",
+     "s": 38.183,
+     "e": 40.029
+    }
+   ],
+   "start": 35.739,
+   "end": 40.27
+  },
+  {
+   "id": "planes",
+   "line": "Ten thousand aircraft are in the air. The newest are half plastic by weight. Now they're half aircraft.",
+   "words": [
+    {
+     "w": "Ten",
+     "s": 40.35,
+     "e": 40.504
+    },
+    {
+     "w": "thousand",
+     "s": 40.658,
+     "e": 41.042
+    },
+    {
+     "w": "aircraft",
+     "s": 41.119,
+     "e": 41.658
+    },
+    {
+     "w": "are",
+     "s": 41.735,
+     "e": 41.812
+    },
+    {
+     "w": "in",
+     "s": 41.85,
+     "e": 41.889
+    },
+    {
+     "w": "the",
+     "s": 41.965,
+     "e": 42.042
+    },
+    {
+     "w": "air.",
+     "s": 42.119,
+     "e": 42.427
+    },
+    {
+     "w": "The",
+     "s": 42.71,
+     "e": 42.787
+    },
+    {
+     "w": "newest",
+     "s": 42.864,
+     "e": 43.249
+    },
+    {
+     "w": "are",
+     "s": 43.326,
+     "e": 43.403
+    },
+    {
+     "w": "half",
+     "s": 43.479,
+     "e": 43.71
+    },
+    {
+     "w": "plastic",
+     "s": 43.787,
+     "e": 44.172
+    },
+    {
+     "w": "by",
+     "s": 44.249,
+     "e": 44.326
+    },
+    {
+     "w": "weight.",
+     "s": 44.403,
+     "e": 44.787
+    },
+    {
+     "w": "Now",
+     "s": 45.249,
+     "e": 45.556
+    },
+    {
+     "w": "they're",
+     "s": 45.71,
+     "e": 45.864
+    },
+    {
+     "w": "half",
+     "s": 46.018,
+     "e": 46.172
+    },
+    {
+     "w": "aircraft.",
+     "s": 46.287,
+     "e": 46.864
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Ten thousand aircraft are in the air.",
+     "s": 40.35,
+     "e": 42.427
+    },
+    {
+     "text": "The newest are half plastic by weight.",
+     "s": 42.71,
+     "e": 44.787
+    },
+    {
+     "text": "Now they're half aircraft.",
+     "s": 45.249,
+     "e": 46.864
+    }
+   ],
+   "start": 40.27,
+   "end": 47.032
+  },
+  {
+   "id": "lenses",
+   "line": "A hundred and forty million contact lenses vanish. So do most spectacle lenses. The world goes blurry.",
+   "words": [
+    {
+     "w": "A",
+     "s": 47.112,
+     "e": 47.265
+    },
+    {
+     "w": "hundred",
+     "s": 47.304,
+     "e": 47.573
+    },
+    {
+     "w": "and",
+     "s": 47.65,
+     "e": 47.727
+    },
+    {
+     "w": "forty",
+     "s": 47.842,
+     "e": 48.035
+    },
+    {
+     "w": "million",
+     "s": 48.188,
+     "e": 48.496
+    },
+    {
+     "w": "contact",
+     "s": 48.65,
+     "e": 49.035
+    },
+    {
+     "w": "lenses",
+     "s": 49.112,
+     "e": 49.419
+    },
+    {
+     "w": "vanish.",
+     "s": 49.573,
+     "e": 50.035
+    },
+    {
+     "w": "So",
+     "s": 50.496,
+     "e": 50.65
+    },
+    {
+     "w": "do",
+     "s": 50.727,
+     "e": 50.804
+    },
+    {
+     "w": "most",
+     "s": 50.919,
+     "e": 51.035
+    },
+    {
+     "w": "spectacle",
+     "s": 51.112,
+     "e": 51.573
+    },
+    {
+     "w": "lenses.",
+     "s": 51.65,
+     "e": 52.28
+    },
+    {
+     "w": "The",
+     "s": 52.395,
+     "e": 52.549
+    },
+    {
+     "w": "world",
+     "s": 52.741,
+     "e": 52.934
+    },
+    {
+     "w": "goes",
+     "s": 53.01,
+     "e": 53.164
+    },
+    {
+     "w": "blurry.",
+     "s": 53.241,
+     "e": 53.78
+    }
+   ],
+   "sentences": [
+    {
+     "text": "A hundred and forty million contact lenses vanish.",
+     "s": 47.112,
+     "e": 50.035
+    },
+    {
+     "text": "So do most spectacle lenses.",
+     "s": 50.496,
+     "e": 52.28
+    },
+    {
+     "text": "The world goes blurry.",
+     "s": 52.395,
+     "e": 53.78
+    }
+   ],
+   "start": 47.032,
+   "end": 53.977
+  },
+  {
+   "id": "shop",
+   "line": "Every bottle in every supermarket is gone. The drinks hold their shape for a moment. Then they remember.",
+   "words": [
+    {
+     "w": "Every",
+     "s": 54.057,
+     "e": 54.365
+    },
+    {
+     "w": "bottle",
+     "s": 54.442,
+     "e": 54.75
+    },
+    {
+     "w": "in",
+     "s": 54.827,
+     "e": 54.98
+    },
+    {
+     "w": "every",
+     "s": 55.057,
+     "e": 55.288
+    },
+    {
+     "w": "supermarket",
+     "s": 55.365,
+     "e": 55.98
+    },
+    {
+     "w": "is",
+     "s": 56.057,
+     "e": 56.211
+    },
+    {
+     "w": "gone.",
+     "s": 56.288,
+     "e": 56.769
+    },
+    {
+     "w": "The",
+     "s": 56.9,
+     "e": 56.977
+    },
+    {
+     "w": "drinks",
+     "s": 57.054,
+     "e": 57.362
+    },
+    {
+     "w": "hold",
+     "s": 57.439,
+     "e": 57.593
+    },
+    {
+     "w": "their",
+     "s": 57.67,
+     "e": 57.823
+    },
+    {
+     "w": "shape",
+     "s": 57.9,
+     "e": 58.131
+    },
+    {
+     "w": "for",
+     "s": 58.17,
+     "e": 58.208
+    },
+    {
+     "w": "a",
+     "s": 58.285,
+     "e": 58.362
+    },
+    {
+     "w": "moment.",
+     "s": 58.554,
+     "e": 58.823
+    },
+    {
+     "w": "Then",
+     "s": 59.285,
+     "e": 59.593
+    },
+    {
+     "w": "they",
+     "s": 59.747,
+     "e": 59.823
+    },
+    {
+     "w": "remember.",
+     "s": 59.9,
+     "e": 60.559
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Every bottle in every supermarket is gone.",
+     "s": 54.057,
+     "e": 56.769
+    },
+    {
+     "text": "The drinks hold their shape for a moment.",
+     "s": 56.9,
+     "e": 58.823
+    },
+    {
+     "text": "Then they remember.",
+     "s": 59.285,
+     "e": 60.559
+    }
+   ],
+   "start": 53.977,
+   "end": 60.616
+  },
+  {
+   "id": "ocean",
+   "line": "At sea, a hundred and seventy trillion bits of plastic vanish. The ocean is clean for five seconds. The fish are suspicious.",
+   "words": [
+    {
+     "w": "At",
+     "s": 60.696,
+     "e": 60.85
+    },
+    {
+     "w": "sea,",
+     "s": 61.004,
+     "e": 61.465
+    },
+    {
+     "w": "a",
+     "s": 61.542,
+     "e": 61.619
+    },
+    {
+     "w": "hundred",
+     "s": 61.696,
+     "e": 61.927
+    },
+    {
+     "w": "and",
+     "s": 62.004,
+     "e": 62.081
+    },
+    {
+     "w": "seventy",
+     "s": 62.158,
+     "e": 62.465
+    },
+    {
+     "w": "trillion",
+     "s": 62.619,
+     "e": 63.004
+    },
+    {
+     "w": "bits",
+     "s": 63.158,
+     "e": 63.311
+    },
+    {
+     "w": "of",
+     "s": 63.388,
+     "e": 63.465
+    },
+    {
+     "w": "plastic",
+     "s": 63.504,
+     "e": 63.927
+    },
+    {
+     "w": "vanish.",
+     "s": 64.081,
+     "e": 64.542
+    },
+    {
+     "w": "The",
+     "s": 64.813,
+     "e": 64.966
+    },
+    {
+     "w": "ocean",
+     "s": 65.043,
+     "e": 65.351
+    },
+    {
+     "w": "is",
+     "s": 65.428,
+     "e": 65.505
+    },
+    {
+     "w": "clean",
+     "s": 65.582,
+     "e": 65.966
+    },
+    {
+     "w": "for",
+     "s": 66.12,
+     "e": 66.274
+    },
+    {
+     "w": "five",
+     "s": 66.351,
+     "e": 66.582
+    },
+    {
+     "w": "seconds.",
+     "s": 66.659,
+     "e": 67.359
+    },
+    {
+     "w": "The",
+     "s": 67.502,
+     "e": 67.579
+    },
+    {
+     "w": "fish",
+     "s": 67.655,
+     "e": 67.963
+    },
+    {
+     "w": "are",
+     "s": 68.04,
+     "e": 68.117
+    },
+    {
+     "w": "suspicious.",
+     "s": 68.194,
+     "e": 68.886
+    }
+   ],
+   "sentences": [
+    {
+     "text": "At sea, a hundred and seventy trillion bits of plastic vanish.",
+     "s": 60.696,
+     "e": 64.542
+    },
+    {
+     "text": "The ocean is clean for five seconds.",
+     "s": 64.813,
+     "e": 67.359
+    },
+    {
+     "text": "The fish are suspicious.",
+     "s": 67.502,
+     "e": 68.886
+    }
+   ],
+   "start": 60.616,
+   "end": 69.15
+  },
+  {
+   "id": "dave_mid",
+   "line": "Dave is in a cotton vest, behind a curtain that was polyester. Priya is studying the ceiling.",
+   "words": [
+    {
+     "w": "Dave",
+     "s": 69.23,
+     "e": 69.538
+    },
+    {
+     "w": "is",
+     "s": 69.576,
+     "e": 69.615
+    },
+    {
+     "w": "in",
+     "s": 69.692,
+     "e": 69.769
+    },
+    {
+     "w": "a",
+     "s": 69.807,
+     "e": 69.845
+    },
+    {
+     "w": "cotton",
+     "s": 69.922,
+     "e": 70.153
+    },
+    {
+     "w": "vest,",
+     "s": 70.23,
+     "e": 70.845
+    },
+    {
+     "w": "behind",
+     "s": 70.922,
+     "e": 71.153
+    },
+    {
+     "w": "a",
+     "s": 71.192,
+     "e": 71.23
+    },
+    {
+     "w": "curtain",
+     "s": 71.307,
+     "e": 71.692
+    },
+    {
+     "w": "that",
+     "s": 71.769,
+     "e": 71.845
+    },
+    {
+     "w": "was",
+     "s": 71.922,
+     "e": 71.999
+    },
+    {
+     "w": "polyester.",
+     "s": 72.153,
+     "e": 72.769
+    },
+    {
+     "w": "Priya",
+     "s": 73.23,
+     "e": 73.615
+    },
+    {
+     "w": "is",
+     "s": 73.692,
+     "e": 73.769
+    },
+    {
+     "w": "studying",
+     "s": 73.845,
+     "e": 74.23
+    },
+    {
+     "w": "the",
+     "s": 74.269,
+     "e": 74.307
+    },
+    {
+     "w": "ceiling.",
+     "s": 74.384,
+     "e": 74.845
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Dave is in a cotton vest, behind a curtain that was polyester.",
+     "s": 69.23,
+     "e": 72.769
+    },
+    {
+     "text": "Priya is studying the ceiling.",
+     "s": 73.23,
+     "e": 74.845
+    }
+   ],
+   "start": 69.15,
+   "end": 75.381
+  },
+  {
+   "id": "back",
+   "line": "Then the plastic comes back. Exactly where it was. Not where things are now.",
+   "words": [
+    {
+     "w": "Then",
+     "s": 75.461,
+     "e": 75.692
+    },
+    {
+     "w": "the",
+     "s": 75.769,
+     "e": 75.807
+    },
+    {
+     "w": "plastic",
+     "s": 75.845,
+     "e": 76.23
+    },
+    {
+     "w": "comes",
+     "s": 76.307,
+     "e": 76.538
+    },
+    {
+     "w": "back.",
+     "s": 76.615,
+     "e": 77.115
+    },
+    {
+     "w": "Exactly",
+     "s": 77.307,
+     "e": 77.769
+    },
+    {
+     "w": "where",
+     "s": 77.845,
+     "e": 77.922
+    },
+    {
+     "w": "it",
+     "s": 77.999,
+     "e": 78.076
+    },
+    {
+     "w": "was.",
+     "s": 78.153,
+     "e": 78.538
+    },
+    {
+     "w": "Not",
+     "s": 78.922,
+     "e": 79.153
+    },
+    {
+     "w": "where",
+     "s": 79.23,
+     "e": 79.307
+    },
+    {
+     "w": "things",
+     "s": 79.384,
+     "e": 79.615
+    },
+    {
+     "w": "are",
+     "s": 79.692,
+     "e": 79.769
+    },
+    {
+     "w": "now.",
+     "s": 79.845,
+     "e": 80.23
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Then the plastic comes back.",
+     "s": 75.461,
+     "e": 77.115
+    },
+    {
+     "text": "Exactly where it was.",
+     "s": 77.307,
+     "e": 78.538
+    },
+    {
+     "text": "Not where things are now.",
+     "s": 78.922,
+     "e": 80.23
+    }
+   ],
+   "start": 75.381,
+   "end": 80.454
+  },
+  {
+   "id": "end",
+   "line": "The suit returns to where Dave was standing. Dave has moved. It stands on its own for a moment. Then it doesn't. The tailor calls it close enough.",
+   "words": [
+    {
+     "w": "The",
+     "s": 80.534,
+     "e": 80.611
+    },
+    {
+     "w": "suit",
+     "s": 80.688,
+     "e": 80.918
+    },
+    {
+     "w": "returns",
+     "s": 80.995,
+     "e": 81.457
+    },
+    {
+     "w": "to",
+     "s": 81.495,
+     "e": 81.534
+    },
+    {
+     "w": "where",
+     "s": 81.611,
+     "e": 81.688
+    },
+    {
+     "w": "Dave",
+     "s": 81.841,
+     "e": 82.072
+    },
+    {
+     "w": "was",
+     "s": 82.149,
+     "e": 82.226
+    },
+    {
+     "w": "standing.",
+     "s": 82.303,
+     "e": 82.92
+    },
+    {
+     "w": "Dave",
+     "s": 83.091,
+     "e": 83.322
+    },
+    {
+     "w": "has",
+     "s": 83.399,
+     "e": 83.476
+    },
+    {
+     "w": "moved.",
+     "s": 83.553,
+     "e": 84.399
+    },
+    {
+     "w": "It",
+     "s": 84.476,
+     "e": 84.553
+    },
+    {
+     "w": "stands",
+     "s": 84.63,
+     "e": 84.937
+    },
+    {
+     "w": "on",
+     "s": 85.014,
+     "e": 85.091
+    },
+    {
+     "w": "its",
+     "s": 85.168,
+     "e": 85.245
+    },
+    {
+     "w": "own",
+     "s": 85.322,
+     "e": 85.476
+    },
+    {
+     "w": "for",
+     "s": 85.553,
+     "e": 85.63
+    },
+    {
+     "w": "a",
+     "s": 85.668,
+     "e": 85.706
+    },
+    {
+     "w": "moment.",
+     "s": 85.783,
+     "e": 86.168
+    },
+    {
+     "w": "Then",
+     "s": 86.63,
+     "e": 86.783
+    },
+    {
+     "w": "it",
+     "s": 86.86,
+     "e": 86.937
+    },
+    {
+     "w": "doesn't.",
+     "s": 87.053,
+     "e": 87.399
+    },
+    {
+     "w": "The",
+     "s": 87.681,
+     "e": 87.758
+    },
+    {
+     "w": "tailor",
+     "s": 87.835,
+     "e": 88.066
+    },
+    {
+     "w": "calls",
+     "s": 88.143,
+     "e": 88.374
+    },
+    {
+     "w": "it",
+     "s": 88.451,
+     "e": 88.528
+    },
+    {
+     "w": "close",
+     "s": 88.835,
+     "e": 89.066
+    },
+    {
+     "w": "enough.",
+     "s": 89.143,
+     "e": 89.681
+    }
+   ],
+   "sentences": [
+    {
+     "text": "The suit returns to where Dave was standing.",
+     "s": 80.534,
+     "e": 82.92
+    },
+    {
+     "text": "Dave has moved.",
+     "s": 83.091,
+     "e": 84.399
+    },
+    {
+     "text": "It stands on its own for a moment.",
+     "s": 84.476,
+     "e": 86.168
+    },
+    {
+     "text": "Then it doesn't.",
+     "s": 86.63,
+     "e": 87.399
+    },
+    {
+     "text": "The tailor calls it close enough.",
+     "s": 87.681,
+     "e": 89.681
+    }
+   ],
+   "start": 80.454,
+   "end": 90.581
+  },
+  {
+   "id": "endcard",
+   "line": "",
+   "words": [],
+   "sentences": [],
+   "start": 90.581,
+   "end": 94.181
+  }
+ ]
+}

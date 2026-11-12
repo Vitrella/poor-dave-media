@@ -1,0 +1,1563 @@
+{
+ "fps": 30,
+ "duration": 94.587,
+ "audio": "voice/height_final.mp3",
+ "marks": {
+  "bags": 2.999,
+  "list": 4.773,
+  "eggs": 7.423,
+  "on": 10.065,
+  "five": 11.65,
+  "h17": 12.774,
+  "h34": 14.51,
+  "doors": 15.868,
+  "ceilings": 17.378,
+  "billion": 19.182,
+  "allof": 20.767,
+  "atonce": 21.597,
+  "indoors": 22.654,
+  "loft": 25.597,
+  "weight": 27.109,
+  "eight": 28.014,
+  "kg560": 28.999,
+  "bear": 31.943,
+  "anxious": 33.339,
+  "bones": 34.117,
+  "double": 36.759,
+  "galileo": 39.195,
+  "nobody": 42.214,
+  "floor": 43.306,
+  "family": 47.593,
+  "lift": 50.214,
+  "barely": 53.233,
+  "cars": 54.001,
+  "zero": 56.341,
+  "sunroof": 58.001,
+  "clothes": 59.935,
+  "outfits": 61.373,
+  "crop": 64.015,
+  "heart": 66.139,
+  "giraffes": 70.517,
+  "practising": 71.875,
+  "sideways": 73.589,
+  "window": 75.702,
+  "again": 76.909,
+  "back": 79.249,
+  "heads": 80.239,
+  "holes": 83.786,
+  "through": 85.03,
+  "itemone": 86.766,
+  "writes": 88.577,
+  "air_back": null
+ },
+ "scenes": [
+  {
+   "id": "intro",
+   "line": "It's Saturday, and Dave has done the big shop.",
+   "words": [
+    {
+     "w": "It's",
+     "s": 0.0,
+     "e": 0.226
+    },
+    {
+     "w": "Saturday,",
+     "s": 0.491,
+     "e": 0.981
+    },
+    {
+     "w": "and",
+     "s": 1.057,
+     "e": 1.132
+    },
+    {
+     "w": "Dave",
+     "s": 1.208,
+     "e": 1.434
+    },
+    {
+     "w": "has",
+     "s": 1.509,
+     "e": 1.585
+    },
+    {
+     "w": "done",
+     "s": 1.66,
+     "e": 1.811
+    },
+    {
+     "w": "the",
+     "s": 1.887,
+     "e": 1.925
+    },
+    {
+     "w": "big",
+     "s": 1.962,
+     "e": 2.189
+    },
+    {
+     "w": "shop.",
+     "s": 2.264,
+     "e": 2.886
+    }
+   ],
+   "sentences": [
+    {
+     "text": "It's Saturday, and Dave has done the big shop.",
+     "s": 0.0,
+     "e": 2.886
+    }
+   ],
+   "start": 0.0,
+   "end": 2.919
+  },
+  {
+   "id": "dave",
+   "line": "Four bags, one door, and Priya's wedding list. Item one: eggs.",
+   "words": [
+    {
+     "w": "Four",
+     "s": 2.999,
+     "e": 3.112
+    },
+    {
+     "w": "bags,",
+     "s": 3.339,
+     "e": 3.792
+    },
+    {
+     "w": "one",
+     "s": 3.867,
+     "e": 4.018
+    },
+    {
+     "w": "door,",
+     "s": 4.094,
+     "e": 4.546
+    },
+    {
+     "w": "and",
+     "s": 4.622,
+     "e": 4.697
+    },
+    {
+     "w": "Priya's",
+     "s": 4.773,
+     "e": 5.15
+    },
+    {
+     "w": "wedding",
+     "s": 5.226,
+     "e": 5.377
+    },
+    {
+     "w": "list.",
+     "s": 5.452,
+     "e": 6.094
+    },
+    {
+     "w": "Item",
+     "s": 6.433,
+     "e": 6.735
+    },
+    {
+     "w": "one:",
+     "s": 6.811,
+     "e": 7.348
+    },
+    {
+     "w": "eggs.",
+     "s": 7.423,
+     "e": 7.876
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Four bags, one door, and Priya's wedding list.",
+     "s": 2.999,
+     "e": 6.094
+    },
+    {
+     "text": "Item one: eggs.",
+     "s": 6.433,
+     "e": 7.876
+    }
+   ],
+   "start": 2.919,
+   "end": 8.325
+  },
+  {
+   "id": "event",
+   "line": "Then everyone on Earth doubles in height. For five seconds.",
+   "words": [
+    {
+     "w": "Then",
+     "s": 8.405,
+     "e": 8.707
+    },
+    {
+     "w": "everyone",
+     "s": 8.933,
+     "e": 9.386
+    },
+    {
+     "w": "on",
+     "s": 9.461,
+     "e": 9.537
+    },
+    {
+     "w": "Earth",
+     "s": 9.612,
+     "e": 9.914
+    },
+    {
+     "w": "doubles",
+     "s": 10.065,
+     "e": 10.442
+    },
+    {
+     "w": "in",
+     "s": 10.518,
+     "e": 10.593
+    },
+    {
+     "w": "height.",
+     "s": 10.669,
+     "e": 11.197
+    },
+    {
+     "w": "For",
+     "s": 11.423,
+     "e": 11.574
+    },
+    {
+     "w": "five",
+     "s": 11.65,
+     "e": 11.876
+    },
+    {
+     "w": "seconds.",
+     "s": 11.952,
+     "e": 12.48
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Then everyone on Earth doubles in height.",
+     "s": 8.405,
+     "e": 11.197
+    },
+    {
+     "text": "For five seconds.",
+     "s": 11.423,
+     "e": 12.48
+    }
+   ],
+   "start": 8.325,
+   "end": 12.694
+  },
+  {
+   "id": "height",
+   "line": "One point seven metres becomes three point four. Doors are two. Ceilings are two point four.",
+   "words": [
+    {
+     "w": "One",
+     "s": 12.774,
+     "e": 12.849
+    },
+    {
+     "w": "point",
+     "s": 13.0,
+     "e": 13.227
+    },
+    {
+     "w": "seven",
+     "s": 13.34,
+     "e": 13.453
+    },
+    {
+     "w": "metres",
+     "s": 13.604,
+     "e": 13.981
+    },
+    {
+     "w": "becomes",
+     "s": 14.132,
+     "e": 14.434
+    },
+    {
+     "w": "three",
+     "s": 14.51,
+     "e": 14.661
+    },
+    {
+     "w": "point",
+     "s": 14.736,
+     "e": 15.038
+    },
+    {
+     "w": "four.",
+     "s": 15.189,
+     "e": 15.604
+    },
+    {
+     "w": "Doors",
+     "s": 15.868,
+     "e": 16.321
+    },
+    {
+     "w": "are",
+     "s": 16.396,
+     "e": 16.472
+    },
+    {
+     "w": "two.",
+     "s": 16.547,
+     "e": 17.151
+    },
+    {
+     "w": "Ceilings",
+     "s": 17.378,
+     "e": 17.906
+    },
+    {
+     "w": "are",
+     "s": 17.981,
+     "e": 18.057
+    },
+    {
+     "w": "two",
+     "s": 18.132,
+     "e": 18.208
+    },
+    {
+     "w": "point",
+     "s": 18.359,
+     "e": 18.585
+    },
+    {
+     "w": "four.",
+     "s": 18.698,
+     "e": 19.106
+    }
+   ],
+   "sentences": [
+    {
+     "text": "One point seven metres becomes three point four.",
+     "s": 12.774,
+     "e": 15.604
+    },
+    {
+     "text": "Doors are two.",
+     "s": 15.868,
+     "e": 17.151
+    },
+    {
+     "text": "Ceilings are two point four.",
+     "s": 17.378,
+     "e": 19.106
+    }
+   ],
+   "start": 12.694,
+   "end": 19.102
+  },
+  {
+   "id": "world",
+   "line": "Eight billion people. All of them. At once.",
+   "words": [
+    {
+     "w": "Eight",
+     "s": 19.182,
+     "e": 19.408
+    },
+    {
+     "w": "billion",
+     "s": 19.559,
+     "e": 19.861
+    },
+    {
+     "w": "people.",
+     "s": 19.937,
+     "e": 20.578
+    },
+    {
+     "w": "All",
+     "s": 20.767,
+     "e": 20.918
+    },
+    {
+     "w": "of",
+     "s": 20.993,
+     "e": 21.069
+    },
+    {
+     "w": "them.",
+     "s": 21.144,
+     "e": 21.446
+    },
+    {
+     "w": "At",
+     "s": 21.597,
+     "e": 21.672
+    },
+    {
+     "w": "once.",
+     "s": 21.823,
+     "e": 22.427
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Eight billion people.",
+     "s": 19.182,
+     "e": 20.578
+    },
+    {
+     "text": "All of them.",
+     "s": 20.767,
+     "e": 21.446
+    },
+    {
+     "text": "At once.",
+     "s": 21.597,
+     "e": 22.427
+    }
+   ],
+   "start": 19.102,
+   "end": 22.574
+  },
+  {
+   "id": "indoor",
+   "line": "Everyone indoors is now partly upstairs. Priya is in the loft.",
+   "words": [
+    {
+     "w": "Everyone",
+     "s": 22.654,
+     "e": 23.031
+    },
+    {
+     "w": "indoors",
+     "s": 23.106,
+     "e": 23.635
+    },
+    {
+     "w": "is",
+     "s": 23.71,
+     "e": 23.786
+    },
+    {
+     "w": "now",
+     "s": 23.861,
+     "e": 24.012
+    },
+    {
+     "w": "partly",
+     "s": 24.088,
+     "e": 24.465
+    },
+    {
+     "w": "upstairs.",
+     "s": 24.578,
+     "e": 25.22
+    },
+    {
+     "w": "Priya",
+     "s": 25.597,
+     "e": 25.974
+    },
+    {
+     "w": "is",
+     "s": 26.05,
+     "e": 26.125
+    },
+    {
+     "w": "in",
+     "s": 26.201,
+     "e": 26.276
+    },
+    {
+     "w": "the",
+     "s": 26.314,
+     "e": 26.352
+    },
+    {
+     "w": "loft.",
+     "s": 26.427,
+     "e": 26.953
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Everyone indoors is now partly upstairs.",
+     "s": 22.654,
+     "e": 25.22
+    },
+    {
+     "text": "Priya is in the loft.",
+     "s": 25.597,
+     "e": 26.953
+    }
+   ],
+   "start": 22.574,
+   "end": 27.029
+  },
+  {
+   "id": "mass",
+   "line": "Weight goes up eight times. Dave now weighs five hundred and sixty kilos. Like a polar bear, but anxious.",
+   "words": [
+    {
+     "w": "Weight",
+     "s": 27.109,
+     "e": 27.411
+    },
+    {
+     "w": "goes",
+     "s": 27.486,
+     "e": 27.637
+    },
+    {
+     "w": "up",
+     "s": 27.712,
+     "e": 27.939
+    },
+    {
+     "w": "eight",
+     "s": 28.014,
+     "e": 28.165
+    },
+    {
+     "w": "times.",
+     "s": 28.241,
+     "e": 28.845
+    },
+    {
+     "w": "Dave",
+     "s": 28.999,
+     "e": 29.377
+    },
+    {
+     "w": "now",
+     "s": 29.452,
+     "e": 29.603
+    },
+    {
+     "w": "weighs",
+     "s": 29.716,
+     "e": 29.905
+    },
+    {
+     "w": "five",
+     "s": 29.98,
+     "e": 30.131
+    },
+    {
+     "w": "hundred",
+     "s": 30.207,
+     "e": 30.433
+    },
+    {
+     "w": "and",
+     "s": 30.546,
+     "e": 30.66
+    },
+    {
+     "w": "sixty",
+     "s": 30.773,
+     "e": 30.961
+    },
+    {
+     "w": "kilos.",
+     "s": 31.037,
+     "e": 31.754
+    },
+    {
+     "w": "Like",
+     "s": 31.943,
+     "e": 32.094
+    },
+    {
+     "w": "a",
+     "s": 32.169,
+     "e": 32.207
+    },
+    {
+     "w": "polar",
+     "s": 32.245,
+     "e": 32.546
+    },
+    {
+     "w": "bear,",
+     "s": 32.66,
+     "e": 33.075
+    },
+    {
+     "w": "but",
+     "s": 33.15,
+     "e": 33.226
+    },
+    {
+     "w": "anxious.",
+     "s": 33.339,
+     "e": 33.829
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Weight goes up eight times.",
+     "s": 27.109,
+     "e": 28.845
+    },
+    {
+     "text": "Dave now weighs five hundred and sixty kilos.",
+     "s": 28.999,
+     "e": 31.754
+    },
+    {
+     "text": "Like a polar bear, but anxious.",
+     "s": 31.943,
+     "e": 33.829
+    }
+   ],
+   "start": 27.029,
+   "end": 34.037
+  },
+  {
+   "id": "bones",
+   "line": "Bones only get four times stronger. Every bone now carries double the load. Galileo worked this out in 1638. Nobody listened.",
+   "words": [
+    {
+     "w": "Bones",
+     "s": 34.117,
+     "e": 34.57
+    },
+    {
+     "w": "only",
+     "s": 34.646,
+     "e": 34.872
+    },
+    {
+     "w": "get",
+     "s": 34.948,
+     "e": 35.098
+    },
+    {
+     "w": "four",
+     "s": 35.249,
+     "e": 35.4
+    },
+    {
+     "w": "times",
+     "s": 35.476,
+     "e": 35.778
+    },
+    {
+     "w": "stronger.",
+     "s": 35.929,
+     "e": 36.306
+    },
+    {
+     "w": "Every",
+     "s": 36.759,
+     "e": 36.985
+    },
+    {
+     "w": "bone",
+     "s": 37.061,
+     "e": 37.363
+    },
+    {
+     "w": "now",
+     "s": 37.514,
+     "e": 37.665
+    },
+    {
+     "w": "carries",
+     "s": 37.74,
+     "e": 38.042
+    },
+    {
+     "w": "double",
+     "s": 38.117,
+     "e": 38.344
+    },
+    {
+     "w": "the",
+     "s": 38.419,
+     "e": 38.495
+    },
+    {
+     "w": "load.",
+     "s": 38.57,
+     "e": 38.948
+    },
+    {
+     "w": "Galileo",
+     "s": 39.195,
+     "e": 39.799
+    },
+    {
+     "w": "worked",
+     "s": 39.912,
+     "e": 40.025
+    },
+    {
+     "w": "this",
+     "s": 40.101,
+     "e": 40.176
+    },
+    {
+     "w": "out",
+     "s": 40.252,
+     "e": 40.403
+    },
+    {
+     "w": "in",
+     "s": 40.478,
+     "e": 40.629
+    },
+    {
+     "w": "1638.",
+     "s": 40.742,
+     "e": 42.138
+    },
+    {
+     "w": "Nobody",
+     "s": 42.214,
+     "e": 42.516
+    },
+    {
+     "w": "listened.",
+     "s": 42.591,
+     "e": 43.044
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Bones only get four times stronger.",
+     "s": 34.117,
+     "e": 36.306
+    },
+    {
+     "text": "Every bone now carries double the load.",
+     "s": 36.759,
+     "e": 38.948
+    },
+    {
+     "text": "Galileo worked this out in 1638.",
+     "s": 39.195,
+     "e": 42.138
+    },
+    {
+     "text": "Nobody listened.",
+     "s": 42.214,
+     "e": 43.044
+    }
+   ],
+   "start": 34.037,
+   "end": 43.226
+  },
+  {
+   "id": "floor",
+   "line": "A living room floor is rated for a hundred and fifty kilos per square metre. A family of four now weighs two tonnes.",
+   "words": [
+    {
+     "w": "A",
+     "s": 43.306,
+     "e": 43.343
+    },
+    {
+     "w": "living",
+     "s": 43.381,
+     "e": 43.608
+    },
+    {
+     "w": "room",
+     "s": 43.683,
+     "e": 43.834
+    },
+    {
+     "w": "floor",
+     "s": 43.985,
+     "e": 44.287
+    },
+    {
+     "w": "is",
+     "s": 44.362,
+     "e": 44.438
+    },
+    {
+     "w": "rated",
+     "s": 44.513,
+     "e": 44.815
+    },
+    {
+     "w": "for",
+     "s": 44.891,
+     "e": 44.966
+    },
+    {
+     "w": "a",
+     "s": 45.004,
+     "e": 45.041
+    },
+    {
+     "w": "hundred",
+     "s": 45.117,
+     "e": 45.268
+    },
+    {
+     "w": "and",
+     "s": 45.343,
+     "e": 45.494
+    },
+    {
+     "w": "fifty",
+     "s": 45.57,
+     "e": 45.721
+    },
+    {
+     "w": "kilos",
+     "s": 45.872,
+     "e": 46.249
+    },
+    {
+     "w": "per",
+     "s": 46.325,
+     "e": 46.4
+    },
+    {
+     "w": "square",
+     "s": 46.475,
+     "e": 46.702
+    },
+    {
+     "w": "metre.",
+     "s": 46.777,
+     "e": 47.328
+    },
+    {
+     "w": "A",
+     "s": 47.442,
+     "e": 47.517
+    },
+    {
+     "w": "family",
+     "s": 47.593,
+     "e": 47.895
+    },
+    {
+     "w": "of",
+     "s": 47.97,
+     "e": 48.045
+    },
+    {
+     "w": "four",
+     "s": 48.121,
+     "e": 48.423
+    },
+    {
+     "w": "now",
+     "s": 48.574,
+     "e": 48.725
+    },
+    {
+     "w": "weighs",
+     "s": 48.8,
+     "e": 49.102
+    },
+    {
+     "w": "two",
+     "s": 49.178,
+     "e": 49.328
+    },
+    {
+     "w": "tonnes.",
+     "s": 49.404,
+     "e": 49.932
+    }
+   ],
+   "sentences": [
+    {
+     "text": "A living room floor is rated for a hundred and fifty kilos per square metre.",
+     "s": 43.306,
+     "e": 47.328
+    },
+    {
+     "text": "A family of four now weighs two tonnes.",
+     "s": 47.442,
+     "e": 49.932
+    }
+   ],
+   "start": 43.226,
+   "end": 50.134
+  },
+  {
+   "id": "lift",
+   "line": "An eight-person lift now holds one person. Barely.",
+   "words": [
+    {
+     "w": "An",
+     "s": 50.214,
+     "e": 50.29
+    },
+    {
+     "w": "eight-person",
+     "s": 50.365,
+     "e": 50.969
+    },
+    {
+     "w": "lift",
+     "s": 51.045,
+     "e": 51.346
+    },
+    {
+     "w": "now",
+     "s": 51.497,
+     "e": 51.724
+    },
+    {
+     "w": "holds",
+     "s": 51.875,
+     "e": 52.026
+    },
+    {
+     "w": "one",
+     "s": 52.101,
+     "e": 52.252
+    },
+    {
+     "w": "person.",
+     "s": 52.328,
+     "e": 53.007
+    },
+    {
+     "w": "Barely.",
+     "s": 53.233,
+     "e": 53.85
+    }
+   ],
+   "sentences": [
+    {
+     "text": "An eight-person lift now holds one person.",
+     "s": 50.214,
+     "e": 53.007
+    },
+    {
+     "text": "Barely.",
+     "s": 53.233,
+     "e": 53.85
+    }
+   ],
+   "start": 50.134,
+   "end": 53.921
+  },
+  {
+   "id": "cars",
+   "line": "One point four billion cars. Zero drivers fit. Every sunroof is now a hat.",
+   "words": [
+    {
+     "w": "One",
+     "s": 54.001,
+     "e": 54.152
+    },
+    {
+     "w": "point",
+     "s": 54.228,
+     "e": 54.53
+    },
+    {
+     "w": "four",
+     "s": 54.605,
+     "e": 54.681
+    },
+    {
+     "w": "billion",
+     "s": 54.907,
+     "e": 55.209
+    },
+    {
+     "w": "cars.",
+     "s": 55.36,
+     "e": 56.19
+    },
+    {
+     "w": "Zero",
+     "s": 56.341,
+     "e": 56.643
+    },
+    {
+     "w": "drivers",
+     "s": 56.718,
+     "e": 57.096
+    },
+    {
+     "w": "fit.",
+     "s": 57.171,
+     "e": 57.926
+    },
+    {
+     "w": "Every",
+     "s": 58.001,
+     "e": 58.228
+    },
+    {
+     "w": "sunroof",
+     "s": 58.379,
+     "e": 58.756
+    },
+    {
+     "w": "is",
+     "s": 58.907,
+     "e": 58.982
+    },
+    {
+     "w": "now",
+     "s": 59.058,
+     "e": 59.209
+    },
+    {
+     "w": "a",
+     "s": 59.247,
+     "e": 59.284
+    },
+    {
+     "w": "hat.",
+     "s": 59.36,
+     "e": 59.817
+    }
+   ],
+   "sentences": [
+    {
+     "text": "One point four billion cars.",
+     "s": 54.001,
+     "e": 56.19
+    },
+    {
+     "text": "Zero drivers fit.",
+     "s": 56.341,
+     "e": 57.926
+    },
+    {
+     "text": "Every sunroof is now a hat.",
+     "s": 58.001,
+     "e": 59.817
+    }
+   ],
+   "start": 53.921,
+   "end": 59.855
+  },
+  {
+   "id": "clothes",
+   "line": "Clothes don't double. Eight billion outfits fail at once. Dave's jumper is now a crop top.",
+   "words": [
+    {
+     "w": "Clothes",
+     "s": 59.935,
+     "e": 60.388
+    },
+    {
+     "w": "don't",
+     "s": 60.464,
+     "e": 60.69
+    },
+    {
+     "w": "double.",
+     "s": 60.879,
+     "e": 61.223
+    },
+    {
+     "w": "Eight",
+     "s": 61.373,
+     "e": 61.524
+    },
+    {
+     "w": "billion",
+     "s": 61.675,
+     "e": 61.902
+    },
+    {
+     "w": "outfits",
+     "s": 62.053,
+     "e": 62.505
+    },
+    {
+     "w": "fail",
+     "s": 62.656,
+     "e": 62.958
+    },
+    {
+     "w": "at",
+     "s": 63.034,
+     "e": 63.109
+    },
+    {
+     "w": "once.",
+     "s": 63.185,
+     "e": 63.788
+    },
+    {
+     "w": "Dave's",
+     "s": 64.015,
+     "e": 64.392
+    },
+    {
+     "w": "jumper",
+     "s": 64.43,
+     "e": 64.77
+    },
+    {
+     "w": "is",
+     "s": 64.921,
+     "e": 64.996
+    },
+    {
+     "w": "now",
+     "s": 65.071,
+     "e": 65.147
+    },
+    {
+     "w": "a",
+     "s": 65.222,
+     "e": 65.298
+    },
+    {
+     "w": "crop",
+     "s": 65.411,
+     "e": 65.524
+    },
+    {
+     "w": "top.",
+     "s": 65.6,
+     "e": 65.902
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Clothes don't double.",
+     "s": 59.935,
+     "e": 61.223
+    },
+    {
+     "text": "Eight billion outfits fail at once.",
+     "s": 61.373,
+     "e": 63.788
+    },
+    {
+     "text": "Dave's jumper is now a crop top.",
+     "s": 64.015,
+     "e": 65.902
+    }
+   ],
+   "start": 59.855,
+   "end": 66.059
+  },
+  {
+   "id": "heart",
+   "line": "Your heart now pumps blood an extra thirty-five centimetres uphill. Giraffes manage. Giraffes have been practising.",
+   "words": [
+    {
+     "w": "Your",
+     "s": 66.139,
+     "e": 66.29
+    },
+    {
+     "w": "heart",
+     "s": 66.366,
+     "e": 66.668
+    },
+    {
+     "w": "now",
+     "s": 66.743,
+     "e": 66.894
+    },
+    {
+     "w": "pumps",
+     "s": 66.969,
+     "e": 67.196
+    },
+    {
+     "w": "blood",
+     "s": 67.271,
+     "e": 67.573
+    },
+    {
+     "w": "an",
+     "s": 67.649,
+     "e": 67.724
+    },
+    {
+     "w": "extra",
+     "s": 67.8,
+     "e": 68.101
+    },
+    {
+     "w": "thirty-five",
+     "s": 68.252,
+     "e": 68.705
+    },
+    {
+     "w": "centimetres",
+     "s": 68.856,
+     "e": 69.385
+    },
+    {
+     "w": "uphill.",
+     "s": 69.535,
+     "e": 70.29
+    },
+    {
+     "w": "Giraffes",
+     "s": 70.517,
+     "e": 70.969
+    },
+    {
+     "w": "manage.",
+     "s": 71.045,
+     "e": 71.686
+    },
+    {
+     "w": "Giraffes",
+     "s": 71.875,
+     "e": 72.328
+    },
+    {
+     "w": "have",
+     "s": 72.403,
+     "e": 72.479
+    },
+    {
+     "w": "been",
+     "s": 72.554,
+     "e": 72.63
+    },
+    {
+     "w": "practising.",
+     "s": 72.705,
+     "e": 73.417
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Your heart now pumps blood an extra thirty-five centimetres uphill.",
+     "s": 66.139,
+     "e": 70.29
+    },
+    {
+     "text": "Giraffes manage.",
+     "s": 70.517,
+     "e": 71.686
+    },
+    {
+     "text": "Giraffes have been practising.",
+     "s": 71.875,
+     "e": 73.417
+    }
+   ],
+   "start": 66.059,
+   "end": 73.509
+  },
+  {
+   "id": "door",
+   "line": "Dave tries the door sideways. Then the window. Then the door again.",
+   "words": [
+    {
+     "w": "Dave",
+     "s": 73.589,
+     "e": 73.89
+    },
+    {
+     "w": "tries",
+     "s": 73.966,
+     "e": 74.192
+    },
+    {
+     "w": "the",
+     "s": 74.268,
+     "e": 74.306
+    },
+    {
+     "w": "door",
+     "s": 74.343,
+     "e": 74.57
+    },
+    {
+     "w": "sideways.",
+     "s": 74.645,
+     "e": 75.513
+    },
+    {
+     "w": "Then",
+     "s": 75.702,
+     "e": 75.928
+    },
+    {
+     "w": "the",
+     "s": 75.966,
+     "e": 76.004
+    },
+    {
+     "w": "window.",
+     "s": 76.23,
+     "e": 76.683
+    },
+    {
+     "w": "Then",
+     "s": 76.909,
+     "e": 77.06
+    },
+    {
+     "w": "the",
+     "s": 77.098,
+     "e": 77.136
+    },
+    {
+     "w": "door",
+     "s": 77.211,
+     "e": 77.362
+    },
+    {
+     "w": "again.",
+     "s": 77.438,
+     "e": 78.079
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Dave tries the door sideways.",
+     "s": 73.589,
+     "e": 75.513
+    },
+    {
+     "text": "Then the window.",
+     "s": 75.702,
+     "e": 76.683
+    },
+    {
+     "text": "Then the door again.",
+     "s": 76.909,
+     "e": 78.079
+    }
+   ],
+   "start": 73.509,
+   "end": 78.263
+  },
+  {
+   "id": "back",
+   "line": "Then everyone shrinks back.",
+   "words": [
+    {
+     "w": "Then",
+     "s": 78.343,
+     "e": 78.57
+    },
+    {
+     "w": "everyone",
+     "s": 78.796,
+     "e": 79.173
+    },
+    {
+     "w": "shrinks",
+     "s": 79.249,
+     "e": 79.551
+    },
+    {
+     "w": "back.",
+     "s": 79.626,
+     "e": 80.004
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Then everyone shrinks back.",
+     "s": 78.343,
+     "e": 80.004
+    }
+   ],
+   "start": 78.263,
+   "end": 80.159
+  },
+  {
+   "id": "after",
+   "line": "Heads come down out of ceilings, sunroofs and lofts. The holes stay.",
+   "words": [
+    {
+     "w": "Heads",
+     "s": 80.239,
+     "e": 80.54
+    },
+    {
+     "w": "come",
+     "s": 80.616,
+     "e": 80.767
+    },
+    {
+     "w": "down",
+     "s": 80.842,
+     "e": 81.069
+    },
+    {
+     "w": "out",
+     "s": 81.144,
+     "e": 81.295
+    },
+    {
+     "w": "of",
+     "s": 81.333,
+     "e": 81.371
+    },
+    {
+     "w": "ceilings,",
+     "s": 81.446,
+     "e": 82.05
+    },
+    {
+     "w": "sunroofs",
+     "s": 82.125,
+     "e": 82.654
+    },
+    {
+     "w": "and",
+     "s": 82.729,
+     "e": 82.805
+    },
+    {
+     "w": "lofts.",
+     "s": 82.88,
+     "e": 83.559
+    },
+    {
+     "w": "The",
+     "s": 83.786,
+     "e": 83.861
+    },
+    {
+     "w": "holes",
+     "s": 83.937,
+     "e": 84.314
+    },
+    {
+     "w": "stay.",
+     "s": 84.54,
+     "e": 84.909
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Heads come down out of ceilings, sunroofs and lofts.",
+     "s": 80.239,
+     "e": 83.559
+    },
+    {
+     "text": "The holes stay.",
+     "s": 83.786,
+     "e": 84.909
+    }
+   ],
+   "start": 80.159,
+   "end": 84.95
+  },
+  {
+   "id": "end",
+   "line": "Dave gets through the door. Item one did not. Priya writes it down again.",
+   "words": [
+    {
+     "w": "Dave",
+     "s": 85.03,
+     "e": 85.332
+    },
+    {
+     "w": "gets",
+     "s": 85.408,
+     "e": 85.558
+    },
+    {
+     "w": "through",
+     "s": 85.634,
+     "e": 85.86
+    },
+    {
+     "w": "the",
+     "s": 85.898,
+     "e": 85.936
+    },
+    {
+     "w": "door.",
+     "s": 86.011,
+     "e": 86.54
+    },
+    {
+     "w": "Item",
+     "s": 86.766,
+     "e": 87.068
+    },
+    {
+     "w": "one",
+     "s": 87.143,
+     "e": 87.445
+    },
+    {
+     "w": "did",
+     "s": 87.596,
+     "e": 87.672
+    },
+    {
+     "w": "not.",
+     "s": 87.747,
+     "e": 88.313
+    },
+    {
+     "w": "Priya",
+     "s": 88.577,
+     "e": 88.879
+    },
+    {
+     "w": "writes",
+     "s": 88.955,
+     "e": 89.181
+    },
+    {
+     "w": "it",
+     "s": 89.219,
+     "e": 89.257
+    },
+    {
+     "w": "down",
+     "s": 89.332,
+     "e": 89.483
+    },
+    {
+     "w": "again.",
+     "s": 89.558,
+     "e": 90.087
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Dave gets through the door.",
+     "s": 85.03,
+     "e": 86.54
+    },
+    {
+     "text": "Item one did not.",
+     "s": 86.766,
+     "e": 88.313
+    },
+    {
+     "text": "Priya writes it down again.",
+     "s": 88.577,
+     "e": 90.087
+    }
+   ],
+   "start": 84.95,
+   "end": 90.987
+  },
+  {
+   "id": "endcard",
+   "line": "",
+   "words": [],
+   "sentences": [],
+   "start": 90.987,
+   "end": 94.587
+  }
+ ]
+}

@@ -26,6 +26,7 @@ export function buildCity() {
   // cars on the roads
   const cars = []; for (let i = 0; i < 70; i++) { const c = makeCar(500 + i); const ln = r.int(0, N); const alongX = i % 2 === 0; c.userData = { alongX, lane: o + ln * (B + ROAD) - ROAD / 2 + (i % 4 < 2 ? 1.4 : -1.4), p0: r.range(o, o + span), v: r.range(8, 13) * (i % 4 < 2 ? 1 : -1) }; c.rotation.y = alongX ? (c.userData.v > 0 ? Math.PI / 2 : -Math.PI / 2) : (c.userData.v > 0 ? 0 : Math.PI); scene.add(c); cars.push(c); }
   const wrap = (v) => o + ((((v - o) % span) + span) % span);
+  S.people = people; S.cars = cars;
   S.update = (t, c) => {
     S.setSky(0); const mode = c.mode || 'still'; const jt = c.jt ?? 0;
     people.forEach((p, i) => { const u = p.userData; let x = u.x, z = u.z, y = 0;

@@ -1,0 +1,1522 @@
+{
+ "fps": 30,
+ "duration": 93.424,
+ "audio": "voice/light_final.mp3",
+ "marks": {
+  "late": 1.66,
+  "seven": 3.27,
+  "leicester": 6.779,
+  "three": 8.364,
+  "cake": 9.874,
+  "on": 11.103,
+  "nearly": 12.914,
+  "mass": 14.225,
+  "infinite": 16.074,
+  "settles": 17.659,
+  "percent": 20.112,
+  "kilos": 21.911,
+  "joules": 25.081,
+  "eight": 25.837,
+  "sandwich": 28.705,
+  "passes": 29.95,
+  "micro": 31.271,
+  "brakes": 33.686,
+  "moon": 34.743,
+  "jupiter": 36.865,
+  "pluto": 38.572,
+  "sorry": 41.365,
+  "slower": 45.71,
+  "oneday": 46.616,
+  "twoyears": 47.975,
+  "squashes": 50.343,
+  "watch": 54.015,
+  "twentyfive": 54.732,
+  "xrays": 57.657,
+  "dot": 60.6,
+  "behind": 61.846,
+  "night": 64.503,
+  "atom": 66.442,
+  "collider": 69.765,
+  "lethal": 70.859,
+  "tingle": 73.35,
+  "turns": 75.17,
+  "fifty": 77.567,
+  "walks": 79.076,
+  "watch2": 80.868,
+  "five": 82.283,
+  "waited": 83.943,
+  "breakfast": 86.736,
+  "cake2": 88.471,
+  "air_back": null
+ },
+ "scenes": [
+  {
+   "id": "intro",
+   "line": "It's Friday, and Dave is late for the rehearsal dinner.",
+   "words": [
+    {
+     "w": "It's",
+     "s": 0.0,
+     "e": 0.226
+    },
+    {
+     "w": "Friday,",
+     "s": 0.453,
+     "e": 0.906
+    },
+    {
+     "w": "and",
+     "s": 0.981,
+     "e": 1.132
+    },
+    {
+     "w": "Dave",
+     "s": 1.283,
+     "e": 1.434
+    },
+    {
+     "w": "is",
+     "s": 1.509,
+     "e": 1.585
+    },
+    {
+     "w": "late",
+     "s": 1.66,
+     "e": 1.887
+    },
+    {
+     "w": "for",
+     "s": 1.925,
+     "e": 1.962
+    },
+    {
+     "w": "the",
+     "s": 2.0,
+     "e": 2.038
+    },
+    {
+     "w": "rehearsal",
+     "s": 2.113,
+     "e": 2.491
+    },
+    {
+     "w": "dinner.",
+     "s": 2.566,
+     "e": 3.157
+    }
+   ],
+   "sentences": [
+    {
+     "text": "It's Friday, and Dave is late for the rehearsal dinner.",
+     "s": 0.0,
+     "e": 3.157
+    }
+   ],
+   "start": 0.0,
+   "end": 3.19
+  },
+  {
+   "id": "dave",
+   "line": "Seven o'clock, the Italian place. Priya's parents came from Leicester. Dave is three kilometres away, with the cake.",
+   "words": [
+    {
+     "w": "Seven",
+     "s": 3.27,
+     "e": 3.383
+    },
+    {
+     "w": "o'clock,",
+     "s": 3.458,
+     "e": 4.062
+    },
+    {
+     "w": "the",
+     "s": 4.1,
+     "e": 4.138
+    },
+    {
+     "w": "Italian",
+     "s": 4.364,
+     "e": 4.591
+    },
+    {
+     "w": "place.",
+     "s": 4.666,
+     "e": 5.308
+    },
+    {
+     "w": "Priya's",
+     "s": 5.572,
+     "e": 5.874
+    },
+    {
+     "w": "parents",
+     "s": 5.949,
+     "e": 6.326
+    },
+    {
+     "w": "came",
+     "s": 6.402,
+     "e": 6.553
+    },
+    {
+     "w": "from",
+     "s": 6.628,
+     "e": 6.704
+    },
+    {
+     "w": "Leicester.",
+     "s": 6.779,
+     "e": 7.685
+    },
+    {
+     "w": "Dave",
+     "s": 7.874,
+     "e": 8.062
+    },
+    {
+     "w": "is",
+     "s": 8.175,
+     "e": 8.289
+    },
+    {
+     "w": "three",
+     "s": 8.364,
+     "e": 8.44
+    },
+    {
+     "w": "kilometres",
+     "s": 8.591,
+     "e": 8.968
+    },
+    {
+     "w": "away,",
+     "s": 9.043,
+     "e": 9.572
+    },
+    {
+     "w": "with",
+     "s": 9.647,
+     "e": 9.723
+    },
+    {
+     "w": "the",
+     "s": 9.76,
+     "e": 9.798
+    },
+    {
+     "w": "cake.",
+     "s": 9.874,
+     "e": 10.499
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Seven o'clock, the Italian place.",
+     "s": 3.27,
+     "e": 5.308
+    },
+    {
+     "text": "Priya's parents came from Leicester.",
+     "s": 5.572,
+     "e": 7.685
+    },
+    {
+     "text": "Dave is three kilometres away, with the cake.",
+     "s": 7.874,
+     "e": 10.499
+    }
+   ],
+   "start": 3.19,
+   "end": 10.494
+  },
+  {
+   "id": "event",
+   "line": "So Dave travels at the speed of light. Nearly. Nothing with mass can reach it. That takes infinite energy. He settles for ninety-nine point nine nine nine nine percent.",
+   "words": [
+    {
+     "w": "So",
+     "s": 10.574,
+     "e": 10.65
+    },
+    {
+     "w": "Dave",
+     "s": 10.725,
+     "e": 11.027
+    },
+    {
+     "w": "travels",
+     "s": 11.103,
+     "e": 11.405
+    },
+    {
+     "w": "at",
+     "s": 11.48,
+     "e": 11.555
+    },
+    {
+     "w": "the",
+     "s": 11.593,
+     "e": 11.631
+    },
+    {
+     "w": "speed",
+     "s": 11.706,
+     "e": 11.933
+    },
+    {
+     "w": "of",
+     "s": 12.008,
+     "e": 12.084
+    },
+    {
+     "w": "light.",
+     "s": 12.159,
+     "e": 12.688
+    },
+    {
+     "w": "Nearly.",
+     "s": 12.914,
+     "e": 13.367
+    },
+    {
+     "w": "Nothing",
+     "s": 13.621,
+     "e": 13.923
+    },
+    {
+     "w": "with",
+     "s": 13.998,
+     "e": 14.074
+    },
+    {
+     "w": "mass",
+     "s": 14.225,
+     "e": 14.451
+    },
+    {
+     "w": "can",
+     "s": 14.527,
+     "e": 14.602
+    },
+    {
+     "w": "reach",
+     "s": 14.678,
+     "e": 14.904
+    },
+    {
+     "w": "it.",
+     "s": 14.979,
+     "e": 15.357
+    },
+    {
+     "w": "That",
+     "s": 15.47,
+     "e": 15.583
+    },
+    {
+     "w": "takes",
+     "s": 15.659,
+     "e": 15.961
+    },
+    {
+     "w": "infinite",
+     "s": 16.074,
+     "e": 16.413
+    },
+    {
+     "w": "energy.",
+     "s": 16.489,
+     "e": 16.942
+    },
+    {
+     "w": "He",
+     "s": 17.395,
+     "e": 17.545
+    },
+    {
+     "w": "settles",
+     "s": 17.659,
+     "e": 17.923
+    },
+    {
+     "w": "for",
+     "s": 17.998,
+     "e": 18.074
+    },
+    {
+     "w": "ninety-nine",
+     "s": 18.149,
+     "e": 18.602
+    },
+    {
+     "w": "point",
+     "s": 18.753,
+     "e": 18.979
+    },
+    {
+     "w": "nine",
+     "s": 19.055,
+     "e": 19.281
+    },
+    {
+     "w": "nine",
+     "s": 19.395,
+     "e": 19.508
+    },
+    {
+     "w": "nine",
+     "s": 19.659,
+     "e": 19.81
+    },
+    {
+     "w": "nine",
+     "s": 19.923,
+     "e": 20.036
+    },
+    {
+     "w": "percent.",
+     "s": 20.112,
+     "e": 20.785
+    }
+   ],
+   "sentences": [
+    {
+     "text": "So Dave travels at the speed of light.",
+     "s": 10.574,
+     "e": 12.688
+    },
+    {
+     "text": "Nearly.",
+     "s": 12.914,
+     "e": 13.367
+    },
+    {
+     "text": "Nothing with mass can reach it.",
+     "s": 13.621,
+     "e": 15.357
+    },
+    {
+     "text": "That takes infinite energy.",
+     "s": 15.47,
+     "e": 16.942
+    },
+    {
+     "text": "He settles for ninety-nine point nine nine nine nine percent.",
+     "s": 17.395,
+     "e": 20.785
+    }
+   ],
+   "start": 10.494,
+   "end": 20.85
+  },
+  {
+   "id": "energy",
+   "line": "Getting seventy-five kilos of Dave that fast takes five sextillion joules. Eight years of the planet's energy. Dave had a sandwich.",
+   "words": [
+    {
+     "w": "Getting",
+     "s": 20.93,
+     "e": 21.231
+    },
+    {
+     "w": "seventy-five",
+     "s": 21.307,
+     "e": 21.835
+    },
+    {
+     "w": "kilos",
+     "s": 21.911,
+     "e": 22.288
+    },
+    {
+     "w": "of",
+     "s": 22.326,
+     "e": 22.364
+    },
+    {
+     "w": "Dave",
+     "s": 22.515,
+     "e": 22.741
+    },
+    {
+     "w": "that",
+     "s": 22.892,
+     "e": 23.043
+    },
+    {
+     "w": "fast",
+     "s": 23.118,
+     "e": 23.496
+    },
+    {
+     "w": "takes",
+     "s": 23.647,
+     "e": 23.948
+    },
+    {
+     "w": "five",
+     "s": 24.024,
+     "e": 24.25
+    },
+    {
+     "w": "sextillion",
+     "s": 24.326,
+     "e": 25.005
+    },
+    {
+     "w": "joules.",
+     "s": 25.081,
+     "e": 25.609
+    },
+    {
+     "w": "Eight",
+     "s": 25.837,
+     "e": 26.063
+    },
+    {
+     "w": "years",
+     "s": 26.214,
+     "e": 26.516
+    },
+    {
+     "w": "of",
+     "s": 26.554,
+     "e": 26.592
+    },
+    {
+     "w": "the",
+     "s": 26.667,
+     "e": 26.743
+    },
+    {
+     "w": "planet's",
+     "s": 26.818,
+     "e": 27.12
+    },
+    {
+     "w": "energy.",
+     "s": 27.195,
+     "e": 27.648
+    },
+    {
+     "w": "Dave",
+     "s": 28.176,
+     "e": 28.403
+    },
+    {
+     "w": "had",
+     "s": 28.478,
+     "e": 28.554
+    },
+    {
+     "w": "a",
+     "s": 28.629,
+     "e": 28.667
+    },
+    {
+     "w": "sandwich.",
+     "s": 28.705,
+     "e": 29.233
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Getting seventy-five kilos of Dave that fast takes five sextillion joules.",
+     "s": 20.93,
+     "e": 25.609
+    },
+    {
+     "text": "Eight years of the planet's energy.",
+     "s": 25.837,
+     "e": 27.648
+    },
+    {
+     "text": "Dave had a sandwich.",
+     "s": 28.176,
+     "e": 29.233
+    }
+   ],
+   "start": 20.85,
+   "end": 29.53
+  },
+  {
+   "id": "pass",
+   "line": "He passes the restaurant in ten microseconds. Light speed has no brakes.",
+   "words": [
+    {
+     "w": "He",
+     "s": 29.61,
+     "e": 29.761
+    },
+    {
+     "w": "passes",
+     "s": 29.95,
+     "e": 30.139
+    },
+    {
+     "w": "the",
+     "s": 30.176,
+     "e": 30.214
+    },
+    {
+     "w": "restaurant",
+     "s": 30.441,
+     "e": 30.667
+    },
+    {
+     "w": "in",
+     "s": 30.743,
+     "e": 30.893
+    },
+    {
+     "w": "ten",
+     "s": 30.969,
+     "e": 31.195
+    },
+    {
+     "w": "microseconds.",
+     "s": 31.271,
+     "e": 32.101
+    },
+    {
+     "w": "Light",
+     "s": 32.478,
+     "e": 32.705
+    },
+    {
+     "w": "speed",
+     "s": 32.893,
+     "e": 33.082
+    },
+    {
+     "w": "has",
+     "s": 33.158,
+     "e": 33.309
+    },
+    {
+     "w": "no",
+     "s": 33.46,
+     "e": 33.61
+    },
+    {
+     "w": "brakes.",
+     "s": 33.686,
+     "e": 34.139
+    }
+   ],
+   "sentences": [
+    {
+     "text": "He passes the restaurant in ten microseconds.",
+     "s": 29.61,
+     "e": 32.101
+    },
+    {
+     "text": "Light speed has no brakes.",
+     "s": 32.478,
+     "e": 34.139
+    }
+   ],
+   "start": 29.53,
+   "end": 34.512
+  },
+  {
+   "id": "tour",
+   "line": "The Moon in one point three seconds. Jupiter, forty minutes. Pluto, five hours. Dave is still apologising.",
+   "words": [
+    {
+     "w": "The",
+     "s": 34.592,
+     "e": 34.667
+    },
+    {
+     "w": "Moon",
+     "s": 34.743,
+     "e": 35.044
+    },
+    {
+     "w": "in",
+     "s": 35.12,
+     "e": 35.271
+    },
+    {
+     "w": "one",
+     "s": 35.346,
+     "e": 35.422
+    },
+    {
+     "w": "point",
+     "s": 35.497,
+     "e": 35.724
+    },
+    {
+     "w": "three",
+     "s": 35.837,
+     "e": 35.95
+    },
+    {
+     "w": "seconds.",
+     "s": 36.026,
+     "e": 36.721
+    },
+    {
+     "w": "Jupiter,",
+     "s": 36.865,
+     "e": 37.469
+    },
+    {
+     "w": "forty",
+     "s": 37.545,
+     "e": 37.809
+    },
+    {
+     "w": "minutes.",
+     "s": 37.846,
+     "e": 38.497
+    },
+    {
+     "w": "Pluto,",
+     "s": 38.572,
+     "e": 39.176
+    },
+    {
+     "w": "five",
+     "s": 39.252,
+     "e": 39.478
+    },
+    {
+     "w": "hours.",
+     "s": 39.554,
+     "e": 40.006
+    },
+    {
+     "w": "Dave",
+     "s": 40.459,
+     "e": 40.837
+    },
+    {
+     "w": "is",
+     "s": 40.912,
+     "e": 41.063
+    },
+    {
+     "w": "still",
+     "s": 41.176,
+     "e": 41.289
+    },
+    {
+     "w": "apologising.",
+     "s": 41.365,
+     "e": 42.12
+    }
+   ],
+   "sentences": [
+    {
+     "text": "The Moon in one point three seconds.",
+     "s": 34.592,
+     "e": 36.721
+    },
+    {
+     "text": "Jupiter, forty minutes.",
+     "s": 36.865,
+     "e": 38.497
+    },
+    {
+     "text": "Pluto, five hours.",
+     "s": 38.572,
+     "e": 40.006
+    },
+    {
+     "text": "Dave is still apologising.",
+     "s": 40.459,
+     "e": 42.12
+    }
+   ],
+   "start": 34.512,
+   "end": 42.234
+  },
+  {
+   "id": "time",
+   "line": "At this speed, Dave's time runs seven hundred and seven times slower. One day for Dave is two years for everyone else.",
+   "words": [
+    {
+     "w": "At",
+     "s": 42.314,
+     "e": 42.465
+    },
+    {
+     "w": "this",
+     "s": 42.541,
+     "e": 42.691
+    },
+    {
+     "w": "speed,",
+     "s": 42.88,
+     "e": 43.22
+    },
+    {
+     "w": "Dave's",
+     "s": 43.295,
+     "e": 43.597
+    },
+    {
+     "w": "time",
+     "s": 43.748,
+     "e": 43.899
+    },
+    {
+     "w": "runs",
+     "s": 43.975,
+     "e": 44.201
+    },
+    {
+     "w": "seven",
+     "s": 44.276,
+     "e": 44.427
+    },
+    {
+     "w": "hundred",
+     "s": 44.503,
+     "e": 44.729
+    },
+    {
+     "w": "and",
+     "s": 44.805,
+     "e": 44.956
+    },
+    {
+     "w": "seven",
+     "s": 45.069,
+     "e": 45.182
+    },
+    {
+     "w": "times",
+     "s": 45.333,
+     "e": 45.635
+    },
+    {
+     "w": "slower.",
+     "s": 45.71,
+     "e": 46.352
+    },
+    {
+     "w": "One",
+     "s": 46.616,
+     "e": 46.767
+    },
+    {
+     "w": "day",
+     "s": 46.842,
+     "e": 46.993
+    },
+    {
+     "w": "for",
+     "s": 47.069,
+     "e": 47.144
+    },
+    {
+     "w": "Dave",
+     "s": 47.22,
+     "e": 47.522
+    },
+    {
+     "w": "is",
+     "s": 47.673,
+     "e": 47.899
+    },
+    {
+     "w": "two",
+     "s": 47.975,
+     "e": 48.125
+    },
+    {
+     "w": "years",
+     "s": 48.201,
+     "e": 48.503
+    },
+    {
+     "w": "for",
+     "s": 48.578,
+     "e": 48.654
+    },
+    {
+     "w": "everyone",
+     "s": 48.729,
+     "e": 49.031
+    },
+    {
+     "w": "else.",
+     "s": 49.107,
+     "e": 49.566
+    }
+   ],
+   "sentences": [
+    {
+     "text": "At this speed, Dave's time runs seven hundred and seven times slower.",
+     "s": 42.314,
+     "e": 46.352
+    },
+    {
+     "text": "One day for Dave is two years for everyone else.",
+     "s": 46.616,
+     "e": 49.566
+    }
+   ],
+   "start": 42.234,
+   "end": 49.659
+  },
+  {
+   "id": "length",
+   "line": "Space squashes flat ahead of him. Five hours to Pluto, on Dave's watch: twenty-five seconds.",
+   "words": [
+    {
+     "w": "Space",
+     "s": 49.739,
+     "e": 50.192
+    },
+    {
+     "w": "squashes",
+     "s": 50.343,
+     "e": 50.795
+    },
+    {
+     "w": "flat",
+     "s": 50.871,
+     "e": 51.173
+    },
+    {
+     "w": "ahead",
+     "s": 51.286,
+     "e": 51.399
+    },
+    {
+     "w": "of",
+     "s": 51.437,
+     "e": 51.475
+    },
+    {
+     "w": "him.",
+     "s": 51.55,
+     "e": 52.008
+    },
+    {
+     "w": "Five",
+     "s": 52.083,
+     "e": 52.31
+    },
+    {
+     "w": "hours",
+     "s": 52.385,
+     "e": 52.612
+    },
+    {
+     "w": "to",
+     "s": 52.687,
+     "e": 52.763
+    },
+    {
+     "w": "Pluto,",
+     "s": 52.8,
+     "e": 53.486
+    },
+    {
+     "w": "on",
+     "s": 53.562,
+     "e": 53.637
+    },
+    {
+     "w": "Dave's",
+     "s": 53.713,
+     "e": 53.977
+    },
+    {
+     "w": "watch:",
+     "s": 54.015,
+     "e": 54.618
+    },
+    {
+     "w": "twenty-five",
+     "s": 54.732,
+     "e": 55.071
+    },
+    {
+     "w": "seconds.",
+     "s": 55.222,
+     "e": 55.837
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Space squashes flat ahead of him.",
+     "s": 49.739,
+     "e": 52.008
+    },
+    {
+     "text": "Five hours to Pluto, on Dave's watch: twenty-five seconds.",
+     "s": 52.083,
+     "e": 55.837
+    }
+   ],
+   "start": 49.659,
+   "end": 55.917
+  },
+  {
+   "id": "light",
+   "line": "Starlight ahead shifts into X-rays. The whole sky bunches into one dot ahead. Behind him: nothing. Dave assumes it's night.",
+   "words": [
+    {
+     "w": "Starlight",
+     "s": 55.997,
+     "e": 56.525
+    },
+    {
+     "w": "ahead",
+     "s": 56.714,
+     "e": 56.902
+    },
+    {
+     "w": "shifts",
+     "s": 57.053,
+     "e": 57.393
+    },
+    {
+     "w": "into",
+     "s": 57.431,
+     "e": 57.582
+    },
+    {
+     "w": "X-rays.",
+     "s": 57.657,
+     "e": 58.638
+    },
+    {
+     "w": "The",
+     "s": 58.714,
+     "e": 58.789
+    },
+    {
+     "w": "whole",
+     "s": 58.865,
+     "e": 59.091
+    },
+    {
+     "w": "sky",
+     "s": 59.166,
+     "e": 59.468
+    },
+    {
+     "w": "bunches",
+     "s": 59.619,
+     "e": 59.997
+    },
+    {
+     "w": "into",
+     "s": 60.11,
+     "e": 60.223
+    },
+    {
+     "w": "one",
+     "s": 60.299,
+     "e": 60.45
+    },
+    {
+     "w": "dot",
+     "s": 60.6,
+     "e": 60.827
+    },
+    {
+     "w": "ahead.",
+     "s": 61.016,
+     "e": 61.657
+    },
+    {
+     "w": "Behind",
+     "s": 61.846,
+     "e": 62.034
+    },
+    {
+     "w": "him:",
+     "s": 62.11,
+     "e": 62.541
+    },
+    {
+     "w": "nothing.",
+     "s": 62.617,
+     "e": 63.447
+    },
+    {
+     "w": "Dave",
+     "s": 63.522,
+     "e": 63.749
+    },
+    {
+     "w": "assumes",
+     "s": 63.824,
+     "e": 64.126
+    },
+    {
+     "w": "it's",
+     "s": 64.202,
+     "e": 64.353
+    },
+    {
+     "w": "night.",
+     "s": 64.503,
+     "e": 64.73
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Starlight ahead shifts into X-rays.",
+     "s": 55.997,
+     "e": 58.638
+    },
+    {
+     "text": "The whole sky bunches into one dot ahead.",
+     "s": 58.714,
+     "e": 61.657
+    },
+    {
+     "text": "Behind him: nothing.",
+     "s": 61.846,
+     "e": 63.447
+    },
+    {
+     "text": "Dave assumes it's night.",
+     "s": 63.522,
+     "e": 64.73
+    }
+   ],
+   "start": 55.917,
+   "end": 64.928
+  },
+  {
+   "id": "hydrogen",
+   "line": "Space has one hydrogen atom per cubic centimetre. Each one hits Dave like a collider beam. Lethal in under a second. He feels a tingle.",
+   "words": [
+    {
+     "w": "Space",
+     "s": 65.008,
+     "e": 65.385
+    },
+    {
+     "w": "has",
+     "s": 65.461,
+     "e": 65.687
+    },
+    {
+     "w": "one",
+     "s": 65.763,
+     "e": 65.838
+    },
+    {
+     "w": "hydrogen",
+     "s": 65.914,
+     "e": 66.367
+    },
+    {
+     "w": "atom",
+     "s": 66.442,
+     "e": 66.744
+    },
+    {
+     "w": "per",
+     "s": 66.819,
+     "e": 66.895
+    },
+    {
+     "w": "cubic",
+     "s": 66.97,
+     "e": 67.272
+    },
+    {
+     "w": "centimetre.",
+     "s": 67.348,
+     "e": 68.129
+    },
+    {
+     "w": "Each",
+     "s": 68.218,
+     "e": 68.444
+    },
+    {
+     "w": "one",
+     "s": 68.52,
+     "e": 68.746
+    },
+    {
+     "w": "hits",
+     "s": 68.821,
+     "e": 69.048
+    },
+    {
+     "w": "Dave",
+     "s": 69.123,
+     "e": 69.35
+    },
+    {
+     "w": "like",
+     "s": 69.425,
+     "e": 69.501
+    },
+    {
+     "w": "a",
+     "s": 69.576,
+     "e": 69.652
+    },
+    {
+     "w": "collider",
+     "s": 69.765,
+     "e": 70.104
+    },
+    {
+     "w": "beam.",
+     "s": 70.255,
+     "e": 70.482
+    },
+    {
+     "w": "Lethal",
+     "s": 70.859,
+     "e": 71.312
+    },
+    {
+     "w": "in",
+     "s": 71.387,
+     "e": 71.463
+    },
+    {
+     "w": "under",
+     "s": 71.576,
+     "e": 71.689
+    },
+    {
+     "w": "a",
+     "s": 71.727,
+     "e": 71.765
+    },
+    {
+     "w": "second.",
+     "s": 71.84,
+     "e": 72.52
+    },
+    {
+     "w": "He",
+     "s": 72.746,
+     "e": 72.897
+    },
+    {
+     "w": "feels",
+     "s": 72.972,
+     "e": 73.123
+    },
+    {
+     "w": "a",
+     "s": 73.199,
+     "e": 73.274
+    },
+    {
+     "w": "tingle.",
+     "s": 73.35,
+     "e": 73.877
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Space has one hydrogen atom per cubic centimetre.",
+     "s": 65.008,
+     "e": 68.129
+    },
+    {
+     "text": "Each one hits Dave like a collider beam.",
+     "s": 68.218,
+     "e": 70.482
+    },
+    {
+     "text": "Lethal in under a second.",
+     "s": 70.859,
+     "e": 72.52
+    },
+    {
+     "text": "He feels a tingle.",
+     "s": 72.746,
+     "e": 73.877
+    }
+   ],
+   "start": 64.928,
+   "end": 73.92
+  },
+  {
+   "id": "uturn",
+   "line": "At Pluto, Dave turns round. By his watch, he's been gone fifty seconds.",
+   "words": [
+    {
+     "w": "At",
+     "s": 74.0,
+     "e": 74.151
+    },
+    {
+     "w": "Pluto,",
+     "s": 74.189,
+     "e": 74.755
+    },
+    {
+     "w": "Dave",
+     "s": 74.831,
+     "e": 75.057
+    },
+    {
+     "w": "turns",
+     "s": 75.17,
+     "e": 75.359
+    },
+    {
+     "w": "round.",
+     "s": 75.434,
+     "e": 75.963
+    },
+    {
+     "w": "By",
+     "s": 76.057,
+     "e": 76.208
+    },
+    {
+     "w": "his",
+     "s": 76.284,
+     "e": 76.435
+    },
+    {
+     "w": "watch,",
+     "s": 76.51,
+     "e": 76.887
+    },
+    {
+     "w": "he's",
+     "s": 76.925,
+     "e": 77.038
+    },
+    {
+     "w": "been",
+     "s": 77.114,
+     "e": 77.189
+    },
+    {
+     "w": "gone",
+     "s": 77.265,
+     "e": 77.491
+    },
+    {
+     "w": "fifty",
+     "s": 77.567,
+     "e": 77.869
+    },
+    {
+     "w": "seconds.",
+     "s": 77.944,
+     "e": 78.472
+    }
+   ],
+   "sentences": [
+    {
+     "text": "At Pluto, Dave turns round.",
+     "s": 74.0,
+     "e": 75.963
+    },
+    {
+     "text": "By his watch, he's been gone fifty seconds.",
+     "s": 76.057,
+     "e": 78.472
+    }
+   ],
+   "start": 73.92,
+   "end": 78.77
+  },
+  {
+   "id": "end",
+   "line": "He walks in on time. By his watch. On Earth it's five in the morning. Priya waited. The rehearsal dinner is now a rehearsal breakfast. Dave brought cake.",
+   "words": [
+    {
+     "w": "He",
+     "s": 78.85,
+     "e": 79.001
+    },
+    {
+     "w": "walks",
+     "s": 79.076,
+     "e": 79.303
+    },
+    {
+     "w": "in",
+     "s": 79.378,
+     "e": 79.529
+    },
+    {
+     "w": "on",
+     "s": 79.604,
+     "e": 79.755
+    },
+    {
+     "w": "time.",
+     "s": 79.831,
+     "e": 80.359
+    },
+    {
+     "w": "By",
+     "s": 80.491,
+     "e": 80.567
+    },
+    {
+     "w": "his",
+     "s": 80.717,
+     "e": 80.793
+    },
+    {
+     "w": "watch.",
+     "s": 80.868,
+     "e": 81.246
+    },
+    {
+     "w": "On",
+     "s": 81.453,
+     "e": 81.603
+    },
+    {
+     "w": "Earth",
+     "s": 81.679,
+     "e": 81.905
+    },
+    {
+     "w": "it's",
+     "s": 82.056,
+     "e": 82.207
+    },
+    {
+     "w": "five",
+     "s": 82.283,
+     "e": 82.434
+    },
+    {
+     "w": "in",
+     "s": 82.509,
+     "e": 82.585
+    },
+    {
+     "w": "the",
+     "s": 82.622,
+     "e": 82.66
+    },
+    {
+     "w": "morning.",
+     "s": 82.736,
+     "e": 83.113
+    },
+    {
+     "w": "Priya",
+     "s": 83.566,
+     "e": 83.868
+    },
+    {
+     "w": "waited.",
+     "s": 83.943,
+     "e": 84.622
+    },
+    {
+     "w": "The",
+     "s": 84.849,
+     "e": 84.924
+    },
+    {
+     "w": "rehearsal",
+     "s": 85.0,
+     "e": 85.377
+    },
+    {
+     "w": "dinner",
+     "s": 85.453,
+     "e": 85.754
+    },
+    {
+     "w": "is",
+     "s": 85.83,
+     "e": 85.905
+    },
+    {
+     "w": "now",
+     "s": 85.981,
+     "e": 86.132
+    },
+    {
+     "w": "a",
+     "s": 86.17,
+     "e": 86.207
+    },
+    {
+     "w": "rehearsal",
+     "s": 86.283,
+     "e": 86.66
+    },
+    {
+     "w": "breakfast.",
+     "s": 86.736,
+     "e": 87.717
+    },
+    {
+     "w": "Dave",
+     "s": 87.905,
+     "e": 88.094
+    },
+    {
+     "w": "brought",
+     "s": 88.17,
+     "e": 88.396
+    },
+    {
+     "w": "cake.",
+     "s": 88.471,
+     "e": 88.924
+    }
+   ],
+   "sentences": [
+    {
+     "text": "He walks in on time.",
+     "s": 78.85,
+     "e": 80.359
+    },
+    {
+     "text": "By his watch.",
+     "s": 80.491,
+     "e": 81.246
+    },
+    {
+     "text": "On Earth it's five in the morning.",
+     "s": 81.453,
+     "e": 83.113
+    },
+    {
+     "text": "Priya waited.",
+     "s": 83.566,
+     "e": 84.622
+    },
+    {
+     "text": "The rehearsal dinner is now a rehearsal breakfast.",
+     "s": 84.849,
+     "e": 87.717
+    },
+    {
+     "text": "Dave brought cake.",
+     "s": 87.905,
+     "e": 88.924
+    }
+   ],
+   "start": 78.77,
+   "end": 89.824
+  },
+  {
+   "id": "endcard",
+   "line": "",
+   "words": [],
+   "sentences": [],
+   "start": 89.824,
+   "end": 93.424
+  }
+ ]
+}

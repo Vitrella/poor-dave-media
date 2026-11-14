@@ -1,0 +1,12 @@
+{"late": ["intro", "late"],
+ "seven": ["dave", "Seven"], "leicester": ["dave", "Leicester"], "three": ["dave", "three"], "cake": ["dave", "cake"],
+ "on": ["event", "travels"], "nearly": ["event", "Nearly"], "mass": ["event", "mass"], "infinite": ["event", "infinite"], "settles": ["event", "settles"], "percent": ["event", "percent"],
+ "kilos": ["energy", "kilos"], "joules": ["energy", "joules"], "eight": ["energy", "Eight"], "sandwich": ["energy", "sandwich"],
+ "passes": ["pass", "passes"], "micro": ["pass", "microseconds"], "brakes": ["pass", "brakes"],
+ "moon": ["tour", "Moon"], "jupiter": ["tour", "Jupiter"], "pluto": ["tour", "Pluto"], "sorry": ["tour", "apologising"],
+ "slower": ["time", "slower"], "oneday": ["time", "One"], "twoyears": ["time", "two"],
+ "squashes": ["length", "squashes"], "watch": ["length", "watch"], "twentyfive": ["length", "twenty-five"],
+ "xrays": ["light", "X-rays"], "dot": ["light", "dot"], "behind": ["light", "Behind"], "night": ["light", "night"],
+ "atom": ["hydrogen", "atom"], "collider": ["hydrogen", "collider"], "lethal": ["hydrogen", "Lethal"], "tingle": ["hydrogen", "tingle"],
+ "turns": ["uturn", "turns"], "fifty": ["uturn", "fifty"],
+ "walks": ["end", "walks"], "watch2": ["end", "watch"], "five": ["end", "five"], "waited": ["end", "waited"], "breakfast": ["end", "breakfast"], "cake2": ["end", "cake"]}

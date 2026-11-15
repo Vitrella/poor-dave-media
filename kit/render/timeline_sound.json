@@ -1,0 +1,1464 @@
+{
+ "fps": 30,
+ "duration": 93.916,
+ "audio": "voice/sound_final.mp3",
+ "marks": {
+  "secret": 1.077,
+  "whispering": 2.365,
+  "library": 4.138,
+  "priya": 4.976,
+  "eight": 7.745,
+  "considers": 9.476,
+  "on": 13.206,
+  "onefour": 14.83,
+  "slower": 17.138,
+  "whispers": 20.292,
+  "leaves": 21.907,
+  "walks": 24.676,
+  "supersonic": 28.523,
+  "foot": 29.828,
+  "mach3": 31.059,
+  "boom": 33.244,
+  "thunderclap": 34.013,
+  "shush": 36.628,
+  "mach20": 38.907,
+  "shboom": 41.138,
+  "car": 42.83,
+  "mach10": 44.215,
+  "dragging": 44.907,
+  "db": 47.138,
+  "rain": 49.873,
+  "pigeons": 51.769,
+  "bats": 54.23,
+  "concerned": 56.615,
+  "fortyfour": 58.461,
+  "none": 61.846,
+  "walking2": 64.615,
+  "back": 67.615,
+  "seven": 68.229,
+  "twenty": 72.999,
+  "pitched": 75.076,
+  "dogs": 77.999,
+  "click": 81.691,
+  "impressed": 82.262,
+  "reaches": 83.954,
+  "safe": 86.724,
+  "knows": 88.301,
+  "air_back": null
+ },
+ "scenes": [
+  {
+   "id": "intro",
+   "line": "Dave has a wedding secret. It needs whispering.",
+   "words": [
+    {
+     "w": "Dave",
+     "s": 0.0,
+     "e": 0.404
+    },
+    {
+     "w": "has",
+     "s": 0.462,
+     "e": 0.589
+    },
+    {
+     "w": "a",
+     "s": 0.615,
+     "e": 0.692
+    },
+    {
+     "w": "wedding",
+     "s": 0.731,
+     "e": 1.038
+    },
+    {
+     "w": "secret.",
+     "s": 1.077,
+     "e": 1.615
+    },
+    {
+     "w": "It",
+     "s": 1.796,
+     "e": 1.981
+    },
+    {
+     "w": "needs",
+     "s": 2.058,
+     "e": 2.319
+    },
+    {
+     "w": "whispering.",
+     "s": 2.365,
+     "e": 2.981
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Dave has a wedding secret.",
+     "s": 0.0,
+     "e": 1.615
+    },
+    {
+     "text": "It needs whispering.",
+     "s": 1.796,
+     "e": 2.981
+    }
+   ],
+   "start": 0.0,
+   "end": 3.279
+  },
+  {
+   "id": "dave",
+   "line": "So, the library. Priya is at the far end of the long table. Eight metres. Dave considers that whispering distance.",
+   "words": [
+    {
+     "w": "So,",
+     "s": 3.359,
+     "e": 3.667
+    },
+    {
+     "w": "the",
+     "s": 3.984,
+     "e": 4.061
+    },
+    {
+     "w": "library.",
+     "s": 4.138,
+     "e": 4.676
+    },
+    {
+     "w": "Priya",
+     "s": 4.976,
+     "e": 5.36
+    },
+    {
+     "w": "is",
+     "s": 5.437,
+     "e": 5.514
+    },
+    {
+     "w": "at",
+     "s": 5.553,
+     "e": 5.591
+    },
+    {
+     "w": "the",
+     "s": 5.668,
+     "e": 5.745
+    },
+    {
+     "w": "far",
+     "s": 5.822,
+     "e": 5.976
+    },
+    {
+     "w": "end",
+     "s": 6.13,
+     "e": 6.283
+    },
+    {
+     "w": "of",
+     "s": 6.322,
+     "e": 6.36
+    },
+    {
+     "w": "the",
+     "s": 6.437,
+     "e": 6.476
+    },
+    {
+     "w": "long",
+     "s": 6.514,
+     "e": 6.745
+    },
+    {
+     "w": "table.",
+     "s": 6.822,
+     "e": 7.476
+    },
+    {
+     "w": "Eight",
+     "s": 7.745,
+     "e": 7.899
+    },
+    {
+     "w": "metres.",
+     "s": 7.976,
+     "e": 8.514
+    },
+    {
+     "w": "Dave",
+     "s": 9.053,
+     "e": 9.36
+    },
+    {
+     "w": "considers",
+     "s": 9.476,
+     "e": 9.822
+    },
+    {
+     "w": "that",
+     "s": 9.899,
+     "e": 10.053
+    },
+    {
+     "w": "whispering",
+     "s": 10.13,
+     "e": 10.591
+    },
+    {
+     "w": "distance.",
+     "s": 10.668,
+     "e": 11.514
+    }
+   ],
+   "sentences": [
+    {
+     "text": "So, the library.",
+     "s": 3.359,
+     "e": 4.676
+    },
+    {
+     "text": "Priya is at the far end of the long table.",
+     "s": 4.976,
+     "e": 7.476
+    },
+    {
+     "text": "Eight metres.",
+     "s": 7.745,
+     "e": 8.514
+    },
+    {
+     "text": "Dave considers that whispering distance.",
+     "s": 9.053,
+     "e": 11.514
+    }
+   ],
+   "start": 3.279,
+   "end": 11.742
+  },
+  {
+   "id": "event",
+   "line": "Then the speed of sound drops to walking pace. One point four metres per second. Two hundred and forty-five times slower.",
+   "words": [
+    {
+     "w": "Then",
+     "s": 11.822,
+     "e": 12.053
+    },
+    {
+     "w": "the",
+     "s": 12.13,
+     "e": 12.168
+    },
+    {
+     "w": "speed",
+     "s": 12.206,
+     "e": 12.514
+    },
+    {
+     "w": "of",
+     "s": 12.553,
+     "e": 12.591
+    },
+    {
+     "w": "sound",
+     "s": 12.745,
+     "e": 13.053
+    },
+    {
+     "w": "drops",
+     "s": 13.206,
+     "e": 13.514
+    },
+    {
+     "w": "to",
+     "s": 13.553,
+     "e": 13.591
+    },
+    {
+     "w": "walking",
+     "s": 13.668,
+     "e": 13.976
+    },
+    {
+     "w": "pace.",
+     "s": 14.053,
+     "e": 14.638
+    },
+    {
+     "w": "One",
+     "s": 14.83,
+     "e": 14.907
+    },
+    {
+     "w": "point",
+     "s": 15.061,
+     "e": 15.292
+    },
+    {
+     "w": "four",
+     "s": 15.369,
+     "e": 15.523
+    },
+    {
+     "w": "metres",
+     "s": 15.6,
+     "e": 15.907
+    },
+    {
+     "w": "per",
+     "s": 15.984,
+     "e": 16.061
+    },
+    {
+     "w": "second.",
+     "s": 16.138,
+     "e": 17.061
+    },
+    {
+     "w": "Two",
+     "s": 17.138,
+     "e": 17.215
+    },
+    {
+     "w": "hundred",
+     "s": 17.292,
+     "e": 17.523
+    },
+    {
+     "w": "and",
+     "s": 17.6,
+     "e": 17.753
+    },
+    {
+     "w": "forty-five",
+     "s": 17.869,
+     "e": 18.292
+    },
+    {
+     "w": "times",
+     "s": 18.446,
+     "e": 18.83
+    },
+    {
+     "w": "slower.",
+     "s": 18.907,
+     "e": 19.369
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Then the speed of sound drops to walking pace.",
+     "s": 11.822,
+     "e": 14.638
+    },
+    {
+     "text": "One point four metres per second.",
+     "s": 14.83,
+     "e": 17.061
+    },
+    {
+     "text": "Two hundred and forty-five times slower.",
+     "s": 17.138,
+     "e": 19.369
+    }
+   ],
+   "start": 11.742,
+   "end": 19.904
+  },
+  {
+   "id": "whisper",
+   "line": "Dave whispers. The whisper leaves his mouth at walking pace. Dave walks alongside it.",
+   "words": [
+    {
+     "w": "Dave",
+     "s": 19.984,
+     "e": 20.215
+    },
+    {
+     "w": "whispers.",
+     "s": 20.292,
+     "e": 21.061
+    },
+    {
+     "w": "The",
+     "s": 21.292,
+     "e": 21.369
+    },
+    {
+     "w": "whisper",
+     "s": 21.446,
+     "e": 21.83
+    },
+    {
+     "w": "leaves",
+     "s": 21.907,
+     "e": 22.138
+    },
+    {
+     "w": "his",
+     "s": 22.215,
+     "e": 22.292
+    },
+    {
+     "w": "mouth",
+     "s": 22.369,
+     "e": 22.676
+    },
+    {
+     "w": "at",
+     "s": 22.753,
+     "e": 22.83
+    },
+    {
+     "w": "walking",
+     "s": 22.907,
+     "e": 23.215
+    },
+    {
+     "w": "pace.",
+     "s": 23.292,
+     "e": 23.984
+    },
+    {
+     "w": "Dave",
+     "s": 24.292,
+     "e": 24.6
+    },
+    {
+     "w": "walks",
+     "s": 24.676,
+     "e": 24.907
+    },
+    {
+     "w": "alongside",
+     "s": 25.1,
+     "e": 25.446
+    },
+    {
+     "w": "it.",
+     "s": 25.523,
+     "e": 25.753
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Dave whispers.",
+     "s": 19.984,
+     "e": 21.061
+    },
+    {
+     "text": "The whisper leaves his mouth at walking pace.",
+     "s": 21.292,
+     "e": 23.984
+    },
+    {
+     "text": "Dave walks alongside it.",
+     "s": 24.292,
+     "e": 25.753
+    }
+   ],
+   "start": 19.904,
+   "end": 26.135
+  },
+  {
+   "id": "steps",
+   "line": "Anything faster than a stroll is now supersonic. Your foot swings at Mach three. Every step is a sonic boom. About a thunderclap.",
+   "words": [
+    {
+     "w": "Anything",
+     "s": 26.215,
+     "e": 26.6
+    },
+    {
+     "w": "faster",
+     "s": 26.753,
+     "e": 27.061
+    },
+    {
+     "w": "than",
+     "s": 27.138,
+     "e": 27.215
+    },
+    {
+     "w": "a",
+     "s": 27.292,
+     "e": 27.369
+    },
+    {
+     "w": "stroll",
+     "s": 27.446,
+     "e": 27.907
+    },
+    {
+     "w": "is",
+     "s": 27.984,
+     "e": 28.138
+    },
+    {
+     "w": "now",
+     "s": 28.215,
+     "e": 28.369
+    },
+    {
+     "w": "supersonic.",
+     "s": 28.523,
+     "e": 29.386
+    },
+    {
+     "w": "Your",
+     "s": 29.521,
+     "e": 29.674
+    },
+    {
+     "w": "foot",
+     "s": 29.828,
+     "e": 29.982
+    },
+    {
+     "w": "swings",
+     "s": 30.136,
+     "e": 30.521
+    },
+    {
+     "w": "at",
+     "s": 30.597,
+     "e": 30.674
+    },
+    {
+     "w": "Mach",
+     "s": 30.751,
+     "e": 30.982
+    },
+    {
+     "w": "three.",
+     "s": 31.059,
+     "e": 31.631
+    },
+    {
+     "w": "Every",
+     "s": 31.782,
+     "e": 32.013
+    },
+    {
+     "w": "step",
+     "s": 32.167,
+     "e": 32.397
+    },
+    {
+     "w": "is",
+     "s": 32.551,
+     "e": 32.628
+    },
+    {
+     "w": "a",
+     "s": 32.667,
+     "e": 32.705
+    },
+    {
+     "w": "sonic",
+     "s": 32.859,
+     "e": 33.09
+    },
+    {
+     "w": "boom.",
+     "s": 33.244,
+     "e": 33.628
+    },
+    {
+     "w": "About",
+     "s": 34.013,
+     "e": 34.321
+    },
+    {
+     "w": "a",
+     "s": 34.359,
+     "e": 34.397
+    },
+    {
+     "w": "thunderclap.",
+     "s": 34.551,
+     "e": 35.244
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Anything faster than a stroll is now supersonic.",
+     "s": 26.215,
+     "e": 29.386
+    },
+    {
+     "text": "Your foot swings at Mach three.",
+     "s": 29.521,
+     "e": 31.631
+    },
+    {
+     "text": "Every step is a sonic boom.",
+     "s": 31.782,
+     "e": 33.628
+    },
+    {
+     "text": "About a thunderclap.",
+     "s": 34.013,
+     "e": 35.244
+    }
+   ],
+   "start": 26.135,
+   "end": 35.702
+  },
+  {
+   "id": "shh",
+   "line": "The librarian shushes him. Her breath leaves at Mach twenty. The shush is a sonic boom.",
+   "words": [
+    {
+     "w": "The",
+     "s": 35.782,
+     "e": 35.821
+    },
+    {
+     "w": "librarian",
+     "s": 35.859,
+     "e": 36.474
+    },
+    {
+     "w": "shushes",
+     "s": 36.628,
+     "e": 36.936
+    },
+    {
+     "w": "him.",
+     "s": 37.013,
+     "e": 37.378
+    },
+    {
+     "w": "Her",
+     "s": 37.523,
+     "e": 37.677
+    },
+    {
+     "w": "breath",
+     "s": 37.753,
+     "e": 38.061
+    },
+    {
+     "w": "leaves",
+     "s": 38.138,
+     "e": 38.446
+    },
+    {
+     "w": "at",
+     "s": 38.484,
+     "e": 38.523
+    },
+    {
+     "w": "Mach",
+     "s": 38.6,
+     "e": 38.83
+    },
+    {
+     "w": "twenty.",
+     "s": 38.907,
+     "e": 39.753
+    },
+    {
+     "w": "The",
+     "s": 39.83,
+     "e": 39.907
+    },
+    {
+     "w": "shush",
+     "s": 39.984,
+     "e": 40.369
+    },
+    {
+     "w": "is",
+     "s": 40.446,
+     "e": 40.523
+    },
+    {
+     "w": "a",
+     "s": 40.6,
+     "e": 40.677
+    },
+    {
+     "w": "sonic",
+     "s": 40.753,
+     "e": 41.061
+    },
+    {
+     "w": "boom.",
+     "s": 41.138,
+     "e": 41.523
+    }
+   ],
+   "sentences": [
+    {
+     "text": "The librarian shushes him.",
+     "s": 35.782,
+     "e": 37.378
+    },
+    {
+     "text": "Her breath leaves at Mach twenty.",
+     "s": 37.523,
+     "e": 39.753
+    },
+    {
+     "text": "The shush is a sonic boom.",
+     "s": 39.83,
+     "e": 41.523
+    }
+   ],
+   "start": 35.702,
+   "end": 41.75
+  },
+  {
+   "id": "street",
+   "line": "Outside, a car at fifty is Mach ten, dragging a shock wave down the street. A hundred and forty decibels, per car.",
+   "words": [
+    {
+     "w": "Outside,",
+     "s": 41.83,
+     "e": 42.599
+    },
+    {
+     "w": "a",
+     "s": 42.676,
+     "e": 42.753
+    },
+    {
+     "w": "car",
+     "s": 42.83,
+     "e": 43.061
+    },
+    {
+     "w": "at",
+     "s": 43.099,
+     "e": 43.138
+    },
+    {
+     "w": "fifty",
+     "s": 43.292,
+     "e": 43.599
+    },
+    {
+     "w": "is",
+     "s": 43.676,
+     "e": 43.83
+    },
+    {
+     "w": "Mach",
+     "s": 43.907,
+     "e": 44.138
+    },
+    {
+     "w": "ten,",
+     "s": 44.215,
+     "e": 44.83
+    },
+    {
+     "w": "dragging",
+     "s": 44.907,
+     "e": 45.215
+    },
+    {
+     "w": "a",
+     "s": 45.292,
+     "e": 45.369
+    },
+    {
+     "w": "shock",
+     "s": 45.446,
+     "e": 45.676
+    },
+    {
+     "w": "wave",
+     "s": 45.792,
+     "e": 45.907
+    },
+    {
+     "w": "down",
+     "s": 45.984,
+     "e": 46.138
+    },
+    {
+     "w": "the",
+     "s": 46.215,
+     "e": 46.253
+    },
+    {
+     "w": "street.",
+     "s": 46.292,
+     "e": 46.753
+    },
+    {
+     "w": "A",
+     "s": 47.138,
+     "e": 47.215
+    },
+    {
+     "w": "hundred",
+     "s": 47.292,
+     "e": 47.522
+    },
+    {
+     "w": "and",
+     "s": 47.561,
+     "e": 47.599
+    },
+    {
+     "w": "forty",
+     "s": 47.753,
+     "e": 47.984
+    },
+    {
+     "w": "decibels,",
+     "s": 48.061,
+     "e": 48.676
+    },
+    {
+     "w": "per",
+     "s": 48.83,
+     "e": 48.984
+    },
+    {
+     "w": "car.",
+     "s": 49.138,
+     "e": 49.522
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Outside, a car at fifty is Mach ten, dragging a shock wave down the street.",
+     "s": 41.83,
+     "e": 46.753
+    },
+    {
+     "text": "A hundred and forty decibels, per car.",
+     "s": 47.138,
+     "e": 49.522
+    }
+   ],
+   "start": 41.75,
+   "end": 49.793
+  },
+  {
+   "id": "world",
+   "line": "Rain falls at Mach six. Pigeons cruise at Mach fourteen. Bats outrun their own echoes. The bats are concerned.",
+   "words": [
+    {
+     "w": "Rain",
+     "s": 49.873,
+     "e": 50.181
+    },
+    {
+     "w": "falls",
+     "s": 50.258,
+     "e": 50.566
+    },
+    {
+     "w": "at",
+     "s": 50.643,
+     "e": 50.72
+    },
+    {
+     "w": "Mach",
+     "s": 50.797,
+     "e": 51.027
+    },
+    {
+     "w": "six.",
+     "s": 51.104,
+     "e": 51.668
+    },
+    {
+     "w": "Pigeons",
+     "s": 51.769,
+     "e": 52.307
+    },
+    {
+     "w": "cruise",
+     "s": 52.384,
+     "e": 52.692
+    },
+    {
+     "w": "at",
+     "s": 52.769,
+     "e": 52.846
+    },
+    {
+     "w": "Mach",
+     "s": 52.923,
+     "e": 53.077
+    },
+    {
+     "w": "fourteen.",
+     "s": 53.153,
+     "e": 54.0
+    },
+    {
+     "w": "Bats",
+     "s": 54.23,
+     "e": 54.615
+    },
+    {
+     "w": "outrun",
+     "s": 54.692,
+     "e": 55.153
+    },
+    {
+     "w": "their",
+     "s": 55.23,
+     "e": 55.307
+    },
+    {
+     "w": "own",
+     "s": 55.384,
+     "e": 55.615
+    },
+    {
+     "w": "echoes.",
+     "s": 55.692,
+     "e": 56.23
+    },
+    {
+     "w": "The",
+     "s": 56.615,
+     "e": 56.692
+    },
+    {
+     "w": "bats",
+     "s": 56.769,
+     "e": 57.077
+    },
+    {
+     "w": "are",
+     "s": 57.115,
+     "e": 57.153
+    },
+    {
+     "w": "concerned.",
+     "s": 57.23,
+     "e": 58.307
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Rain falls at Mach six.",
+     "s": 49.873,
+     "e": 51.668
+    },
+    {
+     "text": "Pigeons cruise at Mach fourteen.",
+     "s": 51.769,
+     "e": 54.0
+    },
+    {
+     "text": "Bats outrun their own echoes.",
+     "s": 54.23,
+     "e": 56.23
+    },
+    {
+     "text": "The bats are concerned.",
+     "s": 56.615,
+     "e": 58.307
+    }
+   ],
+   "start": 49.793,
+   "end": 58.381
+  },
+  {
+   "id": "thunder",
+   "line": "Forty-four lightning bolts a second, worldwide. For five seconds, none of them have thunder. The thunder is walking.",
+   "words": [
+    {
+     "w": "Forty-four",
+     "s": 58.461,
+     "e": 59.0
+    },
+    {
+     "w": "lightning",
+     "s": 59.153,
+     "e": 59.461
+    },
+    {
+     "w": "bolts",
+     "s": 59.538,
+     "e": 59.769
+    },
+    {
+     "w": "a",
+     "s": 59.807,
+     "e": 59.846
+    },
+    {
+     "w": "second,",
+     "s": 59.923,
+     "e": 60.538
+    },
+    {
+     "w": "worldwide.",
+     "s": 60.615,
+     "e": 61.769
+    },
+    {
+     "w": "For",
+     "s": 61.846,
+     "e": 62.0
+    },
+    {
+     "w": "five",
+     "s": 62.115,
+     "e": 62.23
+    },
+    {
+     "w": "seconds,",
+     "s": 62.307,
+     "e": 62.923
+    },
+    {
+     "w": "none",
+     "s": 63.0,
+     "e": 63.153
+    },
+    {
+     "w": "of",
+     "s": 63.23,
+     "e": 63.307
+    },
+    {
+     "w": "them",
+     "s": 63.384,
+     "e": 63.461
+    },
+    {
+     "w": "have",
+     "s": 63.538,
+     "e": 63.615
+    },
+    {
+     "w": "thunder.",
+     "s": 63.692,
+     "e": 64.153
+    },
+    {
+     "w": "The",
+     "s": 64.615,
+     "e": 64.692
+    },
+    {
+     "w": "thunder",
+     "s": 64.769,
+     "e": 65.077
+    },
+    {
+     "w": "is",
+     "s": 65.23,
+     "e": 65.307
+    },
+    {
+     "w": "walking.",
+     "s": 65.384,
+     "e": 65.923
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Forty-four lightning bolts a second, worldwide.",
+     "s": 58.461,
+     "e": 61.769
+    },
+    {
+     "text": "For five seconds, none of them have thunder.",
+     "s": 61.846,
+     "e": 64.153
+    },
+    {
+     "text": "The thunder is walking.",
+     "s": 64.615,
+     "e": 65.923
+    }
+   ],
+   "start": 58.381,
+   "end": 66.381
+  },
+  {
+   "id": "back",
+   "line": "Then sound comes back. Everything said in those five seconds sits within seven metres of whoever said it. It arrives in twenty milliseconds, pitched up two hundred and forty-five times.",
+   "words": [
+    {
+     "w": "Then",
+     "s": 66.461,
+     "e": 66.769
+    },
+    {
+     "w": "sound",
+     "s": 66.923,
+     "e": 67.23
+    },
+    {
+     "w": "comes",
+     "s": 67.307,
+     "e": 67.538
+    },
+    {
+     "w": "back.",
+     "s": 67.615,
+     "e": 68.086
+    },
+    {
+     "w": "Everything",
+     "s": 68.229,
+     "e": 68.691
+    },
+    {
+     "w": "said",
+     "s": 68.768,
+     "e": 68.999
+    },
+    {
+     "w": "in",
+     "s": 69.037,
+     "e": 69.076
+    },
+    {
+     "w": "those",
+     "s": 69.191,
+     "e": 69.306
+    },
+    {
+     "w": "five",
+     "s": 69.383,
+     "e": 69.614
+    },
+    {
+     "w": "seconds",
+     "s": 69.691,
+     "e": 70.076
+    },
+    {
+     "w": "sits",
+     "s": 70.306,
+     "e": 70.537
+    },
+    {
+     "w": "within",
+     "s": 70.614,
+     "e": 70.845
+    },
+    {
+     "w": "seven",
+     "s": 70.922,
+     "e": 71.152
+    },
+    {
+     "w": "metres",
+     "s": 71.306,
+     "e": 71.614
+    },
+    {
+     "w": "of",
+     "s": 71.691,
+     "e": 71.768
+    },
+    {
+     "w": "whoever",
+     "s": 71.845,
+     "e": 72.076
+    },
+    {
+     "w": "said",
+     "s": 72.152,
+     "e": 72.306
+    },
+    {
+     "w": "it.",
+     "s": 72.383,
+     "e": 72.768
+    },
+    {
+     "w": "It",
+     "s": 72.999,
+     "e": 73.076
+    },
+    {
+     "w": "arrives",
+     "s": 73.152,
+     "e": 73.537
+    },
+    {
+     "w": "in",
+     "s": 73.614,
+     "e": 73.691
+    },
+    {
+     "w": "twenty",
+     "s": 73.768,
+     "e": 73.999
+    },
+    {
+     "w": "milliseconds,",
+     "s": 74.152,
+     "e": 74.999
+    },
+    {
+     "w": "pitched",
+     "s": 75.076,
+     "e": 75.383
+    },
+    {
+     "w": "up",
+     "s": 75.499,
+     "e": 75.614
+    },
+    {
+     "w": "two",
+     "s": 75.691,
+     "e": 75.768
+    },
+    {
+     "w": "hundred",
+     "s": 75.845,
+     "e": 76.076
+    },
+    {
+     "w": "and",
+     "s": 76.191,
+     "e": 76.306
+    },
+    {
+     "w": "forty-five",
+     "s": 76.383,
+     "e": 76.768
+    },
+    {
+     "w": "times.",
+     "s": 76.922,
+     "e": 77.845
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Then sound comes back.",
+     "s": 66.461,
+     "e": 68.086
+    },
+    {
+     "text": "Everything said in those five seconds sits within seven metres of whoever said it.",
+     "s": 68.229,
+     "e": 72.768
+    },
+    {
+     "text": "It arrives in twenty milliseconds, pitched up two hundred and forty-five times.",
+     "s": 72.999,
+     "e": 77.845
+    }
+   ],
+   "start": 66.381,
+   "end": 77.919
+  },
+  {
+   "id": "dogs",
+   "line": "Nine hundred million dogs hear five seconds of humanity in one click. They are not impressed.",
+   "words": [
+    {
+     "w": "Nine",
+     "s": 77.999,
+     "e": 78.229
+    },
+    {
+     "w": "hundred",
+     "s": 78.306,
+     "e": 78.537
+    },
+    {
+     "w": "million",
+     "s": 78.691,
+     "e": 78.999
+    },
+    {
+     "w": "dogs",
+     "s": 79.076,
+     "e": 79.383
+    },
+    {
+     "w": "hear",
+     "s": 79.46,
+     "e": 79.691
+    },
+    {
+     "w": "five",
+     "s": 79.768,
+     "e": 79.922
+    },
+    {
+     "w": "seconds",
+     "s": 80.076,
+     "e": 80.383
+    },
+    {
+     "w": "of",
+     "s": 80.422,
+     "e": 80.46
+    },
+    {
+     "w": "humanity",
+     "s": 80.537,
+     "e": 81.152
+    },
+    {
+     "w": "in",
+     "s": 81.268,
+     "e": 81.383
+    },
+    {
+     "w": "one",
+     "s": 81.46,
+     "e": 81.537
+    },
+    {
+     "w": "click.",
+     "s": 81.691,
+     "e": 82.183
+    },
+    {
+     "w": "They",
+     "s": 82.262,
+     "e": 82.416
+    },
+    {
+     "w": "are",
+     "s": 82.493,
+     "e": 82.57
+    },
+    {
+     "w": "not",
+     "s": 82.647,
+     "e": 82.724
+    },
+    {
+     "w": "impressed.",
+     "s": 82.801,
+     "e": 83.647
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Nine hundred million dogs hear five seconds of humanity in one click.",
+     "s": 77.999,
+     "e": 82.183
+    },
+    {
+     "text": "They are not impressed.",
+     "s": 82.262,
+     "e": 83.647
+    }
+   ],
+   "start": 77.919,
+   "end": 83.874
+  },
+  {
+   "id": "end",
+   "line": "Dave's whisper reaches Priya as a click. The secret is safe. The dog knows.",
+   "words": [
+    {
+     "w": "Dave's",
+     "s": 83.954,
+     "e": 84.262
+    },
+    {
+     "w": "whisper",
+     "s": 84.301,
+     "e": 84.724
+    },
+    {
+     "w": "reaches",
+     "s": 84.762,
+     "e": 85.031
+    },
+    {
+     "w": "Priya",
+     "s": 85.185,
+     "e": 85.57
+    },
+    {
+     "w": "as",
+     "s": 85.647,
+     "e": 85.724
+    },
+    {
+     "w": "a",
+     "s": 85.775,
+     "e": 85.826
+    },
+    {
+     "w": "click.",
+     "s": 85.877,
+     "e": 86.647
+    },
+    {
+     "w": "The",
+     "s": 86.724,
+     "e": 86.801
+    },
+    {
+     "w": "secret",
+     "s": 86.877,
+     "e": 87.262
+    },
+    {
+     "w": "is",
+     "s": 87.339,
+     "e": 87.493
+    },
+    {
+     "w": "safe.",
+     "s": 87.647,
+     "e": 88.262
+    },
+    {
+     "w": "The",
+     "s": 88.301,
+     "e": 88.339
+    },
+    {
+     "w": "dog",
+     "s": 88.416,
+     "e": 88.724
+    },
+    {
+     "w": "knows.",
+     "s": 88.801,
+     "e": 89.416
+    }
+   ],
+   "sentences": [
+    {
+     "text": "Dave's whisper reaches Priya as a click.",
+     "s": 83.954,
+     "e": 86.647
+    },
+    {
+     "text": "The secret is safe.",
+     "s": 86.724,
+     "e": 88.262
+    },
+    {
+     "text": "The dog knows.",
+     "s": 88.301,
+     "e": 89.416
+    }
+   ],
+   "start": 83.874,
+   "end": 90.316
+  },
+  {
+   "id": "endcard",
+   "line": "",
+   "words": [],
+   "sentences": [],
+   "start": 90.316,
+   "end": 93.916
+  }
+ ]
+}
